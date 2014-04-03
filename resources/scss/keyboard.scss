@@ -1,0 +1,618 @@
+@charset "UTF-8";
+
+/*!
+*
+* KeyBorad Shortcut List
+*
+* Copyright (c) 2014 Beeworks Co., Ltd All rights reserved
+* 
+* @version : 0
+* @author  : k_shimoda@beeworks.co.jp
+* 
+*/
+
+/*! ===========================================
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+　このCSSファイルはSassから生成されていますので、
+　編集しないようご注意ください。by Beeworks
+※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※
+============================================ */
+
+@import "compass";
+// @import "mixin";
+// @import "extend";
+//@import "reset";
+// @import "setting";
+// @import "layout";
+
+
+// ===================================
+// キーボードベース
+// ===================================
+#keyboard-base {
+	width: 1180px;
+	height: 316px;
+	background-color: #dddddd;
+	@include border-radius(14px);
+	@include box-shadow(2px 2px 0 rgba(0,0,0,0.2));
+	position: relative;
+	margin: 10px auto;
+	&.keyboard-apple-sj,
+	&.keyboard-apple-us {
+		width: 775px;
+	}
+}
+
+// ===================================
+// キー共通スタイル
+// ===================================
+.mod-key {
+	color: #666;
+	@include border-radius(4px);
+	@include box-shadow(1px 1px 2px rgba(0,0,0,0.2));
+	background-color: #fff;
+	width: 43px;
+	height: 43px;
+	line-height: 43px;
+	display: inline-block;
+	font-size: 10px;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	&.on {
+		background-color: orange;
+		font-weight: bold;
+	}
+}
+
+#key-esc,
+#key-f1,
+#key-f2,
+#key-f3,
+#key-f4,
+#key-f5,
+#key-f6,
+#key-f7,
+#key-f8,
+#key-f9,
+#key-f10,
+#key-f11,
+#key-f12,
+#key-eject {
+	width: 43px;
+	height: 27px;
+	line-height: 27px;
+	top: 11px;
+}
+#key-esc {left: 11px;}
+#key-f1 {left: 11px + 54;}
+#key-f2 {left: 11px + ( 54 * 2 );}
+#key-f3 {left: 11px + ( 54 * 3 );}
+#key-f4 {left: 11px + ( 54 * 4 );}
+#key-f5 {left: 11px + ( 54 * 5 );}
+#key-f6 {left: 11px + ( 54 * 6 );}
+#key-f7 {left: 11px + ( 54 * 7 );}
+#key-f8 {left: 11px + ( 54 * 8 );}
+#key-f9 {left: 11px + ( 54 * 9 );}
+#key-f10 {left: 11px + ( 54 * 10 );}
+#key-f11 {left: 11px + ( 54 * 11 );}
+#key-f12 {left: 11px + ( 54 * 12 );}
+#key-eject {left: 11px + ( 54 * 13 );}
+
+
+#key-num1,
+#key-num2,
+#key-num3,
+#key-num4,
+#key-num5,
+#key-num6,
+#key-num7,
+#key-num8,
+#key-num9,
+#key-num0,
+#key-hyphen,
+#key-caret,
+#key-backslash,
+#key-delete {
+	top: 47px;
+}
+#key-num1 {left: 11px; width: 69px;}
+#key-num2 {left: 89px;}
+#key-num3 {left: 89px + 52;}
+#key-num4 {left: 89px + ( 52 * 2 );}
+#key-num5 {left: 89px + ( 52 * 3 );}
+#key-num6 {left: 89px + ( 52 * 4 );}
+#key-num7 {left: 89px + ( 52 * 5 );}
+#key-num8 {left: 89px + ( 52 * 6 );}
+#key-num9 {left: 89px + ( 52 * 7 );}
+#key-num0 {left: 89px + ( 52 * 8 );}
+#key-hyphen {left: 89px + ( 52 * 9 );}
+#key-caret {left: 89px + ( 52 * 10 );}
+#key-backslash {left: 89px + ( 52 * 11 );}
+#key-delete {left: 89px + ( 52 * 12 );}
+
+
+#key-tab,
+#key-q,
+#key-w,
+#key-e,
+#key-r,
+#key-t,
+#key-y,
+#key-u,
+#key-i,
+#key-o,
+#key-p,
+#key-at,
+#key-bra1,
+#key-return {
+	top: 98px;
+}
+#key-tab {left: 11px;}
+#key-q {left: 11px + 52;}
+#key-w {left: 11px + ( 52 * 2 );}
+#key-e {left: 11px + ( 52 * 3 );}
+#key-r {left: 11px + ( 52 * 4 );}
+#key-t {left: 11px + ( 52 * 5 );}
+#key-y {left: 11px + ( 52 * 6 );}
+#key-u {left: 11px + ( 52 * 7 );}
+#key-i {left: 11px + ( 52 * 8 );}
+#key-o {left: 11px + ( 52 * 9 );}
+#key-p {left: 11px + ( 52 * 10 );}
+#key-at {left: 11px + ( 52 * 11 );}
+#key-bra1 {left: 11px + ( 52 * 12 );}
+#key-return { left: 703px; width: 53px; height: 95px; line-height: 95px;}
+
+
+#key-ctrl,
+#key-a,
+#key-s,
+#key-d,
+#key-f,
+#key-g,
+#key-h,
+#key-j,
+#key-k,
+#key-l,
+#key-semicolon,
+#key-colon,
+#key-bra2 {
+	top: 149px;
+}
+#key-ctrl {left: 11px; width: 56px;}
+#key-a {left: 76px;}
+#key-s {left: 76px + 52;}
+#key-d {left: 76px + ( 52 * 2 );}
+#key-f {left: 76px + ( 52 * 3 );}
+#key-g {left: 76px + ( 52 * 4 );}
+#key-h {left: 76px + ( 52 * 5 );}
+#key-j {left: 76px + ( 52 * 6 );}
+#key-k {left: 76px + ( 52 * 7 );}
+#key-l {left: 76px + ( 52 * 8 );}
+#key-semicolon {left: 76px + ( 52 * 9 );}
+#key-colon {left: 76px + ( 52 * 10 );}
+#key-bra2 {left: 76px + ( 52 * 11 );}
+
+
+#key-shiftLeft,
+#key-z,
+#key-x,
+#key-c,
+#key-v,
+#key-b,
+#key-n,
+#key-m,
+#key-comma,
+#key-period,
+#key-slash,
+#key-underScore,
+#key-shiftRight {
+	top: 200px;
+}
+#key-shiftLeft {left: 11px; width: 83px;}
+#key-z {left: 102px;}
+#key-x {left: 102px + 52;}
+#key-c {left: 102px + ( 52 * 2 );}
+#key-v {left: 102px + ( 52 * 3 );}
+#key-b {left: 102px + ( 52 * 4 );}
+#key-n {left: 102px + ( 52 * 5 );}
+#key-m {left: 102px + ( 52 * 6 );}
+#key-comma {left: 102px + ( 52 * 7 );}
+#key-period {left: 102px + ( 52 * 8 );}
+#key-slash {left: 102px + ( 52 * 9 );}
+#key-underScore {left: 102px + ( 52 * 10 );}
+#key-shiftRight {left: 102px + ( 52 * 11 ); width: 83px;}
+
+
+#key-altLeft,
+#key-cmdLeft,
+#key-eisu,
+#key-space,
+#key-kana,
+#key-cmdRight,
+#key-altRight,
+#key-caps {
+	top: 251px;
+	height: 51px;
+	line-height: 51px;
+}
+#key-altLeft {left: 11px; width: 77px;}
+#key-cmdLeft {left: 95px; width: 77px;}
+#key-eisu {left: 180px; width: 57px;}
+#key-space {left: 245px; width: 174px;}
+#key-kana {left: 428px; width: 57px;}
+#key-cmdRight {left: 493px; width: 77px;}
+#key-altRight {left: 578px; width: 77px;}
+#key-caps {left: 663px; width: 96px;}
+
+
+//テンキー有り版右側のボタン
+#key-f13,
+#key-f14,
+#key-f15,
+#key-f16,
+#key-f17,
+#key-f18,
+#key-f19 {
+	top: 11px;
+}
+#key-fn,
+#key-home,
+#key-pageup,
+#key-clear,
+#key-equalTen,
+#key-slashTen,
+#key-astTen {
+	top: 47px;
+}
+#key-deleteRight,
+#key-end,
+#key-pageDown,
+#key-num7ten,
+#key-num8ten,
+#key-num9ten,
+#key-hyphenTen {
+	top: 98px;
+}
+#key-num4ten,
+#key-num5ten,
+#key-num6ten,
+#key-plusTen {
+	top: 149px;
+}
+#key-num1ten,
+#key-num2ten,
+#key-num3ten,
+#key-enter{
+	top: 200px;
+}
+#key-curUp {
+	top: 208px;
+}
+#key-num0ten,
+#key-commaTen,
+#key-periodTen {
+	top: 251px;
+	height: 51px;
+	line-height: 51px;
+}
+#key-f13,
+#key-fn,
+#key-deleteRight,
+#key-curLeft {
+	left: 789px;
+}
+#key-f14,
+#key-home,
+#key-end,
+#key-curUp,
+#key-curDown {
+	left: 841px;
+}
+#key-f15,
+#key-pageup,
+#key-pageDown,
+#key-curRight {
+	left: 893px;
+}
+#key-f16,
+#key-clear,
+#key-num7ten,
+#key-num4ten,
+#key-num1ten,
+#key-num0ten {
+	left: 967px;
+}
+#key-f17,
+#key-equalTen,
+#key-num8ten,
+#key-num5ten,
+#key-num2ten,
+#key-commaTen {
+	left: 1019px;
+}
+#key-f18,
+#key-slashTen,
+#key-num9ten,
+#key-num6ten,
+#key-num3ten,
+#key-periodTen {
+	left: 1071px;
+}
+#key-f19,
+#key-astTen,
+#key-hyphenTen,
+#key-plusTen,
+#key-enter {
+	left: 1123px;
+}
+#key-f13,
+#key-f14,
+#key-f15,
+#key-f16,
+#key-f17,
+#key-f18,
+#key-f19 {
+	width: 43px;
+	height: 27px;
+	line-height: 27px;
+}
+#key-curLeft,
+#key-curRight,
+#key-curDown {
+	top: 259px;
+}
+#key-curUp {
+	top: 208px;
+}
+#key-enter {
+	height: 102px;
+	line-height: 102px;
+}
+
+//USのみのボタンは非表示
+#key-tilde,
+#key-hyphenUs,
+#key-plusUs,
+#key-colonUs,
+#key-quotation,
+#key-ctrlRight {
+	display: none;
+}
+
+// =============================================
+// テンキー無しキーボード/Macbook：ボタン位置調整
+// =============================================
+#base.keyboard-apple-sj,
+#base.keyboard-apple-us,
+#base.keyboard-macbook-sj,
+#base.keyboard-macbook-us {
+	width: 775px;
+	#key-altRight,
+	#key-f13,
+	#key-f14,
+	#key-f15,
+	#key-f16,
+	#key-f17,
+	#key-f18,
+	#key-f19,
+	#key-home,
+	#key-pageup,
+	#key-deleteRight,
+	#key-end,
+	#key-pageDown,
+	#key-clear,
+	#key-equalTen,
+	#key-slashTen,
+	#key-astTen,
+	#key-hyphenTen,
+	#key-plusTen,
+	#key-enter,
+	#key-num0ten,
+	#key-num1ten,
+	#key-num2ten,
+	#key-num3ten,
+	#key-num4ten,
+	#key-num5ten,
+	#key-num6ten,
+	#key-num7ten,
+	#key-num8ten,
+	#key-num9ten,
+	#key-commaTen,
+	#key-periodTen {
+		display: none;
+	}
+
+	#key-fn {
+		top: 251px;
+		height: 51px;
+		line-height: 51px;
+	}
+
+	#key-curLeft,
+	#key-curDown,
+	#key-curRight,
+	#key-curUp {
+		height: 25px;
+		line-height: 25px;
+	}
+
+	#key-caps {left: 11px; width: 43px;}
+	#key-altLeft {left: 63px; width: 43px;}
+	#key-cmdLeft {left: 115px; width: 57px;}
+	#key-cmdRight {left: 493px; width: 57px;}
+	#key-fn {left: 560px; width: 43px;}
+	#key-curLeft {left: 611px; top: 278px;}
+	#key-curDown {left: 664px; top: 278px;}
+	#key-curRight {left: 716px; top: 278px;}
+	#key-curUp {left: 664px; top: 251px;}
+
+}
+
+// =============================================
+// Macbook：ボタン色調整
+// =============================================
+#base.keyboard-macbook-sj,
+#base.keyboard-macbook-us {
+	.mod-key {
+		background-color: #222;
+		color: #fff;
+	}
+}
+
+// =============================================
+// USキーボード（テンキー有り／無し）：ボタン表示、位置調整
+// =============================================
+#base.keyboard-macbook-us,
+#base.keyboard-apple-us,
+#base.keyboard-apple-us-ten {
+	#key-tilde,
+	#key-hyphenUs,
+	#key-plusUs,
+	#key-colonUs,
+	#key-quotation,
+	#key-ctrlRight,
+	#key-ctrlRight {
+		display: block;
+	}
+
+	#key-hyphen,
+	#key-caret,
+	#key-at,
+	#key-semicolon,
+	#key-colon,
+	#key-underScore,
+	#key-eisu,
+	#key-kana {
+		display: none;
+	}
+
+	#key-tilde,
+	#key-hyphenUs,
+	#key-plusUs {
+		top: 47px;
+	}
+	#key-tilde {left: 11px;}
+	#key-num1 {left: 11px + 52; width: 43px;}
+	#key-num2 {left: 11px + ( 52 * 2 );}
+	#key-num3 {left: 11px + ( 52 * 3 );}
+	#key-num4 {left: 11px + ( 52 * 4 );}
+	#key-num5 {left: 11px + ( 52 * 5 );}
+	#key-num6 {left: 11px + ( 52 * 6 );}
+	#key-num7 {left: 11px + ( 52 * 7 );}
+	#key-num8 {left: 11px + ( 52 * 8 );}
+	#key-num9 {left: 11px + ( 52 * 9 );}
+	#key-num0 {left: 11px + ( 52 * 10 );}
+	#key-hyphenUs {left: 11px + ( 52 * 11 );}
+	#key-plusUs {left: 11px + ( 52 * 12 );}
+	#key-delete {left: 11px + ( 52 * 13 ); width: 70px;}
+
+	#key-backslash,
+	#key-bra2 {
+		top: 98px;
+	}
+	#key-tab {left: 11px; width: 70px;}
+	#key-q {left: 88px;}
+	#key-w {left: 88px + 52;}
+	#key-e {left: 88px + ( 52 * 2 );}
+	#key-r {left: 88px + ( 52 * 3 );}
+	#key-t {left: 88px + ( 52 * 4 );}
+	#key-y {left: 88px + ( 52 * 5 );}
+	#key-u {left: 88px + ( 52 * 6 );}
+	#key-i {left: 88px + ( 52 * 7 );}
+	#key-o {left: 88px + ( 52 * 8 );}
+	#key-p {left: 88px + ( 52 * 9 );}
+	#key-bra1 {left: 88px + ( 52 * 10 );}
+	#key-bra2 {left: 88px + ( 52 * 11 );}
+	#key-backslash {left: 88px + ( 52 * 12 );}
+
+	#key-caps,
+	#key-colonUs,
+	#key-quotation,
+	#key-ctrlRight,
+	#key-return {
+		top: 149px;
+	}
+	#key-return,
+	#key-caps {
+		height: 43px;
+		line-height: 43px;
+	}
+	#key-caps {left: 11px; width: 84px;}
+	#key-a {left: 102px;}
+	#key-s {left: 102px + 52;}
+	#key-d {left: 102px + ( 52 * 2 );}
+	#key-f {left: 102px + ( 52 * 3 );}
+	#key-g {left: 102px + ( 52 * 4 );}
+	#key-h {left: 102px + ( 52 * 5 );}
+	#key-j {left: 102px + ( 52 * 6 );}
+	#key-k {left: 102px + ( 52 * 7 );}
+	#key-l {left: 102px + ( 52 * 8 );}
+	#key-colonUs {left: 102px + ( 52 * 9 );}
+	#key-quotation,
+	#key-ctrlRight {left: 102px + ( 52 * 10 );}
+	#key-return {left: 102px + ( 52 * 11 );width: 84px;}
+
+	#key-shiftLeft {left: 11px; width: 110px;}
+	#key-z {left: 128px;}
+	#key-x {left: 128px + 52;}
+	#key-c {left: 128px + ( 52 * 2 );}
+	#key-v {left: 128px + ( 52 * 3 );}
+	#key-b {left: 128px + ( 52 * 4 );}
+	#key-n {left: 128px + ( 52 * 5 );}
+	#key-m {left: 128px + ( 52 * 6 );}
+	#key-comma {left: 128px + ( 52 * 7 );}
+	#key-period {left: 128px + ( 52 * 8 );}
+	#key-slash {left: 128px + ( 52 * 9 );}
+	#key-shiftRight {left: 128px + ( 52 * 10 ); width: 110px;}
+}
+
+// =============================================
+// USキーボード（テンキー有り）：ボタン表示、位置調整
+// =============================================
+#base.keyboard-apple-us-ten {
+	#key-ctrl,
+	#key-ctrlRight {
+		top: 251px;
+		height: 51px;
+		line-height: 51px;
+	}
+	#key-ctrl {left: 11px;width: 70px;}
+	#key-altLeft {left: 88px;width: 57px;}
+	#key-cmdLeft {left: 153px;width: 70px;}
+	#key-space {left: 232px;width: 303px;}
+	#key-cmdRight {left: 544px;width: 70px;}
+	#key-altRight {left: 622px;width: 57px;}
+	#key-ctrlRight {left: 687px;width: 70px;}
+}
+
+// =============================================
+// USキーボード（テンキー無し）：ボタン表示、位置調整
+// =============================================
+#base.keyboard-apple-us,
+#base.keyboard-macbook-us {
+
+	#key-ctrlRight {
+		display: none;
+	}
+	#key-ctrl {
+		top: 251px;
+		width: 43px;
+		height: 51px;
+		line-height: 51px;
+	}
+	#key-altRight {
+		display: block;
+		top: 251px;
+		width: 43px;
+		height: 51px;
+		line-height: 51px;
+	}
+	#key-fn {left: 11px;}
+	#key-ctrl {left: 11px + 52;}
+	#key-altLeft {left: 11px + ( 52 * 2 );}
+	#key-cmdLeft {left: 11px + ( 52 * 3 );}
+	#key-space {left: 232px;width: 253px;}
+	#key-cmdRight {left: 493px;}
+	#key-altRight {left: 558px;}
+}

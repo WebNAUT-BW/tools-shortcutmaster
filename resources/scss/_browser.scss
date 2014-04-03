@@ -1,0 +1,26 @@
+// IE6 用のハック
+* html #main { background: blue; }
+#main { _background: blue; }
+
+// IE7 用のハック
+*:first-child + html #main { background: blue; }
+
+// IE6, 7 用のハック
+#main { *background: blue; }
+
+// IE7, 8, 9 用のハック
+#main { background: blue\9; }
+
+// IE9 用のハック
+:root #main { background: blue\9; }
+
+// Firefox 用のハック
+#main, x:-moz-any-link { background: red; }
+@-moz-document url-prefix( ) {
+	#main { background: red; }
+}
+
+// Chrome、Safari 用のハック
+@media screen and (-webkit-min-device-pixel-ratio : 0 ) {
+	#main { background: green; }
+}

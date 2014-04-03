@@ -1,0 +1,17 @@
+// -------------------------
+// Clearfix
+// -------------------------
+// 使用例: @extend clearfix;
+
+$supportIE: true; // IE非対応の場合 false
+
+.clearfix {
+	@if $supportIE {
+		*zoom: 1;
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
