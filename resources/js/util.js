@@ -61,10 +61,17 @@ $(function () {
 		console.log('_val=' + _val);
 		console.log('_id=' + _id);
 		window.localStorage.setItem(_id,_val);
+		if (_val == true){
+			$(this).parents('td.like').append('<span class="txtLike">like</span>');
+		} else {
+			$(this).parents('td.like').find('span.txtLike').remove();
+			//$(this).remove('<span class="txtLike">like</span>');
+		}
 		// var _keyboardBase = $('#keyboard-base');
 		// _keyboardBase.attr('class','');
 		// _keyboardBase.addClass(_val);
 		// window.localStorage.setItem("keyboardType",_val);
+		teblesorterOn();
 	});
 });
 
@@ -78,8 +85,18 @@ $(document).ready(function() {
 		if (getItem == 'true'){
 			console.log('_id=' + _id + ' is true');
 			$(this).find('input:checkbox').attr("checked", true);
+			$(this).append('<span class="txtLike">like</span>');
 		}
 	});
 });
 
 
+/* ===============================================
+# tablesorter Setting
+=============================================== */
+function teblesorterOn () {
+	$("#sortable").tablesorter();
+} 
+$(function () {
+	teblesorterOn();
+});

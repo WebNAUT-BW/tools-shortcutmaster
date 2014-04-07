@@ -19,7 +19,7 @@
 ============================================ */
 
 @import "compass";
-// @import "mixin";
+@import "mixin";
 // @import "extend";
 // @import "reset";
 // @import "setting";
@@ -37,4 +37,8 @@
 
 #contentMain {
 	margin-bottom: 350px;
+}
+
+.txtLike {
+	@include hide-text;
 }

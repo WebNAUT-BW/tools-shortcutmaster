@@ -65,8 +65,8 @@
 // --------------------------------------------------------------------
 // 
 // オプション：sprite画像格納フォルダ指定（$sprites-map0*と$sprites-img0*はセット）
-$sprites-map01: sprite-map("sprite01/*.png");
-$sprites-img01: sprite-url($sprites-map01);
+// $sprites-map01: sprite-map("sprite01/*.png");
+// $sprites-img01: sprite-url($sprites-map01);
 // $sprites-map02: sprite-map("sprite02/*.png");
 //$sprites-img02: sprite-url($sprites-map02);
 // $sprites-map03: sprite-map("sprite03/*.png");
