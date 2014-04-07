@@ -383,10 +383,10 @@
 // =============================================
 // テンキー無しキーボード/Macbook：ボタン位置調整
 // =============================================
-#base.keyboard-apple-sj,
-#base.keyboard-apple-us,
-#base.keyboard-macbook-sj,
-#base.keyboard-macbook-us {
+#keyboard-base.keyboard-apple-sj,
+#keyboard-base.keyboard-apple-us,
+#keyboard-base.keyboard-macbook-sj,
+#keyboard-base.keyboard-macbook-us {
 	width: 775px;
 	#key-altRight,
 	#key-f13,
@@ -452,8 +452,8 @@
 // =============================================
 // Macbook：ボタン色調整
 // =============================================
-#base.keyboard-macbook-sj,
-#base.keyboard-macbook-us {
+#keyboard-base.keyboard-macbook-sj,
+#keyboard-base.keyboard-macbook-us {
 	.mod-key {
 		background-color: #222;
 		color: #fff;
@@ -463,9 +463,9 @@
 // =============================================
 // USキーボード（テンキー有り／無し）：ボタン表示、位置調整
 // =============================================
-#base.keyboard-macbook-us,
-#base.keyboard-apple-us,
-#base.keyboard-apple-us-ten {
+#keyboard-base.keyboard-macbook-us,
+#keyboard-base.keyboard-apple-us,
+#keyboard-base.keyboard-apple-us-ten {
 	#key-tilde,
 	#key-hyphenUs,
 	#key-plusUs,
@@ -570,7 +570,7 @@
 // =============================================
 // USキーボード（テンキー有り）：ボタン表示、位置調整
 // =============================================
-#base.keyboard-apple-us-ten {
+#keyboard-base.keyboard-apple-us-ten {
 	#key-ctrl,
 	#key-ctrlRight {
 		top: 251px;
@@ -589,8 +589,8 @@
 // =============================================
 // USキーボード（テンキー無し）：ボタン表示、位置調整
 // =============================================
-#base.keyboard-apple-us,
-#base.keyboard-macbook-us {
+#keyboard-base.keyboard-apple-us,
+#keyboard-base.keyboard-macbook-us {
 
 	#key-ctrlRight {
 		display: none;
@@ -615,4 +615,130 @@
 	#key-space {left: 232px;width: 253px;}
 	#key-cmdRight {left: 493px;}
 	#key-altRight {left: 558px;}
+}
+
+
+
+// =============================================
+// マウスオンスタイル
+// =============================================
+#keyboard-wrap.key-esc #key-esc,
+#keyboard-wrap.key-f1 #key-f1,
+#keyboard-wrap.key-f2 #key-f2,
+#keyboard-wrap.key-f3 #key-f3,
+#keyboard-wrap.key-f4 #key-f4,
+#keyboard-wrap.key-f5 #key-f5,
+#keyboard-wrap.key-f6 #key-f6,
+#keyboard-wrap.key-f7 #key-f7,
+#keyboard-wrap.key-f8 #key-f8,
+#keyboard-wrap.key-f9 #key-f9,
+#keyboard-wrap.key-f10 #key-f10,
+#keyboard-wrap.key-f11 #key-f11,
+#keyboard-wrap.key-f12 #key-f12,
+#keyboard-wrap.key-eject #key-eject,
+#keyboard-wrap.key-num1 #key-num1,
+#keyboard-wrap.key-num2 #key-num2,
+#keyboard-wrap.key-num3 #key-num3,
+#keyboard-wrap.key-num4 #key-num4,
+#keyboard-wrap.key-num5 #key-num5,
+#keyboard-wrap.key-num6 #key-num6,
+#keyboard-wrap.key-num7 #key-num7,
+#keyboard-wrap.key-num8 #key-num8,
+#keyboard-wrap.key-num9 #key-num9,
+#keyboard-wrap.key-num0 #key-num0,
+#keyboard-wrap.key-hyphen #key-hyphen,
+#keyboard-wrap.key-caret #key-caret,
+#keyboard-wrap.key-backslash #key-backslash,
+#keyboard-wrap.key-delete #key-delete,
+#keyboard-wrap.key-tab #key-tab,
+#keyboard-wrap.key-q #key-q,
+#keyboard-wrap.key-w #key-w,
+#keyboard-wrap.key-e #key-e,
+#keyboard-wrap.key-r #key-r,
+#keyboard-wrap.key-t #key-t,
+#keyboard-wrap.key-y #key-y,
+#keyboard-wrap.key-u #key-u,
+#keyboard-wrap.key-i #key-i,
+#keyboard-wrap.key-o #key-o,
+#keyboard-wrap.key-p #key-p,
+#keyboard-wrap.key-at #key-at,
+#keyboard-wrap.key-bra1 #key-bra1,
+#keyboard-wrap.key-return #key-return,
+#keyboard-wrap.key-ctrl #key-ctrl,
+#keyboard-wrap.key-a #key-a,
+#keyboard-wrap.key-s #key-s,
+#keyboard-wrap.key-d #key-d,
+#keyboard-wrap.key-f #key-f,
+#keyboard-wrap.key-g #key-g,
+#keyboard-wrap.key-h #key-h,
+#keyboard-wrap.key-j #key-j,
+#keyboard-wrap.key-k #key-k,
+#keyboard-wrap.key-l #key-l,
+#keyboard-wrap.key-semicolon #key-semicolon,
+#keyboard-wrap.key-colon #key-colon,
+#keyboard-wrap.key-bra2 #key-bra2,
+#keyboard-wrap.key-shiftLeft #key-shiftLeft,
+#keyboard-wrap.key-z #key-z,
+#keyboard-wrap.key-x #key-x,
+#keyboard-wrap.key-c #key-c,
+#keyboard-wrap.key-v #key-v,
+#keyboard-wrap.key-b #key-b,
+#keyboard-wrap.key-n #key-n,
+#keyboard-wrap.key-m #key-m,
+#keyboard-wrap.key-comma #key-comma,
+#keyboard-wrap.key-period #key-period,
+#keyboard-wrap.key-slash #key-slash,
+#keyboard-wrap.key-underScore #key-underScore,
+#keyboard-wrap.key-shiftRight #key-shiftRight,
+#keyboard-wrap.key-alt #key-altLeft,
+#keyboard-wrap.key-cmd #key-cmdLeft,
+#keyboard-wrap.key-eisu #key-eisu,
+#keyboard-wrap.key-space #key-space,
+#keyboard-wrap.key-kana #key-kana,
+#keyboard-wrap.key-alt #key-altRight,
+#keyboard-wrap.key-caps #key-caps,
+#keyboard-wrap.key-f13 #key-f13,
+#keyboard-wrap.key-f14 #key-f14,
+#keyboard-wrap.key-f15 #key-f15,
+#keyboard-wrap.key-f16 #key-f16,
+#keyboard-wrap.key-f17 #key-f17,
+#keyboard-wrap.key-f18 #key-f18,
+#keyboard-wrap.key-f19 #key-f19,
+#keyboard-wrap.key-fn #key-fn,
+#keyboard-wrap.key-home #key-home,
+#keyboard-wrap.key-pageup #key-pageup,
+#keyboard-wrap.key-deleteRight #key-deleteRight,
+#keyboard-wrap.key-end #key-end,
+#keyboard-wrap.key-pageDown #key-pageDown,
+#keyboard-wrap.key-curUp #key-curUp,
+#keyboard-wrap.key-curRight #key-curRight,
+#keyboard-wrap.key-curDown #key-curDown,
+#keyboard-wrap.key-curLeft #key-curLeft,
+#keyboard-wrap.key-clear #key-clear,
+#keyboard-wrap.key-equalTen #key-equalTen,
+#keyboard-wrap.key-slashTen #key-slashTen,
+#keyboard-wrap.key-astTen #key-astTen,
+#keyboard-wrap.key-hyphenTen #key-hyphenTen,
+#keyboard-wrap.key-plusTen #key-plusTen,
+#keyboard-wrap.key-enter #key-enter,
+#keyboard-wrap.key-num0ten #key-num0ten,
+#keyboard-wrap.key-num1ten #key-num1ten,
+#keyboard-wrap.key-num2ten #key-num2ten,
+#keyboard-wrap.key-num3ten #key-num3ten,
+#keyboard-wrap.key-num4ten #key-num4ten,
+#keyboard-wrap.key-num5ten #key-num5ten,
+#keyboard-wrap.key-num6ten #key-num6ten,
+#keyboard-wrap.key-num7ten #key-num7ten,
+#keyboard-wrap.key-num8ten #key-num8ten,
+#keyboard-wrap.key-num9ten #key-num9ten,
+#keyboard-wrap.key-commaTen #key-commaTen,
+#keyboard-wrap.key-periodTen #key-periodTen {
+	background-color: orange;
+	font-weight: bold;
+}
+
+#keyboard-wrap.key-cmd #key-cmdRight
+ {
+	background-color: #ccc;
+	font-weight: bold;
 }

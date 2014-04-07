@@ -41,37 +41,37 @@ padding-top: 80px;
 				<ul class="dropdown-menu">
 					<li>
 						<a href="#"><label>
-							<input type="radio" name="keyboardType" id="optionsRadios1" value="option1" checked>
+							<input type="radio" name="keyboardType" id="optionsRadios1" value="keyboard-apple-sj-ten" checked>
 							Apple with ten key(Shift-JIS)
 							</label></a>
 					</li>
 					<li>
 						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios2" value="option2">
+								<input type="radio" name="keyboardType" id="optionsRadios2" value="keyboard-apple-sj">
 								Apple without ten key(Shift-JIS)
 							</label></a>
 					</li>
 					<li>
 						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios3" value="option3">
+								<input type="radio" name="keyboardType" id="optionsRadios3" value="keyboard-macbook-sj">
 								Macbook(Shift-JIS)
 							</label></a>
 					</li>
 					<li>
 						<a href="#"><label>
-							<input type="radio" name="keyboardType" id="optionsRadios1" value="option1" checked>
+							<input type="radio" name="keyboardType" id="optionsRadios4" value="keyboard-apple-us-ten">
 							Apple with ten key(US)
 							</label></a>
 					</li>
 					<li>
 						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios2" value="option2">
+								<input type="radio" name="keyboardType" id="optionsRadios5" value="keyboard-apple-us">
 								Apple without ten key(US)
 							</label></a>
 					</li>
 					<li>
 						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios3" value="option3">
+								<input type="radio" name="keyboardType" id="optionsRadios6" value="keyboard-macbook-us">
 								Macbook(US)
 							</label></a>
 					</li>
@@ -124,16 +124,28 @@ padding-top: 80px;
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="key-cmd key-d">
-					<td>基本操作系</td>
-					<td>複数選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-d">D</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
-				</tr>
 				<tr class="key-cmd key-f">
 					<td>基本操作系</td>
 					<td>検索</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-f">F</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+				<tr class="key-cmd key-a">
+					<td>基本操作系</td>
+					<td>全て選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-a">A</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+				<tr class="key-cmd key-c">
+					<td>基本操作系</td>
+					<td>コピー</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-c">C</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+				<tr class="key-cmd key-v">
+					<td>基本操作系</td>
+					<td>ペースト</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-v">V</button></td>
 					<td><span class="glyphicon glyphicon-star"></span></td>
 				</tr>
 			</tbody>
@@ -164,6 +176,38 @@ padding-top: 80px;
 					<td>Check</td>
 				</tr>
 			</thead>
+			<tbody>
+				<tr class="key-cmd key-d">
+					<td>編集関連</td>
+					<td>複数選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-d">D</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+				<tr class="key-cmd key-l">
+					<td>編集関連</td>
+					<td>1行選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-l">L</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+				<tr class="key-ctrl key-e">
+					<td>Emmet</td>
+					<td>タグ展開</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-e">E</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+				<tr class="key-ctrl key-alt key-return">
+					<td>Emmet</td>
+					<td>タグで括る</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-return">Return</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+				<tr class="key-cmd key-alt key-num2">
+					<td>表示関連</td>
+					<td>画面を2分割</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-num2">2</button></td>
+					<td><span class="glyphicon glyphicon-star"></span></td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
 	<div class="tab-pane" id="chrome">
@@ -193,6 +237,8 @@ padding-top: 80px;
 
 <div id="keyboard-wrap">
 <div id="keyboard-base" class="keyboard-apple-sj-ten">
+
+
 	<ul>
 		<li class="mod-key" id="key-esc">esc</li>
 		<li class="mod-key" id="key-f1">F1</li>
@@ -315,7 +361,17 @@ padding-top: 80px;
 		<li class="mod-key" id="key-num9ten">9</li>
 		<li class="mod-key" id="key-commaTen">,</li>
 		<li class="mod-key" id="key-periodTen">.</li>
+
+		<li class="mod-key" id="key-tilde">~/`</li>
+		<li class="mod-key" id="key-hyphenUs">-/_</li>
+		<li class="mod-key" id="key-plusUs">+/=</li>
+		<li class="mod-key" id="key-colonUs">:/;</li>
+		<li class="mod-key" id="key-quotation">"/'</li>
+		<li class="mod-key" id="key-ctrlRight">control</li>
+
 	</ul>
+
+
 </div>
 <!-- /#keyboard-wrap --></div>
 
