@@ -111,7 +111,7 @@ padding-top: 80px;
 
 
 <!-- Tab panes -->
-<div class="tab-content">
+<div id="contentMain" class="tab-content">
 	<div class="tab-pane active" id="mac">
 		<h2>Mac</h2>
 		<table class="ovTable table table-bordered table-hover">
@@ -124,29 +124,29 @@ padding-top: 80px;
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="key-cmd key-f">
+				<tr class="key-cmd key-f" id="mac-tr1">
 					<td>基本操作系</td>
 					<td>検索</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-f">F</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
-				<tr class="key-cmd key-a">
+				<tr class="key-cmd key-a" id="mac-tr2">
 					<td>基本操作系</td>
 					<td>全て選択</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-a">A</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
-				<tr class="key-cmd key-c">
+				<tr class="key-cmd key-c" id="mac-tr3">
 					<td>基本操作系</td>
 					<td>コピー</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-c">C</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
-				<tr class="key-cmd key-v">
+				<tr class="key-cmd key-v" id="mac-tr4">
 					<td>基本操作系</td>
 					<td>ペースト</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-v">V</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
 			</tbody>
 		</table>
@@ -177,35 +177,125 @@ padding-top: 80px;
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="key-cmd key-d">
+				<tr class="key-cmd key-d" id="sublimetext-tr1">
 					<td>編集関連</td>
 					<td>複数選択</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-d">D</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
-				<tr class="key-cmd key-l">
+				<tr class="key-cmd key-l" id="sublimetext-tr2">
 					<td>編集関連</td>
 					<td>1行選択</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-l">L</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
-				<tr class="key-ctrl key-e">
+				<tr class="key-ctrl key-e" id="sublimetext-tr3">
 					<td>Emmet</td>
 					<td>タグ展開</td>
 					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-e">E</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
-				<tr class="key-ctrl key-alt key-return">
+				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr4">
 					<td>Emmet</td>
 					<td>タグで括る</td>
 					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-return">Return</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
-				<tr class="key-cmd key-alt key-num2">
+				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr5">
 					<td>表示関連</td>
 					<td>画面を2分割</td>
 					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-num2">2</button></td>
-					<td><span class="glyphicon glyphicon-star"></span></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-d" id="sublimetext-tr6">
+					<td>編集関連</td>
+					<td>複数選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-d">D</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-l" id="sublimetext-tr7">
+					<td>編集関連</td>
+					<td>1行選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-l">L</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-ctrl key-e" id="sublimetext-tr8">
+					<td>Emmet</td>
+					<td>タグ展開</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-e">E</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr9">
+					<td>Emmet</td>
+					<td>タグで括る</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-return">Return</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr10">
+					<td>表示関連</td>
+					<td>画面を2分割</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-num2">2</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-d" id="sublimetext-tr11">
+					<td>編集関連</td>
+					<td>複数選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-d">D</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-l" id="sublimetext-tr12">
+					<td>編集関連</td>
+					<td>1行選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-l">L</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-ctrl key-e" id="sublimetext-tr13">
+					<td>Emmet</td>
+					<td>タグ展開</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-e">E</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr14">
+					<td>Emmet</td>
+					<td>タグで括る</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-return">Return</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr15">
+					<td>表示関連</td>
+					<td>画面を2分割</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-num2">2</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-d" id="sublimetext-tr16">
+					<td>編集関連</td>
+					<td>複数選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-d">D</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-l" id="sublimetext-tr17">
+					<td>編集関連</td>
+					<td>1行選択</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-l">L</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-ctrl key-e" id="sublimetext-tr18">
+					<td>Emmet</td>
+					<td>タグ展開</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-e">E</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr19">
+					<td>Emmet</td>
+					<td>タグで括る</td>
+					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-return">Return</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
+				</tr>
+				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr20">
+					<td>表示関連</td>
+					<td>画面を2分割</td>
+					<td><button class="btn btn-default key" id="key-cmd">Cmd</button> + <button class="btn btn-default key" id="key-alt">Alt</button> + <button class="btn btn-default key" id="key-num2">2</button></td>
+					<td class="like"><input type="checkbox" value=""></td>
 				</tr>
 			</tbody>
 		</table>
