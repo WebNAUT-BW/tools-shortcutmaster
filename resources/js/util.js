@@ -102,9 +102,32 @@ $(function () {
 });
 
 /* ===============================================
-# Initial Tab
+# Tab Select
 =============================================== */
+
+//クリック時にチェックボックスの値を記録
 $(function () {
-	$('#navMain li:first-child').addClass('active');
-	$('#contentMain .tab-pane:first-child').addClass('active');
+	$( '#navMain li a' ).click( function() {
+		var _val = $(this).html();
+		var _eq = $(this).parents('li').index();
+		// console.log('_val=' + _val);
+		// console.log('_eq=' + _eq);
+		window.localStorage.setItem('tabSelect',_val);
+	});
 });
+$(document).ready(function() {
+	var getItem = window.localStorage.getItem('tabSelect');
+	console.log('getItem=' + getItem);
+	if (getItem == null) {
+		console.log("getItemなし");
+		$('#navMain li:first-child').addClass('active');
+		$('#contentMain .tab-pane:first-child').addClass('active');
+	} else {
+		console.log("getItemあり");
+		$('#navMain li a:contains(' + getItem +')').parents('li').addClass('active');
+		$('#contentMain #' + getItem).addClass('active');
+	}
+});
+
+
+
