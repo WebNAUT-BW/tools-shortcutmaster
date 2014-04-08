@@ -1,5 +1,8 @@
+<?php
+require_once('ini.php');
+?>
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +14,6 @@
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link href="resources/css/style.css" rel="stylesheet" media="screen">
 <link href="resources/css/keyboard.css" rel="stylesheet" media="screen">
-<style>
-body {
-padding-top: 80px;
-}
-</style>
 </head>
 <body>
 <div class="container">
@@ -110,6 +108,12 @@ padding-top: 80px;
 </ul>
 
 
+<table>
+
+
+
+
+</table>
 <!-- Tab panes -->
 <div id="contentMain" class="tab-content">
 	<div class="tab-pane active" id="mac">
@@ -124,31 +128,96 @@ padding-top: 80px;
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="key-cmd key-f" id="mac-tr1">
+
+
+<?php
+//tbody
+
+$file = fopen($filelist, 'r');
+$cnt = 1;
+
+while($line = fgets($file, 1024)) {
+	$data = explode("\t", $line);
+	$num = (string) $cnt;
+	$colCount = 0;
+	
+	// if($cnt < 10) {
+	// 	$num = "00".$num;
+	// } else if($cnt >= 10 && $cnt < 100) {
+	// 	$num = "0".$num;
+	// }
+	
+
+	echo ('<tr id="'.$filename.'-tr'.$num.'" class="');
+
+
+	//
+	$class=explode(',',$data[2]);
+	for($l = 0; $l < count($class); $l++) {
+		echo ('key-'.$class[$l].' ');
+	}
+
+	echo ('">');
+
+
+
+
+
+
+
+	
+	for($i = 0, $j =0; $i < count($data); $i++, $j++) {
+		if($attr[$j]['label'] === 'Keys') {
+			echo ('<td>');
+
+
+			$sample=explode(',',$data[$i]);
+			for($k = 0; $k < count($sample); $k++) {
+				echo ('<button class="btn btn-default">'.$sample[$k].'</button>');
+			}
+
+
+			echo ('</td>');
+
+		}
+		else {
+			echo ('<td>'.$data[$i].'</td>');
+		}
+	}
+
+	echo ('<td class="like"><input type="checkbox"></td>');
+	echo ('</tr>');
+	$cnt++;
+}
+fclose($file);
+?>
+
+
+<!-- 				<tr class="key-cmd key-f" id="mac-tr1">
 					<td>基本操作系</td>
 					<td>検索</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-f">F</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
+					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">f</button></td>
+					<td class="like"><input type="checkbox"></td>
 				</tr>
 				<tr class="key-cmd key-a" id="mac-tr2">
 					<td>基本操作系</td>
 					<td>全て選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-a">A</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
+					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">a</button></td>
+					<td class="like"><input type="checkbox"></td>
 				</tr>
 				<tr class="key-cmd key-c" id="mac-tr3">
 					<td>基本操作系</td>
 					<td>コピー</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-c">C</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
+					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">c</button></td>
+					<td class="like"><input type="checkbox"></td>
 				</tr>
 				<tr class="key-cmd key-v" id="mac-tr4">
 					<td>基本操作系</td>
 					<td>ペースト</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-v">V</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
+					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">v</button></td>
+					<td class="like"><input type="checkbox"></td>
 				</tr>
-			</tbody>
+ -->			</tbody>
 		</table>
 
 	</div>

@@ -26,6 +26,9 @@
 // @import "layout";
 
 
+body {
+	padding-top: 80px;
+}
 
 
 #keyboard-wrap {
@@ -80,7 +83,12 @@
 			-moz-osx-font-smoothing: grayscale;
 			font-size: 110%;
 			content:"\e151";
-		} 
+		}
+	}
+	tbody {
+		td button{
+			text-transform:capitalize;
+		}
 	}
 }
 
