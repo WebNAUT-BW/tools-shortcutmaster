@@ -39,8 +39,15 @@ body {
 	background-color: rgba(0,0,0, 0.3);
 }
 
+#navMain li {
+	text-transform:capitalize;
+}
+
 #contentMain {
 	margin-bottom: 350px;
+	.tab-h {
+		text-transform:capitalize;
+	}
 	thead {
 		th {
 			position: relative;

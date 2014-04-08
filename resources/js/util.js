@@ -95,8 +95,16 @@ $(document).ready(function() {
 # tablesorter Setting
 =============================================== */
 function teblesorterOn () {
-	$("#sortable").tablesorter();
+	$("#contentMain table").tablesorter();
 } 
 $(function () {
 	teblesorterOn();
+});
+
+/* ===============================================
+# Initial Tab
+=============================================== */
+$(function () {
+	$('#navMain li:first-child').addClass('active');
+	$('#contentMain .tab-pane:first-child').addClass('active');
 });

@@ -76,7 +76,7 @@ require_once('ini.php');
 
 				</ul>
 			</li>
-			<li class="dropdown">
+			<!-- <li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Display Type <b class="caret"></b></a>
 				<ul class="dropdown-menu">
 					<li>
@@ -92,7 +92,7 @@ require_once('ini.php');
 						</label></a>
 					</li>
 				</ul>
-			</li>
+			</li> -->
 		</ul>
 
 		</div><!--/.nav-collapse -->
@@ -100,11 +100,40 @@ require_once('ini.php');
 </div>
 
 
-<ul class="nav nav-tabs">
-	<li class="active"><a href="#mac" data-toggle="tab">Mac</a></li>
-	<li><a href="#photoshop" data-toggle="tab">Photoshop</a></li>
-	<li><a href="#sublimetext" data-toggle="tab">Sublimetext</a></li>
-	<li><a href="#chrome" data-toggle="tab">Chrome</a></li>
+
+<?php
+	$files = array();
+	$ids = array();
+	if ($dh = opendir($dataDir)) {
+		while (($file = readdir($dh)) !== false) {
+			//.から始まるファイル名でなければ
+			if (substr($file,0,1) !== '.') {
+				$files[] = $file;
+				$ids[] = basename($file,'.tsv');
+			}
+		}
+		closedir($dh);
+	}
+
+	for($m = 0; $m < count($files); $m++) {
+		// echo ('<p class="btn btn-default">'.$files[$m].'</p>');
+		// echo ('<p class="btn btn-default">'.$ids[$m].'</p>');
+	}
+
+?> 
+
+
+
+
+
+
+
+<ul class="nav nav-tabs" id="navMain">
+	<?php
+		for($m = 0; $m < count($files); $m++) {
+			echo ('<li><a href="#'.$ids[$m].'" data-toggle="tab">'.$ids[$m].'</a></li>');
+		}
+	?> 
 </ul>
 
 
@@ -116,272 +145,69 @@ require_once('ini.php');
 </table>
 <!-- Tab panes -->
 <div id="contentMain" class="tab-content">
-	<div class="tab-pane active" id="mac">
-		<h2>Mac</h2>
-		<table class="ovTable table table-bordered table-hover tablesorter" id="sortable">
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Command</th>
-					<th>Keys</th>
-					<th>Check</th>
-				</tr>
-			</thead>
-			<tbody>
-
 
 <?php
-//tbody
+	for($m = 0; $m < count($files); $m++) {
+		$file = fopen($dataDir.$files[$m], 'r');
 
-$file = fopen($filelist, 'r');
-$cnt = 1;
+		echo ('<div class="tab-pane" id="'.$ids[$m].'">');
+		echo ('<h2 class="tab-h">'.$ids[$m].'</h2>');
+		echo ('
+				<table class="ovTable table table-bordered table-hover tablesorter">
+					<thead>
+						<tr>
+							<th>Category</th>
+							<th>Command</th>
+							<th>Keys</th>
+							<th>Check</th>
+						</tr>
+					</thead>
+					<tbody>
+			');
 
-while($line = fgets($file, 1024)) {
-	$data = explode("\t", $line);
-	$num = (string) $cnt;
-	$colCount = 0;
-	
-	// if($cnt < 10) {
-	// 	$num = "00".$num;
-	// } else if($cnt >= 10 && $cnt < 100) {
-	// 	$num = "0".$num;
-	// }
-	
-
-	echo ('<tr id="'.$filename.'-tr'.$num.'" class="');
-
-
-	//
-	$class=explode(',',$data[2]);
-	for($l = 0; $l < count($class); $l++) {
-		echo ('key-'.$class[$l].' ');
-	}
-
-	echo ('">');
-
-
-
-
-
-
-
-	
-	for($i = 0, $j =0; $i < count($data); $i++, $j++) {
-		if($attr[$j]['label'] === 'Keys') {
-			echo ('<td>');
-
-
-			$sample=explode(',',$data[$i]);
-			for($k = 0; $k < count($sample); $k++) {
-				echo ('<button class="btn btn-default">'.$sample[$k].'</button>');
+		$cnt = 1;
+		while($line = fgets($file, 1024)) {
+			$data = explode("\t", $line);
+			$num = (string) $cnt;
+			$colCount = 0;
+			//<tr>生成============
+			echo ('<tr id="'.$ids[$m].'-tr'.$num.'" class="');
+			//<tr>内のクラス：
+			$class=explode(',',$data[2]);
+			for($l = 0; $l < count($class); $l++) {
+				echo ('key-'.$class[$l].' ');
 			}
-
-
-			echo ('</td>');
-
+			echo ('">');
+			//<td>生成============
+			for($i = 0, $j =0; $i < count($data); $i++, $j++) {
+				if($attr[$j]['label'] === 'Keys') {
+					echo ('<td>');
+					$sample=explode(',',$data[$i]);
+					for($k = 0; $k < count($sample); $k++) {
+						echo ('<button class="btn btn-default">'.$sample[$k].'</button>');
+					}
+					echo ('</td>');
+				}
+				else {
+					echo ('<td>'.$data[$i].'</td>');
+				}
+			}
+			echo ('<td class="like"><input type="checkbox"></td>');
+			echo ('</tr>');
+			$cnt++;
 		}
-		else {
-			echo ('<td>'.$data[$i].'</td>');
-		}
+		fclose($file);
+
+		echo ('
+					</tbody>
+				</table>
+			</div>
+			');
+
 	}
-
-	echo ('<td class="like"><input type="checkbox"></td>');
-	echo ('</tr>');
-	$cnt++;
-}
-fclose($file);
-?>
+?> 
 
 
-<!-- 				<tr class="key-cmd key-f" id="mac-tr1">
-					<td>基本操作系</td>
-					<td>検索</td>
-					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">f</button></td>
-					<td class="like"><input type="checkbox"></td>
-				</tr>
-				<tr class="key-cmd key-a" id="mac-tr2">
-					<td>基本操作系</td>
-					<td>全て選択</td>
-					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">a</button></td>
-					<td class="like"><input type="checkbox"></td>
-				</tr>
-				<tr class="key-cmd key-c" id="mac-tr3">
-					<td>基本操作系</td>
-					<td>コピー</td>
-					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">c</button></td>
-					<td class="like"><input type="checkbox"></td>
-				</tr>
-				<tr class="key-cmd key-v" id="mac-tr4">
-					<td>基本操作系</td>
-					<td>ペースト</td>
-					<td><button class="btn btn-default">cmd</button><button class="btn btn-default">v</button></td>
-					<td class="like"><input type="checkbox"></td>
-				</tr>
- -->			</tbody>
-		</table>
-
-	</div>
-	<div class="tab-pane" id="photoshop">
-		<h2>Photoshop</h2>
-		<table class="ovTable table table-bordered table-hover">
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Command</th>
-					<th>Keys</th>
-					<th>Check</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
-	<div class="tab-pane" id="sublimetext">
-		<h2>Sublimetext</h2>
-		<table class="ovTable table table-bordered table-hover">
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Command</th>
-					<th>Keys</th>
-					<th>Check</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="key-cmd key-d" id="sublimetext-tr1">
-					<td>編集関連</td>
-					<td>複数選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-d">D</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-l" id="sublimetext-tr2">
-					<td>編集関連</td>
-					<td>1行選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-l">L</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-e" id="sublimetext-tr3">
-					<td>Emmet</td>
-					<td>タグ展開</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-e">E</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr4">
-					<td>Emmet</td>
-					<td>タグで括る</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-return">Return</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr5">
-					<td>表示関連</td>
-					<td>画面を2分割</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-num2">2</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-d" id="sublimetext-tr6">
-					<td>編集関連</td>
-					<td>複数選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-d">D</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-l" id="sublimetext-tr7">
-					<td>編集関連</td>
-					<td>1行選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-l">L</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-e" id="sublimetext-tr8">
-					<td>Emmet</td>
-					<td>タグ展開</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-e">E</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr9">
-					<td>Emmet</td>
-					<td>タグで括る</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-return">Return</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr10">
-					<td>表示関連</td>
-					<td>画面を2分割</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-num2">2</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-d" id="sublimetext-tr11">
-					<td>編集関連</td>
-					<td>複数選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-d">D</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-l" id="sublimetext-tr12">
-					<td>編集関連</td>
-					<td>1行選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-l">L</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-e" id="sublimetext-tr13">
-					<td>Emmet</td>
-					<td>タグ展開</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-e">E</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr14">
-					<td>Emmet</td>
-					<td>タグで括る</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-return">Return</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr15">
-					<td>表示関連</td>
-					<td>画面を2分割</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-num2">2</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-d" id="sublimetext-tr16">
-					<td>編集関連</td>
-					<td>複数選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-d">D</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-l" id="sublimetext-tr17">
-					<td>編集関連</td>
-					<td>1行選択</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-l">L</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-e" id="sublimetext-tr18">
-					<td>Emmet</td>
-					<td>タグ展開</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-e">E</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-ctrl key-alt key-return" id="sublimetext-tr19">
-					<td>Emmet</td>
-					<td>タグで括る</td>
-					<td><button class="btn btn-default key" id="key-ctrl">Ctrl</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-return">Return</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-				<tr class="key-cmd key-alt key-num2" id="sublimetext-tr20">
-					<td>表示関連</td>
-					<td>画面を2分割</td>
-					<td><button class="btn btn-default key" id="key-cmd">Cmd</button><button class="btn btn-default key" id="key-alt">Alt</button><button class="btn btn-default key" id="key-num2">2</button></td>
-					<td class="like"><input type="checkbox" value=""></td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="tab-pane" id="chrome">
-		<h2>Chrome</h2>
-		<table class="ovTable table table-bordered table-hover">
-			<thead>
-				<tr>
-					<th>Category</th>
-					<th>Command</th>
-					<th>Keys</th>
-					<th>Check</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
 </div>
 
 
@@ -396,8 +222,6 @@ fclose($file);
 
 <div id="keyboard-wrap">
 <div id="keyboard-base" class="keyboard-apple-sj-ten">
-
-
 	<ul>
 		<li class="mod-key" id="key-esc">esc</li>
 		<li class="mod-key" id="key-f1">F1</li>
