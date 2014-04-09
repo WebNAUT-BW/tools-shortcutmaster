@@ -55,7 +55,7 @@
 	height: 43px;
 	line-height: 43px;
 	display: inline-block;
-	font-size: 10px;
+	font-size: 12px;
 	text-align: center;
 	vertical-align: middle;
 	position: absolute;
@@ -689,13 +689,11 @@
 #keyboard-wrap.key-period #key-period,
 #keyboard-wrap.key-slash #key-slash,
 #keyboard-wrap.key-underScore #key-underScore,
-#keyboard-wrap.key-shiftRight #key-shiftRight,
 #keyboard-wrap.key-alt #key-altLeft,
 #keyboard-wrap.key-cmd #key-cmdLeft,
 #keyboard-wrap.key-eisu #key-eisu,
 #keyboard-wrap.key-space #key-space,
 #keyboard-wrap.key-kana #key-kana,
-#keyboard-wrap.key-alt #key-altRight,
 #keyboard-wrap.key-caps #key-caps,
 #keyboard-wrap.key-f13 #key-f13,
 #keyboard-wrap.key-f14 #key-f14,
@@ -707,7 +705,6 @@
 #keyboard-wrap.key-fn #key-fn,
 #keyboard-wrap.key-home #key-home,
 #keyboard-wrap.key-pageup #key-pageup,
-#keyboard-wrap.key-deleteRight #key-deleteRight,
 #keyboard-wrap.key-end #key-end,
 #keyboard-wrap.key-pageDown #key-pageDown,
 #keyboard-wrap.key-curUp #key-curUp,
@@ -732,13 +729,17 @@
 #keyboard-wrap.key-num8ten #key-num8ten,
 #keyboard-wrap.key-num9ten #key-num9ten,
 #keyboard-wrap.key-commaTen #key-commaTen,
-#keyboard-wrap.key-periodTen #key-periodTen {
-	background-color: orange;
+#keyboard-wrap.key-periodTen #key-periodTen
+ {
+	background-color: #428BCA;
+	color: #fff;
 	font-weight: bold;
 }
 
-#keyboard-wrap.key-cmd #key-cmdRight
- {
-	background-color: #ccc;
+#keyboard-wrap.key-cmd #key-cmdRight,
+#keyboard-wrap.key-shiftRight #key-shiftRight,
+#keyboard-wrap.key-alt #key-altRight,
+#keyboard-wrap.key-deleteRight #key-deleteRight {
+	background-color: #aaa;
 	font-weight: bold;
 }
