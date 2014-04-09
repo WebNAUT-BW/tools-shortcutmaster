@@ -192,7 +192,7 @@ require_once('ini.php');
 					echo ('<td>'.$data[$i].'</td>');
 				}
 			}
-			echo ('<td class="like"><input type="checkbox"></td>');
+			echo ('<td class="like"><label><input type="checkbox"></label></td>');
 			echo ('</tr>');
 			$cnt++;
 		}
@@ -345,11 +345,11 @@ require_once('ini.php');
 		<li class="mod-key" id="key-commaTen">,</li>
 		<li class="mod-key" id="key-periodTen">.</li>
 
-		<li class="mod-key" id="key-tilde">~/`</li>
-		<li class="mod-key" id="key-hyphenUs">-/_</li>
-		<li class="mod-key" id="key-plusUs">+/=</li>
-		<li class="mod-key" id="key-colonUs">:/;</li>
-		<li class="mod-key" id="key-quotation">"/'</li>
+		<li class="mod-key" id="key-tilde">~ / `</li>
+		<li class="mod-key" id="key-hyphenUs">- / _</li>
+		<li class="mod-key" id="key-plusUs">+ / =</li>
+		<li class="mod-key" id="key-colonUs">: / ;</li>
+		<li class="mod-key" id="key-quotation">" / '</li>
 		<li class="mod-key" id="key-ctrlRight">control</li>
 
 	</ul>

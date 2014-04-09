@@ -62,10 +62,11 @@ $(function () {
 		console.log('_id=' + _id);
 		window.localStorage.setItem(_id,_val);
 		if (_val == true){
-			$(this).parents('td.like').append('<span class="txtLike">like</span>');
+			$(this).parents('td.like label').append('<span class="icon"></span><span class="txtLike">Like</span>');
 		} else {
 			$(this).parents('td.like').find('span.txtLike').remove();
-			//$(this).remove('<span class="txtLike">like</span>');
+			$(this).parents('td.like').find('span.icon').remove();
+			//$(this).remove('<span class="icon"></span><span class="txtLike">like</span>');
 		}
 		// var _keyboardBase = $('#keyboard-base');
 		// _keyboardBase.attr('class','');
@@ -85,7 +86,7 @@ $(document).ready(function() {
 		if (getItem == 'true'){
 			console.log('_id=' + _id + ' is true');
 			$(this).find('input:checkbox').attr("checked", true);
-			$(this).append('<span class="txtLike">like</span>');
+			$(this).find('label').append('<span class="icon"></span><span class="txtLike">Like</span>');
 		}
 	});
 });
