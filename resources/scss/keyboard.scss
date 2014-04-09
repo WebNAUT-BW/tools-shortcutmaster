@@ -676,8 +676,9 @@
 #keyboard-wrap.key-l #key-l,
 #keyboard-wrap.key-semicolon #key-semicolon,
 #keyboard-wrap.key-colon #key-colon,
+#keyboard-wrap.key-colon #key-colonUs,
 #keyboard-wrap.key-bra2 #key-bra2,
-#keyboard-wrap.key-shiftLeft #key-shiftLeft,
+#keyboard-wrap.key-shift #key-shiftLeft,
 #keyboard-wrap.key-z #key-z,
 #keyboard-wrap.key-x #key-x,
 #keyboard-wrap.key-c #key-c,
@@ -713,33 +714,49 @@
 #keyboard-wrap.key-curLeft #key-curLeft,
 #keyboard-wrap.key-clear #key-clear,
 #keyboard-wrap.key-equalTen #key-equalTen,
-#keyboard-wrap.key-slashTen #key-slashTen,
 #keyboard-wrap.key-astTen #key-astTen,
-#keyboard-wrap.key-hyphenTen #key-hyphenTen,
-#keyboard-wrap.key-plusTen #key-plusTen,
+#keyboard-wrap.key-plus #key-plusUs,
 #keyboard-wrap.key-enter #key-enter,
-#keyboard-wrap.key-num0ten #key-num0ten,
-#keyboard-wrap.key-num1ten #key-num1ten,
-#keyboard-wrap.key-num2ten #key-num2ten,
-#keyboard-wrap.key-num3ten #key-num3ten,
-#keyboard-wrap.key-num4ten #key-num4ten,
-#keyboard-wrap.key-num5ten #key-num5ten,
-#keyboard-wrap.key-num6ten #key-num6ten,
-#keyboard-wrap.key-num7ten #key-num7ten,
-#keyboard-wrap.key-num8ten #key-num8ten,
-#keyboard-wrap.key-num9ten #key-num9ten,
-#keyboard-wrap.key-commaTen #key-commaTen,
-#keyboard-wrap.key-periodTen #key-periodTen
+#keyboard-wrap.key-hyphen #key-hyphenUs
  {
 	background-color: #428BCA;
 	color: #fff;
 	font-weight: bold;
 }
 
+#keyboard-wrap.key-num0 #key-num0ten,
+#keyboard-wrap.key-num1 #key-num1ten,
+#keyboard-wrap.key-num2 #key-num2ten,
+#keyboard-wrap.key-num3 #key-num3ten,
+#keyboard-wrap.key-num4 #key-num4ten,
+#keyboard-wrap.key-num5 #key-num5ten,
+#keyboard-wrap.key-num6 #key-num6ten,
+#keyboard-wrap.key-num7 #key-num7ten,
+#keyboard-wrap.key-num8 #key-num8ten,
+#keyboard-wrap.key-num9 #key-num9ten,
+
+#keyboard-wrap.key-ctrl #key-ctrlRight,
+#keyboard-wrap.key-plus #key-plusTen,
+
+#keyboard-wrap.key-comma #key-commaTen,
+#keyboard-wrap.key-period #key-periodTen,
+#keyboard-wrap.key-hyphen #key-hyphenTen,
+#keyboard-wrap.key-slash #key-slashTen,
+
 #keyboard-wrap.key-cmd #key-cmdRight,
-#keyboard-wrap.key-shiftRight #key-shiftRight,
+#keyboard-wrap.key-shift #key-shiftRight,
 #keyboard-wrap.key-alt #key-altRight,
-#keyboard-wrap.key-deleteRight #key-deleteRight {
+#keyboard-wrap.key-delete #key-deleteRight {
 	background-color: #aaa;
 	font-weight: bold;
 }
+
+
+// #key-tilde,
+// #key-plusUs,
+// #key-quotation,
+// #key-ctrlRight {
+// 	display: none;
+// }
+
+

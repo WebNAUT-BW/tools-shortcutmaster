@@ -95,6 +95,12 @@ body {
 	tbody {
 		td button{
 			text-transform:capitalize;
+			margin-right: 5px;
+			&.btn-and,&.btn-or {
+				text-transform:none;
+				border: none;
+				background-color: transparent;
+			}
 		}
 	}
 }

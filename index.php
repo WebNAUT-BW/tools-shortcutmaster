@@ -184,7 +184,83 @@ require_once('ini.php');
 					echo ('<td>');
 					$sample=explode(',',$data[$i]);
 					for($k = 0; $k < count($sample); $k++) {
-						echo ('<button class="btn btn-default">'.$sample[$k].'</button>');
+
+	//echo $sample[$k];
+
+						if (strpos($sample[$k], 'hyphen') !== false){
+							$sample[$k] = '-';
+						}elseif (strpos($sample[$k], 'caret') !== false){
+							$sample[$k] = '^';
+						}elseif (strpos($sample[$k], 'backslash') !== false){
+							$sample[$k] = '¥';
+						}elseif (strpos($sample[$k], 'at') !== false){
+							$sample[$k] = '@';
+						}elseif (strpos($sample[$k], 'bra1') !== false){
+							$sample[$k] = '[';
+						}elseif (strpos($sample[$k], 'bra2') !== false){
+							$sample[$k] = ']';
+						}elseif (strpos($sample[$k], 'semicolon') !== false){
+							$sample[$k] = ';';
+						}elseif (strpos($sample[$k], 'colon') !== false){
+							$sample[$k] = ':';
+						}elseif (strpos($sample[$k], 'comma') !== false){
+							$sample[$k] = '.';
+						}elseif (strpos($sample[$k], 'period') !== false){
+							$sample[$k] = '.';
+						}elseif (strpos($sample[$k], 'slash') !== false){
+							$sample[$k] = '/';
+						}elseif (strpos($sample[$k], 'underScore') !== false){
+							$sample[$k] = '_';
+						}elseif (strpos($sample[$k], 'eisu') !== false){
+							$sample[$k] = '英数';
+						}elseif (strpos($sample[$k], 'kana') !== false){
+							$sample[$k] = 'かな';
+						}elseif (strpos($sample[$k], 'caps') !== false){
+							$sample[$k] = 'caps lock';
+						}elseif (strpos($sample[$k], 'curUp') !== false){
+							$sample[$k] = '↑';
+						}elseif (strpos($sample[$k], 'curRight') !== false){
+							$sample[$k] = '→';
+						}elseif (strpos($sample[$k], 'curDown') !== false){
+							$sample[$k] = '↓';
+						}elseif (strpos($sample[$k], 'curLeft') !== false){
+							$sample[$k] = '←';
+						}elseif (strpos($sample[$k], 'equalTen') !== false){
+							$sample[$k] = '=';
+						}elseif (strpos($sample[$k], 'astTen') !== false){
+							$sample[$k] = '*';
+						}elseif (strpos($sample[$k], 'plus') !== false){
+							$sample[$k] = '+';
+						}elseif (strpos($sample[$k], 'num0') !== false){
+							$sample[$k] = '0';
+						}elseif (strpos($sample[$k], 'num1') !== false){
+							$sample[$k] = '1';
+						}elseif (strpos($sample[$k], 'num2') !== false){
+							$sample[$k] = '2';
+						}elseif (strpos($sample[$k], 'num3') !== false){
+							$sample[$k] = '3';
+						}elseif (strpos($sample[$k], 'num4') !== false){
+							$sample[$k] = '4';
+						}elseif (strpos($sample[$k], 'num5') !== false){
+							$sample[$k] = '5';
+						}elseif (strpos($sample[$k], 'num6') !== false){
+							$sample[$k] = '6';
+						}elseif (strpos($sample[$k], 'num7') !== false){
+							$sample[$k] = '7';
+						}elseif (strpos($sample[$k], 'num8') !== false){
+							$sample[$k] = '8';
+						}elseif (strpos($sample[$k], 'num9') !== false){
+							$sample[$k] = '9';
+						}
+
+						if (strpos($sample[$k], 'and') !== false){
+							echo ('<button class="btn btn-default btn-and">→</button>');
+						}elseif (strpos($sample[$k], 'or') !== false){
+							echo ('<button class="btn btn-default btn-or">or</button>');
+						}else {
+							echo ('<button class="btn btn-default">'.$sample[$k].'</button>');
+						}
+
 					}
 					echo ('</td>');
 				}
