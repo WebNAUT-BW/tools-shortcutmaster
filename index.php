@@ -8,7 +8,7 @@ require_once('ini.php');
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>U.K.C.</title>
+<title>U.K.C.[ver.1.0]</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -27,7 +27,7 @@ require_once('ini.php');
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">U.K.C.<!--  (Ultimate Keyboard Cheat-sheet) --></a>
+			<a class="navbar-brand" href="#">U.K.C.[ver.1.0]<!--  (Ultimate Keyboard Cheat-sheet) --></a>
 		</div>
 
 
@@ -156,10 +156,11 @@ require_once('ini.php');
 				<table class="ovTable table table-bordered table-hover tablesorter">
 					<thead>
 						<tr>
+							<th>No.</th>
 							<th>Category</th>
 							<th>Command</th>
 							<th>Keys</th>
-							<th>Check</th>
+							<th>Favorite</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -179,6 +180,7 @@ require_once('ini.php');
 			}
 			echo ('">');
 			//<td>生成============
+			echo ('<td>'.$num.'</td>');
 			for($i = 0, $j =0; $i < count($data); $i++, $j++) {
 				if($attr[$j]['label'] === 'Keys') {
 					echo ('<td>');
@@ -204,7 +206,7 @@ require_once('ini.php');
 						}elseif (strpos($sample[$k], 'colon') !== false){
 							$sample[$k] = ':';
 						}elseif (strpos($sample[$k], 'comma') !== false){
-							$sample[$k] = '.';
+							$sample[$k] = ',';
 						}elseif (strpos($sample[$k], 'period') !== false){
 							$sample[$k] = '.';
 						}elseif (strpos($sample[$k], 'slash') !== false){
@@ -391,7 +393,7 @@ require_once('ini.php');
 
 		<li class="mod-key" id="key-fn">fn</li>
 		<li class="mod-key" id="key-home">home</li>
-		<li class="mod-key" id="key-pageup">pageup</li>
+		<li class="mod-key" id="key-pageUp">pageup</li>
 		<li class="mod-key" id="key-deleteRight">delete</li>
 		<li class="mod-key" id="key-end">end</li>
 		<li class="mod-key" id="key-pageDown">pagedown</li>
