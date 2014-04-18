@@ -30,13 +30,13 @@ $(function () {
 		var _keyboardBase = $('#keyboard-base');
 		_keyboardBase.attr('class','');
 		_keyboardBase.addClass(_val);
-		window.localStorage.setItem("keyboardType",_val);
+		window.localStorage.setItem("UKC-keyboardType",_val);
 	});
 });
 
 //ページロード時にキーボード選択状態を呼び出し、チェックを入れる
 $(document).ready(function() {
-	var data = window.localStorage.getItem("keyboardType");
+	var data = window.localStorage.getItem("UKC-keyboardType");
 	var _input = $('input[name="keyboardType"]');
 	if (data == "") {
 		return;
@@ -60,7 +60,7 @@ $(function () {
 		var _id = $( this ).parents('tr').attr('id');
 		console.log('_val=' + _val);
 		console.log('_id=' + _id);
-		window.localStorage.setItem(_id,_val);
+		window.localStorage.setItem('UKC-'+_id,_val);
 		if (_val == true){
 			$(this).parents('td.like label').append('<span class="icon"></span><span class="txtLike">Like</span>');
 		} else {
@@ -81,7 +81,7 @@ $(document).ready(function() {
 	$('td.like').each(function() {
 		var _id = $( this ).parents('tr').attr('id');
 		console.log('_id=' + _id);
-		var getItem = window.localStorage.getItem(_id);
+		var getItem = window.localStorage.getItem('UKC-'+_id);
 		console.log('getItem=' + getItem);
 		if (getItem == 'true'){
 			console.log('_id=' + _id + ' is true');
@@ -113,11 +113,11 @@ $(function () {
 		var _eq = $(this).parents('li').index();
 		// console.log('_val=' + _val);
 		// console.log('_eq=' + _eq);
-		window.localStorage.setItem('tabSelect',_val);
+		window.localStorage.setItem('UKC-tabSelect',_val);
 	});
 });
 $(document).ready(function() {
-	var getItem = window.localStorage.getItem('tabSelect');
+	var getItem = window.localStorage.getItem('UKC-tabSelect');
 	console.log('getItem=' + getItem);
 	if (getItem == null) {
 		console.log("getItemなし");

@@ -2,13 +2,13 @@
 require_once('ini.php');
 ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php echo($lang); ?>">
 <head>
-<meta charset="utf-8">
+<meta charset="<?php echo($charset); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
-<title>U.K.C.[ver.1.0]</title>
+<title><?php echo($name); ?>[ver.<?php echo($ver); ?>]</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -27,7 +27,7 @@ require_once('ini.php');
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">U.K.C.[ver.1.0]<!--  (Ultimate Keyboard Cheat-sheet) --></a>
+			<a class="navbar-brand" href="#"><?php echo($name); ?>[ver.<?php echo($ver); ?>]<!--  (Ultimate Keyboard Cheat-sheet) --></a>
 		</div>
 
 
@@ -171,24 +171,28 @@ require_once('ini.php');
 			$data = explode("\t", $line);
 			$num = (string) $cnt;
 			$colCount = 0;
+
 			//<tr>生成============
-			echo ('<tr id="'.$ids[$m].'-tr'.$num.'" class="');
+			echo ('<tr id="'.$ids[$m].'-'.$data[1].'" class="');
 			//<tr>内のクラス：
-			$class=explode(',',$data[2]);
+			$class=explode(',',$data[3]);
 			for($l = 0; $l < count($class); $l++) {
 				echo ('key-'.$class[$l].' ');
 			}
 			echo ('">');
 			//<td>生成============
+
+			//連番のセル出力
 			echo ('<td>'.$num.'</td>');
 			for($i = 0, $j =0; $i < count($data); $i++, $j++) {
+
+				//Keysの出力
 				if($attr[$j]['label'] === 'Keys') {
 					echo ('<td>');
 					$sample=explode(',',$data[$i]);
 					for($k = 0; $k < count($sample); $k++) {
 
-	//echo $sample[$k];
-
+						//キー表記と変えるもの
 						if (strpos($sample[$k], 'hyphen') !== false){
 							$sample[$k] = '-';
 						}elseif (strpos($sample[$k], 'caret') !== false){
@@ -255,21 +259,32 @@ require_once('ini.php');
 							$sample[$k] = '9';
 						}
 
+						//AndとOr
 						if (strpos($sample[$k], 'and') !== false){
 							echo ('<button class="btn btn-default btn-and">→</button>');
 						}elseif (strpos($sample[$k], 'or') !== false){
 							echo ('<button class="btn btn-default btn-or">or</button>');
+
+						//それ以外はキー表記そのまま
 						}else {
 							echo ('<button class="btn btn-default">'.$sample[$k].'</button>');
-						}
 
+						}
 					}
 					echo ('</td>');
 				}
+
+				//Idのセルは出力しない
+				elseif ($attr[$j]['label'] === 'Id') {
+				}
+
+				//Keys以外の出力
 				else {
 					echo ('<td>'.$data[$i].'</td>');
 				}
 			}
+
+			//Favoriteのセル出力
 			echo ('<td class="like"><label><input type="checkbox"></label></td>');
 			echo ('</tr>');
 			$cnt++;
