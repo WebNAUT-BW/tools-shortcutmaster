@@ -93,6 +93,9 @@ body {
 		}
 	}
 	tbody {
+		td {
+			vertical-align: middle;
+		}
 		td button{
 			text-transform:capitalize;
 			margin-right: 5px;
@@ -115,18 +118,20 @@ body {
 }
 
 
-td.like {
+td.favorite {
+	text-align: center;
 	label {
 		cursor: pointer;
 		display: inline-block;
 		height: 20px;
 		width: 100%;
 		position: relative;
+		margin-bottom: 0;
 	}
 	input {
 		display: none;
 	}
-	.txtLike {
+	.txtFavorite {
 		@include hide-text;
 	}
 	.icon {
@@ -134,7 +139,8 @@ td.like {
 		&:after {
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: 50%;
+			margin-left: -10px;
 			display: inline-block;
 			font-family: 'Glyphicons Halflings';
 			font-style: normal;

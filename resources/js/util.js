@@ -51,7 +51,7 @@ $(document).ready(function() {
 });
 
 /* ===============================================
-# Like Select
+# Favorite Select
 =============================================== */
 //クリック時にチェックボックスの値を記録
 $(function () {
@@ -62,11 +62,11 @@ $(function () {
 		console.log('_id=' + _id);
 		window.localStorage.setItem('UKC-'+_id,_val);
 		if (_val == true){
-			$(this).parents('td.like label').append('<span class="icon"></span><span class="txtLike">Like</span>');
+			$(this).parents('td.favorite label').append('<span class="icon"></span><span class="txtFavorite">Favorite</span>');
 		} else {
-			$(this).parents('td.like').find('span.txtLike').remove();
-			$(this).parents('td.like').find('span.icon').remove();
-			//$(this).remove('<span class="icon"></span><span class="txtLike">like</span>');
+			$(this).parents('td.favorite').find('span.txtFavorite').remove();
+			$(this).parents('td.favorite').find('span.icon').remove();
+			//$(this).remove('<span class="icon"></span><span class="txtFavorite">Favorite</span>');
 		}
 		// var _keyboardBase = $('#keyboard-base');
 		// _keyboardBase.attr('class','');
@@ -78,7 +78,7 @@ $(function () {
 
 //ページロード時にチェックボックスの値を呼び出し、チェックを入れる
 $(document).ready(function() {
-	$('td.like').each(function() {
+	$('td.favorite').each(function() {
 		var _id = $( this ).parents('tr').attr('id');
 		console.log('_id=' + _id);
 		var getItem = window.localStorage.getItem('UKC-'+_id);
@@ -86,7 +86,7 @@ $(document).ready(function() {
 		if (getItem == 'true'){
 			console.log('_id=' + _id + ' is true');
 			$(this).find('input:checkbox').attr("checked", true);
-			$(this).find('label').append('<span class="icon"></span><span class="txtLike">Like</span>');
+			$(this).find('label').append('<span class="icon"></span><span class="txtFavorite">Favorite</span>');
 		}
 	});
 });

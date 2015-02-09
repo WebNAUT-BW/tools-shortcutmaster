@@ -95,7 +95,36 @@ require_once('ini.php');
 			</li> -->
 		</ul>
 
-		</div><!--/.nav-collapse -->
+		</div>
+
+		<!-- <div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort Setting<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#"><label>
+								<input type="radio" name="keyboardType" id="optionsRadios1" value="keyboard-apple-sj-ten" checked>
+								Apple with ten key(Shift-JIS)
+								</label></a>
+						</li>
+						<li>
+							<a href="#"><label>
+									<input type="radio" name="keyboardType" id="optionsRadios2" value="keyboard-apple-sj">
+									Apple without ten key(Shift-JIS)
+								</label></a>
+						</li>
+						<li>
+							<a href="#"><label>
+									<input type="radio" name="keyboardType" id="optionsRadios3" value="keyboard-macbook-sj">
+									Macbook(Shift-JIS)
+								</label></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div> -->
+
 	</div>
 </div>
 
@@ -285,7 +314,7 @@ require_once('ini.php');
 			}
 
 			//Favoriteのセル出力
-			echo ('<td class="like"><label><input type="checkbox"></label></td>');
+			echo ('<td class="favorite"><label><input type="checkbox"></label></td>');
 			echo ('</tr>');
 			$cnt++;
 		}
