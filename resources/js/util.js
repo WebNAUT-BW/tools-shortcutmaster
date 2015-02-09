@@ -62,11 +62,11 @@ $(function () {
 		console.log('_id=' + _id);
 		window.localStorage.setItem('UKC-'+_id,_val);
 		if (_val == true){
-			$(this).parents('td.favorite label').append('<span class="icon"></span><span class="txtFavorite">Favorite</span>');
+			$(this).parents('td.favorite label').append('<span class="icon"></span>');
 		} else {
 			$(this).parents('td.favorite').find('span.txtFavorite').remove();
 			$(this).parents('td.favorite').find('span.icon').remove();
-			//$(this).remove('<span class="icon"></span><span class="txtFavorite">Favorite</span>');
+			//$(this).remove('<span class="icon"></span>');
 		}
 		// var _keyboardBase = $('#keyboard-base');
 		// _keyboardBase.attr('class','');
@@ -86,7 +86,7 @@ $(document).ready(function() {
 		if (getItem == 'true'){
 			console.log('_id=' + _id + ' is true');
 			$(this).find('input:checkbox').attr("checked", true);
-			$(this).find('label').append('<span class="icon"></span><span class="txtFavorite">Favorite</span>');
+			$(this).find('label').append('<span class="icon"></span>');
 		}
 	});
 });

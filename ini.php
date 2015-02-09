@@ -30,6 +30,9 @@ $attr = array(
 	),
 	array(
 		'label' => 'Keys'
+	),
+	array(
+		'label' => 'Recommend'
 	)
 );
 ?>

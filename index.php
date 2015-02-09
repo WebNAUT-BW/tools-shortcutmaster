@@ -33,74 +33,9 @@ require_once('ini.php');
 
 		<div class="collapse navbar-collapse">
 
-		<ul class="nav navbar-nav navbar-right">
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Keyboard Type <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li>
-						<a href="#"><label>
-							<input type="radio" name="keyboardType" id="optionsRadios1" value="keyboard-apple-sj-ten" checked>
-							Apple with ten key(Shift-JIS)
-							</label></a>
-					</li>
-					<li>
-						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios2" value="keyboard-apple-sj">
-								Apple without ten key(Shift-JIS)
-							</label></a>
-					</li>
-					<li>
-						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios3" value="keyboard-macbook-sj">
-								Macbook(Shift-JIS)
-							</label></a>
-					</li>
-					<li>
-						<a href="#"><label>
-							<input type="radio" name="keyboardType" id="optionsRadios4" value="keyboard-apple-us-ten">
-							Apple with ten key(US)
-							</label></a>
-					</li>
-					<li>
-						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios5" value="keyboard-apple-us">
-								Apple without ten key(US)
-							</label></a>
-					</li>
-					<li>
-						<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios6" value="keyboard-macbook-us">
-								Macbook(US)
-							</label></a>
-					</li>
-
-				</ul>
-			</li>
-			<!-- <li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Display Type <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li>
-						<a href="#"><label>
-							<input type="radio" name="displayType" id="optionsRadios1" value="option1" checked>
-							Window Fix
-						</label></a>
-					</li>
-					<li>
-						<a href="#"><label>
-							<input type="radio" name="displayType" id="optionsRadios2" value="option2">
-							Indivisual
-						</label></a>
-					</li>
-				</ul>
-			</li> -->
-		</ul>
-
-		</div>
-
-		<!-- <div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort Setting<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Keyboard Type <b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li>
 							<a href="#"><label>
@@ -120,11 +55,53 @@ require_once('ini.php');
 									Macbook(Shift-JIS)
 								</label></a>
 						</li>
+						<li>
+							<a href="#"><label>
+								<input type="radio" name="keyboardType" id="optionsRadios4" value="keyboard-apple-us-ten">
+								Apple with ten key(US)
+								</label></a>
+						</li>
+						<li>
+							<a href="#"><label>
+									<input type="radio" name="keyboardType" id="optionsRadios5" value="keyboard-apple-us">
+									Apple without ten key(US)
+								</label></a>
+						</li>
+						<li>
+							<a href="#"><label>
+									<input type="radio" name="keyboardType" id="optionsRadios6" value="keyboard-macbook-us">
+									Macbook(US)
+								</label></a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort Setting<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#"><label>
+								<input type="radio" name="sortSetting" id="sort-all" value="sort-all" checked>
+								All
+								</label></a>
+						</li>
+						<li>
+							<a href="#"><label>
+									<input type="radio" name="sortSetting" id="sort-favorite" value="sort-favorite">
+									Favorite
+								</label></a>
+						</li>
+						<li>
+							<a href="#"><label>
+									<input type="radio" name="sortSetting" id="sort-recommend" value="sort-recommend">
+									Recommend
+								</label></a>
+						</li>
 					</ul>
 				</li>
 			</ul>
-		</div> -->
 
+		</div>
 	</div>
 </div>
 
@@ -197,6 +174,7 @@ require_once('ini.php');
 							<th>Category</th>
 							<th>Command</th>
 							<th>Keys</th>
+							<th>Recommend</th>
 							<th>Favorite</th>
 						</tr>
 					</thead>
@@ -216,6 +194,11 @@ require_once('ini.php');
 			for($l = 0; $l < count($class); $l++) {
 				echo ('key-'.$class[$l].' ');
 			}
+
+			if ($data[4] == 1) {
+				echo ('is-recommend');
+			}
+
 			echo ('">');
 			//<td>生成============
 
@@ -313,6 +296,17 @@ require_once('ini.php');
 
 				//Idのセルは出力しない
 				elseif ($attr[$j]['label'] === 'Id') {
+				}
+
+				//Recommendの場合
+				elseif ($attr[$j]['label'] === 'Recommend') {
+					//0と1
+					if ($data[$i] == 1){
+						echo ('<td class="recommend"><label><span class="icon"></span></label></td>');
+					}else {
+						echo ('<td></td>');
+					}
+					// echo ('<td>'.$data[$i].'11</td>');
 				}
 
 				//Keys以外の出力
