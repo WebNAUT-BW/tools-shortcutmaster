@@ -316,134 +316,134 @@ require_once('ini.php');
 <div id="keyboard-wrap">
 <div id="keyboard-base" class="keyboard-apple-sj-ten">
 	<ul>
-		<li class="mod-key" id="key-esc">esc</li>
-		<li class="mod-key" id="key-f1">F1</li>
-		<li class="mod-key" id="key-f2">F2</li>
-		<li class="mod-key" id="key-f3">F3</li>
-		<li class="mod-key" id="key-f4">F4</li>
-		<li class="mod-key" id="key-f5">F5</li>
-		<li class="mod-key" id="key-f6">F6</li>
-		<li class="mod-key" id="key-f7">F7</li>
-		<li class="mod-key" id="key-f8">F8</li>
-		<li class="mod-key" id="key-f9">F9</li>
-		<li class="mod-key" id="key-f10">F10</li>
-		<li class="mod-key" id="key-f11">F11</li>
-		<li class="mod-key" id="key-f12">F12</li>
-		<li class="mod-key" id="key-eject">eject</li>
+		<li class="mod-key" id="key-esc"><span class="key-text">esc</span></li>
+		<li class="mod-key" id="key-f1"><span class="key-text">F1</span></li>
+		<li class="mod-key" id="key-f2"><span class="key-text">F2</span></li>
+		<li class="mod-key" id="key-f3"><span class="key-text">F3</span></li>
+		<li class="mod-key" id="key-f4"><span class="key-text">F4</span></li>
+		<li class="mod-key" id="key-f5"><span class="key-text">F5</span></li>
+		<li class="mod-key" id="key-f6"><span class="key-text">F6</span></li>
+		<li class="mod-key" id="key-f7"><span class="key-text">F7</span></li>
+		<li class="mod-key" id="key-f8"><span class="key-text">F8</span></li>
+		<li class="mod-key" id="key-f9"><span class="key-text">F9</span></li>
+		<li class="mod-key" id="key-f10"><span class="key-text">F10</span></li>
+		<li class="mod-key" id="key-f11"><span class="key-text">F11</span></li>
+		<li class="mod-key" id="key-f12"><span class="key-text">F12</span></li>
+		<li class="mod-key" id="key-eject"><span class="key-text"><span class="glyphicon glyphicon-eject" aria-hidden="true"></span></span></li>
 
-		<li class="mod-key" id="key-num1">1</li>
-		<li class="mod-key" id="key-num2">2</li>
-		<li class="mod-key" id="key-num3">3</li>
-		<li class="mod-key" id="key-num4">4</li>
-		<li class="mod-key" id="key-num5">5</li>
-		<li class="mod-key" id="key-num6">6</li>
-		<li class="mod-key" id="key-num7">7</li>
-		<li class="mod-key" id="key-num8">8</li>
-		<li class="mod-key" id="key-num9">9</li>
-		<li class="mod-key" id="key-num0">0</li>
-		<li class="mod-key" id="key-hyphen">-</li>
-		<li class="mod-key" id="key-caret">^</li>
-		<li class="mod-key" id="key-backslash">¥</li>
-		<li class="mod-key" id="key-delete">delete</li>
+		<li class="mod-key" id="key-num1"><span class="key-text">1</span></li>
+		<li class="mod-key" id="key-num2"><span class="key-text">2</span></li>
+		<li class="mod-key" id="key-num3"><span class="key-text">3</span></li>
+		<li class="mod-key" id="key-num4"><span class="key-text">4</span></li>
+		<li class="mod-key" id="key-num5"><span class="key-text">5</span></li>
+		<li class="mod-key" id="key-num6"><span class="key-text">6</span></li>
+		<li class="mod-key" id="key-num7"><span class="key-text">7</span></li>
+		<li class="mod-key" id="key-num8"><span class="key-text">8</span></li>
+		<li class="mod-key" id="key-num9"><span class="key-text">9</span></li>
+		<li class="mod-key" id="key-num0"><span class="key-text">0</span></li>
+		<li class="mod-key" id="key-hyphen"><span class="key-text">-</span></li>
+		<li class="mod-key" id="key-caret"><span class="key-text">^</span></li>
+		<li class="mod-key" id="key-backslash"><span class="key-text">¥</span></li>
+		<li class="mod-key" id="key-delete"><span class="key-text">delete</span></li>
 
-		<li class="mod-key" id="key-tab">tab</li>
-		<li class="mod-key" id="key-q">Q</li>
-		<li class="mod-key" id="key-w">W</li>
-		<li class="mod-key" id="key-e">E</li>
-		<li class="mod-key" id="key-r">R</li>
-		<li class="mod-key" id="key-t">T</li>
-		<li class="mod-key" id="key-y">Y</li>
-		<li class="mod-key" id="key-u">U</li>
-		<li class="mod-key" id="key-i">I</li>
-		<li class="mod-key" id="key-o">O</li>
-		<li class="mod-key" id="key-p">P</li>
-		<li class="mod-key" id="key-at">@</li>
-		<li class="mod-key" id="key-bra1">[</li>
-		<li class="mod-key" id="key-return">return</li>
+		<li class="mod-key" id="key-tab"><span class="key-text">tab</span></li>
+		<li class="mod-key" id="key-q"><span class="key-text">Q</span></li>
+		<li class="mod-key" id="key-w"><span class="key-text">W</span></li>
+		<li class="mod-key" id="key-e"><span class="key-text">E</span></li>
+		<li class="mod-key" id="key-r"><span class="key-text">R</span></li>
+		<li class="mod-key" id="key-t"><span class="key-text">T</span></li>
+		<li class="mod-key" id="key-y"><span class="key-text">Y</span></li>
+		<li class="mod-key" id="key-u"><span class="key-text">U</span></li>
+		<li class="mod-key" id="key-i"><span class="key-text">I</span></li>
+		<li class="mod-key" id="key-o"><span class="key-text">O</span></li>
+		<li class="mod-key" id="key-p"><span class="key-text">P</span></li>
+		<li class="mod-key" id="key-at"><span class="key-text">@</span></li>
+		<li class="mod-key" id="key-bra1"><span class="key-text">[</span></li>
+		<li class="mod-key" id="key-return"><span class="key-text">return</span></li>
 
-		<li class="mod-key" id="key-ctrl">control</li>
-		<li class="mod-key" id="key-a">A</li>
-		<li class="mod-key" id="key-s">S</li>
-		<li class="mod-key" id="key-d">D</li>
-		<li class="mod-key" id="key-f">F</li>
-		<li class="mod-key" id="key-g">G</li>
-		<li class="mod-key" id="key-h">H</li>
-		<li class="mod-key" id="key-j">J</li>
-		<li class="mod-key" id="key-k">K</li>
-		<li class="mod-key" id="key-l">L</li>
-		<li class="mod-key" id="key-semicolon">;</li>
-		<li class="mod-key" id="key-colon">:</li>
-		<li class="mod-key" id="key-bra2">]</li>
+		<li class="mod-key" id="key-ctrl"><span class="key-text">control</span></li>
+		<li class="mod-key" id="key-a"><span class="key-text">A</span></li>
+		<li class="mod-key" id="key-s"><span class="key-text">S</span></li>
+		<li class="mod-key" id="key-d"><span class="key-text">D</span></li>
+		<li class="mod-key" id="key-f"><span class="key-text">F</span></li>
+		<li class="mod-key" id="key-g"><span class="key-text">G</span></li>
+		<li class="mod-key" id="key-h"><span class="key-text">H</span></li>
+		<li class="mod-key" id="key-j"><span class="key-text">J</span></li>
+		<li class="mod-key" id="key-k"><span class="key-text">K</span></li>
+		<li class="mod-key" id="key-l"><span class="key-text">L</span></li>
+		<li class="mod-key" id="key-semicolon"><span class="key-text">;</span></li>
+		<li class="mod-key" id="key-colon"><span class="key-text">:</span></li>
+		<li class="mod-key" id="key-bra2"><span class="key-text">]</span></li>
 
-		<li class="mod-key" id="key-shiftLeft">shift</li>
-		<li class="mod-key" id="key-z">Z</li>
-		<li class="mod-key" id="key-x">X</li>
-		<li class="mod-key" id="key-c">C</li>
-		<li class="mod-key" id="key-v">V</li>
-		<li class="mod-key" id="key-b">B</li>
-		<li class="mod-key" id="key-n">N</li>
-		<li class="mod-key" id="key-m">M</li>
-		<li class="mod-key" id="key-comma">,</li>
-		<li class="mod-key" id="key-period">.</li>
-		<li class="mod-key" id="key-slash">/</li>
-		<li class="mod-key" id="key-underScore">_</li>
-		<li class="mod-key" id="key-shiftRight">shift</li>
+		<li class="mod-key" id="key-shiftLeft"><span class="key-text">shift</span></li>
+		<li class="mod-key" id="key-z"><span class="key-text">Z</span></li>
+		<li class="mod-key" id="key-x"><span class="key-text">X</span></li>
+		<li class="mod-key" id="key-c"><span class="key-text">C</span></li>
+		<li class="mod-key" id="key-v"><span class="key-text">V</span></li>
+		<li class="mod-key" id="key-b"><span class="key-text">B</span></li>
+		<li class="mod-key" id="key-n"><span class="key-text">N</span></li>
+		<li class="mod-key" id="key-m"><span class="key-text">M</span></li>
+		<li class="mod-key" id="key-comma"><span class="key-text">,</span></li>
+		<li class="mod-key" id="key-period"><span class="key-text">.</span></li>
+		<li class="mod-key" id="key-slash"><span class="key-text">/</span></li>
+		<li class="mod-key" id="key-underScore"><span class="key-text">_</span></li>
+		<li class="mod-key" id="key-shiftRight"><span class="key-text">shift</span></li>
 
-		<li class="mod-key" id="key-altLeft">alt/option</li>
-		<li class="mod-key" id="key-cmdLeft">command</li>
-		<li class="mod-key" id="key-eisu">英数</li>
-		<li class="mod-key" id="key-space"></li>
-		<li class="mod-key" id="key-kana">かな</li>
-		<li class="mod-key" id="key-cmdRight">command</li>
-		<li class="mod-key" id="key-altRight">alt/option</li>
-		<li class="mod-key" id="key-caps">caps</li>
+		<li class="mod-key" id="key-altLeft"><span class="key-text">alt/<br>option</span></li>
+		<li class="mod-key" id="key-cmdLeft"><span class="key-text">command</span></li>
+		<li class="mod-key" id="key-eisu"><span class="key-text">英数</span></li>
+		<li class="mod-key" id="key-space"><span class="key-text"></span></li>
+		<li class="mod-key" id="key-kana"><span class="key-text">かな</span></li>
+		<li class="mod-key" id="key-cmdRight"><span class="key-text">command</span></li>
+		<li class="mod-key" id="key-altRight"><span class="key-text">alt/<br>option</span></li>
+		<li class="mod-key" id="key-caps"><span class="key-text">caps</span></li>
 
-		<li class="mod-key" id="key-f13">F13</li>
-		<li class="mod-key" id="key-f14">F14</li>
-		<li class="mod-key" id="key-f15">F15</li>
-		<li class="mod-key" id="key-f16">F16</li>
-		<li class="mod-key" id="key-f17">F17</li>
-		<li class="mod-key" id="key-f18">F18</li>
-		<li class="mod-key" id="key-f19">F19</li>
+		<li class="mod-key" id="key-f13"><span class="key-text">F13</span></li>
+		<li class="mod-key" id="key-f14"><span class="key-text">F14</span></li>
+		<li class="mod-key" id="key-f15"><span class="key-text">F15</span></li>
+		<li class="mod-key" id="key-f16"><span class="key-text">F16</span></li>
+		<li class="mod-key" id="key-f17"><span class="key-text">F17</span></li>
+		<li class="mod-key" id="key-f18"><span class="key-text">F18</span></li>
+		<li class="mod-key" id="key-f19"><span class="key-text">F19</span></li>
 
-		<li class="mod-key" id="key-fn">fn</li>
-		<li class="mod-key" id="key-home">home</li>
-		<li class="mod-key" id="key-pageUp">pageup</li>
-		<li class="mod-key" id="key-deleteRight">delete</li>
-		<li class="mod-key" id="key-end">end</li>
-		<li class="mod-key" id="key-pageDown">pagedown</li>
+		<li class="mod-key" id="key-fn"><span class="key-text">fn</span></li>
+		<li class="mod-key" id="key-home"><span class="key-text">home</span></li>
+		<li class="mod-key" id="key-pageUp"><span class="key-text">page<br>up</span></li>
+		<li class="mod-key" id="key-deleteRight"><span class="key-text">delete</span></li>
+		<li class="mod-key" id="key-end"><span class="key-text">end</span></li>
+		<li class="mod-key" id="key-pageDown"><span class="key-text">page<br>down</span></li>
 
-		<li class="mod-key" id="key-curUp">▲</li>
-		<li class="mod-key" id="key-curRight">▶</li>
-		<li class="mod-key" id="key-curDown">▼</li>
-		<li class="mod-key" id="key-curLeft">◀</li>
+		<li class="mod-key" id="key-curUp"><span class="key-text">▲</span></li>
+		<li class="mod-key" id="key-curRight"><span class="key-text">▶</span></li>
+		<li class="mod-key" id="key-curDown"><span class="key-text">▼</span></li>
+		<li class="mod-key" id="key-curLeft"><span class="key-text">◀</span></li>
 
-		<li class="mod-key" id="key-clear">clear</li>
-		<li class="mod-key" id="key-equalTen">=</li>
-		<li class="mod-key" id="key-slashTen">/</li>
-		<li class="mod-key" id="key-astTen">*</li>
-		<li class="mod-key" id="key-hyphenTen">-</li>
-		<li class="mod-key" id="key-plusTen">+</li>
-		<li class="mod-key" id="key-enter">enter</li>
-		<li class="mod-key" id="key-num0ten">0</li>
-		<li class="mod-key" id="key-num1ten">1</li>
-		<li class="mod-key" id="key-num2ten">2</li>
-		<li class="mod-key" id="key-num3ten">3</li>
-		<li class="mod-key" id="key-num4ten">4</li>
-		<li class="mod-key" id="key-num5ten">5</li>
-		<li class="mod-key" id="key-num6ten">6</li>
-		<li class="mod-key" id="key-num7ten">7</li>
-		<li class="mod-key" id="key-num8ten">8</li>
-		<li class="mod-key" id="key-num9ten">9</li>
-		<li class="mod-key" id="key-commaTen">,</li>
-		<li class="mod-key" id="key-periodTen">.</li>
+		<li class="mod-key" id="key-clear"><span class="key-text">clear</span></li>
+		<li class="mod-key" id="key-equalTen"><span class="key-text">=</span></li>
+		<li class="mod-key" id="key-slashTen"><span class="key-text">/</span></li>
+		<li class="mod-key" id="key-astTen"><span class="key-text">*</span></li>
+		<li class="mod-key" id="key-hyphenTen"><span class="key-text">-</span></li>
+		<li class="mod-key" id="key-plusTen"><span class="key-text">+</span></li>
+		<li class="mod-key" id="key-enter"><span class="key-text">enter</span></li>
+		<li class="mod-key" id="key-num0ten"><span class="key-text">0</span></li>
+		<li class="mod-key" id="key-num1ten"><span class="key-text">1</span></li>
+		<li class="mod-key" id="key-num2ten"><span class="key-text">2</span></li>
+		<li class="mod-key" id="key-num3ten"><span class="key-text">3</span></li>
+		<li class="mod-key" id="key-num4ten"><span class="key-text">4</span></li>
+		<li class="mod-key" id="key-num5ten"><span class="key-text">5</span></li>
+		<li class="mod-key" id="key-num6ten"><span class="key-text">6</span></li>
+		<li class="mod-key" id="key-num7ten"><span class="key-text">7</span></li>
+		<li class="mod-key" id="key-num8ten"><span class="key-text">8</span></li>
+		<li class="mod-key" id="key-num9ten"><span class="key-text">9</span></li>
+		<li class="mod-key" id="key-commaTen"><span class="key-text">,</span></li>
+		<li class="mod-key" id="key-periodTen"><span class="key-text">.</span></li>
 
-		<li class="mod-key" id="key-tilde">~ / `</li>
-		<li class="mod-key" id="key-hyphenUs">- / _</li>
-		<li class="mod-key" id="key-plusUs">+ / =</li>
-		<li class="mod-key" id="key-colonUs">: / ;</li>
-		<li class="mod-key" id="key-quotation">" / '</li>
-		<li class="mod-key" id="key-ctrlRight">control</li>
+		<li class="mod-key" id="key-tilde"><span class="key-text">~ / `</span></li>
+		<li class="mod-key" id="key-hyphenUs"><span class="key-text">- / _</span></li>
+		<li class="mod-key" id="key-plusUs"><span class="key-text">+ / =</span></li>
+		<li class="mod-key" id="key-colonUs"><span class="key-text">: / ;</span></li>
+		<li class="mod-key" id="key-quotation"><span class="key-text">" / '</span></li>
+		<li class="mod-key" id="key-ctrlRight"><span class="key-text">control</span></li>
 
 	</ul>
 

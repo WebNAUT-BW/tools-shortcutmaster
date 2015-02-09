@@ -53,16 +53,19 @@
 	background-color: #fff;
 	width: 43px;
 	height: 43px;
-	line-height: 43px;
-	display: inline-block;
+	// line-height: 43px;
+	display: table;
 	font-size: 12px;
 	text-align: center;
-	vertical-align: middle;
 	position: absolute;
 	&.on {
 		background-color: orange;
 		font-weight: bold;
 	}
+}
+.key-text {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #key-esc,
@@ -81,7 +84,7 @@
 #key-eject {
 	width: 43px;
 	height: 27px;
-	line-height: 27px;
+	// line-height: 27px;
 	top: 11px;
 }
 #key-esc {left: 11px;}
@@ -161,7 +164,9 @@
 #key-p {left: 11px + ( 52 * 10 );}
 #key-at {left: 11px + ( 52 * 11 );}
 #key-bra1 {left: 11px + ( 52 * 12 );}
-#key-return { left: 703px; width: 53px; height: 95px; line-height: 95px;}
+#key-return { left: 703px; width: 53px; height: 95px;
+	// line-height: 95px;
+}
 
 
 #key-ctrl,
@@ -234,7 +239,7 @@
 #key-caps {
 	top: 251px;
 	height: 51px;
-	line-height: 51px;
+	// line-height: 51px;
 }
 #key-altLeft {left: 11px; width: 77px;}
 #key-cmdLeft {left: 95px; width: 77px;}
@@ -294,7 +299,7 @@
 #key-periodTen {
 	top: 251px;
 	height: 51px;
-	line-height: 51px;
+	// line-height: 51px;
 }
 #key-f13,
 #key-fn,
@@ -355,7 +360,7 @@
 #key-f19 {
 	width: 43px;
 	height: 27px;
-	line-height: 27px;
+	// line-height: 27px;
 }
 #key-curLeft,
 #key-curRight,
@@ -367,7 +372,7 @@
 }
 #key-enter {
 	height: 102px;
-	line-height: 102px;
+	// line-height: 102px;
 }
 
 //USのみのボタンは非表示
@@ -426,7 +431,7 @@
 	#key-fn {
 		top: 251px;
 		height: 51px;
-		line-height: 51px;
+		// line-height: 51px;
 	}
 
 	#key-curLeft,
@@ -434,7 +439,7 @@
 	#key-curRight,
 	#key-curUp {
 		height: 25px;
-		line-height: 25px;
+		// line-height: 25px;
 	}
 
 	#key-caps {left: 11px; width: 43px;}
@@ -473,7 +478,7 @@
 	#key-quotation,
 	#key-ctrlRight,
 	#key-ctrlRight {
-		display: block;
+		display: table;
 	}
 
 	#key-hyphen,
@@ -536,7 +541,7 @@
 	#key-return,
 	#key-caps {
 		height: 43px;
-		line-height: 43px;
+		// line-height: 43px;
 	}
 	#key-caps {left: 11px; width: 84px;}
 	#key-a {left: 102px;}
@@ -575,7 +580,7 @@
 	#key-ctrlRight {
 		top: 251px;
 		height: 51px;
-		line-height: 51px;
+		// line-height: 51px;
 	}
 	#key-ctrl {left: 11px;width: 70px;}
 	#key-altLeft {left: 88px;width: 57px;}
@@ -599,14 +604,14 @@
 		top: 251px;
 		width: 43px;
 		height: 51px;
-		line-height: 51px;
+		// line-height: 51px;
 	}
 	#key-altRight {
-		display: block;
+		display: table;
 		top: 251px;
 		width: 43px;
 		height: 51px;
-		line-height: 51px;
+		// line-height: 51px;
 	}
 	#key-fn {left: 11px;}
 	#key-ctrl {left: 11px + 52;}
