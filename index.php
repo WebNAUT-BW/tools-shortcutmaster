@@ -183,6 +183,14 @@ require_once('ini.php');
 		echo ('<h2 class="tab-h">'.$ids[$m].'</h2>');
 		echo ('
 				<table class="ovTable table table-bordered table-hover tablesorter">
+					<colgroup>
+						<col class="col-num">
+						<col class="col-category">
+						<col class="col-command">
+						<col class="col-keys">
+						<col class="col-recommend">
+						<col class="col-favorite">
+					</colgroup>
 					<thead>
 						<tr>
 							<th>No.</th>
