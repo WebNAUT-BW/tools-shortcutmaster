@@ -1,0 +1,7 @@
+*.scssc
+*.css
+*.rb
+_zip/
+_psd/
+_prv/
+_xls/
