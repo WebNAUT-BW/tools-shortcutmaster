@@ -2,7 +2,7 @@
 # Table Mouseover
 =============================================== */
 $(function () {
-	$('.ovTable tbody tr').on('mouseenter' ,function(event) {
+	$('.ovTable tbody tr').on('mouseover' ,function(event) {
 		event.preventDefault();
 		/* Act on the event */
 		//console.log('hover');

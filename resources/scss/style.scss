@@ -100,6 +100,15 @@ body {
 				text-transform:none;
 				border: none;
 				background-color: transparent;
+				&:hover {
+					border: none;
+					background-color: transparent;
+				}
+			}
+			&:hover {
+				background-color: #fff;
+				border-color: #ccc;
+				cursor: default;
 			}
 		}
 	}
