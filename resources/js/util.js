@@ -72,7 +72,7 @@ $(function () {
 		// _keyboardBase.attr('class','');
 		// _keyboardBase.addClass(_val);
 		// window.localStorage.setItem("keyboardType",_val);
-		teblesorterOn();
+		// teblesorterOn();
 	});
 });
 
@@ -95,12 +95,12 @@ $(document).ready(function() {
 /* ===============================================
 # tablesorter Setting
 =============================================== */
-function teblesorterOn () {
-	$("#contentMain table").tablesorter();
-} 
-$(function () {
-	teblesorterOn();
-});
+// function teblesorterOn () {
+// 	$("#contentMain table").tablesorter();
+// } 
+// $(function () {
+// 	teblesorterOn();
+// });
 
 /* ===============================================
 # Tab Select
