@@ -55,7 +55,7 @@ require_once('ini.php');
 									Macbook(Shift-JIS)
 								</label></a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="#"><label>
 								<input type="radio" name="keyboardType" id="optionsRadios4" value="keyboard-apple-us-ten">
 								Apple with ten key(US)
@@ -72,29 +72,11 @@ require_once('ini.php');
 									<input type="radio" name="keyboardType" id="optionsRadios6" value="keyboard-macbook-us">
 									Macbook(US)
 								</label></a>
-						</li>
-
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort Setting<b class="caret"></b></a>
-					<ul class="dropdown-menu">
+						</li> -->
 						<li>
 							<a href="#"><label>
-								<input type="radio" name="sortSetting" id="sort-all" value="sort-all" checked>
-								All
-								</label></a>
-						</li>
-						<li>
-							<a href="#"><label>
-									<input type="radio" name="sortSetting" id="sort-favorite" value="sort-favorite">
-									Favorite
-								</label></a>
-						</li>
-						<li>
-							<a href="#"><label>
-									<input type="radio" name="sortSetting" id="sort-recommend" value="sort-recommend">
-									Recommend
+									<input type="radio" name="keyboardType" id="optionsRadios7" value="keyboard-none">
+									None
 								</label></a>
 						</li>
 					</ul>
@@ -174,8 +156,8 @@ require_once('ini.php');
 							<th>Category</th>
 							<th>Command</th>
 							<th>Keys</th>
-							<th>Recommend</th>
-							<th>Favorite</th>
+							<th class="header-recommend">Recommend</th>
+							<th class="header-favorite">Favorite</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -302,7 +284,11 @@ require_once('ini.php');
 				elseif ($attr[$j]['label'] === 'Recommend') {
 					//0と1
 					if ($data[$i] == 1){
-						echo ('<td class="recommend"><label><span class="icon"></span></label></td>');
+						echo ('<td class="recommend">☆</td>');
+					} else if ($data[$i] == 2){
+						echo ('<td class="recommend">☆☆</td>');
+					} else if ($data[$i] == 3){
+						echo ('<td class="recommend">☆☆☆</td>');
 					}else {
 						echo ('<td></td>');
 					}
@@ -317,6 +303,7 @@ require_once('ini.php');
 
 			//Favoriteのセル出力
 			echo ('<td class="favorite"><label><input type="checkbox"></label></td>');
+			echo ('<td class="blank"></td>');
 			echo ('</tr>');
 			$cnt++;
 		}
@@ -485,7 +472,7 @@ require_once('ini.php');
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<!-- <script src="resources/js/jquery.tablesorter.js"></script> -->
+<script src="resources/js/jquery.tablesorter.js"></script>
 <script src="resources/js/util.js"></script>
 </body>
 </html>
