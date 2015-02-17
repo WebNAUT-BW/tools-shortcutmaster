@@ -1,3 +1,5 @@
+var prefix = 'UKC-';
+
 /* ===============================================
 # 行をマウスオーバー時にスタイルを当てる
 =============================================== */
@@ -28,13 +30,13 @@ $(function () {
 		var _keyboardBase = $('#keyboard-base');
 		_keyboardBase.attr('class','');
 		_keyboardBase.addClass(_val);
-		window.localStorage.setItem("UKC-keyboardType",_val);
+		window.localStorage.setItem(prefix+"keyboardType",_val);
 	});
 });
 
 //ページロード時にキーボード選択状態を呼び出し設定する
 $(document).ready(function() {
-	var _data = window.localStorage.getItem("UKC-keyboardType");
+	var _data = window.localStorage.getItem(prefix+"keyboardType");
 	var _input = $('input[name="keyboardType"]');
 	if (!_data == "") {
 		$("input[value='" + _data  + "']:radio").attr('checked', 'checked');
@@ -56,7 +58,7 @@ $(function () {
 		var _id = $(this).parents('tr').attr('id');
 		// console.log('_val=' + _val);
 		// console.log('_id=' + _id);
-		window.localStorage.setItem('UKC-'+_id,_val);
+		window.localStorage.setItem(prefix+_id,_val);
 		if (_val == true){
 			$(this).parents('td.favorite label').append(addItem);
 		} else {
@@ -78,13 +80,13 @@ $(function () {
 	$( '#navMain li a' ).click( function() {
 		var _val = $(this).html();
 		var _eq = $(this).parents('li').index();
-		window.localStorage.setItem('UKC-tabSelect',_val);
+		window.localStorage.setItem(prefix+'tabSelect',_val);
 	});
 });
 
 //ページロード時にタブ選択状態を呼び出し設定する
 $(document).ready(function() {
-	var _getItem = window.localStorage.getItem('UKC-tabSelect');
+	var _getItem = window.localStorage.getItem(prefix+'tabSelect');
 	//getItemなし
 	if (_getItem == null) {
 		$('#navMain li:first-child').addClass('active');
@@ -103,7 +105,7 @@ $(function () {
 	$('th.tablesorter-header').click(function(e) {
 		//ソートしたセルを記録
 		var _dataColumn = $(this).attr('data-column');
-		window.localStorage.setItem("UKC-sortOrder",_dataColumn);
+		window.localStorage.setItem(prefix+"sortOrder",_dataColumn);
 		if (_dataColumn == 5) {
 			//Favoriteの場合設定をリセットして再度ソートさせる
 			teblesorterOn();
@@ -115,11 +117,11 @@ $(function () {
 			//ソート完了後の処理
 			.bind("sortEnd",function(e, table) {
 				if (_this.hasClass('tablesorter-headerDesc')) {
-					window.localStorage.setItem("UKC-sortOrderSc",1);
+					window.localStorage.setItem(prefix+"sortOrderSc",1);
 				} else if (_this.hasClass('tablesorter-headerAsc')) {
-					window.localStorage.setItem("UKC-sortOrderSc",0);
+					window.localStorage.setItem(prefix+"sortOrderSc",0);
 				} else {
-					window.localStorage.setItem("UKC-sortOrderSc","");
+					window.localStorage.setItem(prefix+"sortOrderSc","");
 				}
 		});
 		e.preventDefault();
@@ -133,7 +135,7 @@ var sortTable;
 function teblesorterInit () {
 	$('td.favorite').each(function(indx) {
 		var _id = $(this).parents('tr').attr('id');
-		var _getItem = window.localStorage.getItem('UKC-'+_id);
+		var _getItem = window.localStorage.getItem(prefix+_id);
 		if (_getItem == 'true'){
 			$(this).find('input:checkbox').attr("checked", true);
 			$(this).find('label').append(addItem);
@@ -141,8 +143,8 @@ function teblesorterInit () {
 	});
 
 	//localStorage読み込み：ソート設定
-	var _getItem = window.localStorage.getItem('UKC-sortOrder');
-	var _getItemSc = window.localStorage.getItem('UKC-sortOrderSc');
+	var _getItem = window.localStorage.getItem(prefix+'sortOrder');
+	var _getItemSc = window.localStorage.getItem(prefix+'sortOrderSc');
 	var _sortListSetting = [[_getItem,_getItemSc]];
 	sortTable = $("#contentMain table").tablesorter({
 		sortList: _sortListSetting,
@@ -162,3 +164,48 @@ function teblesorterOn () {
 	sortTable.trigger("update")
 	sortTable.trigger("sorton", [[[5, 1]]]);
 }
+
+/* ===============================================
+# モーダル
+=============================================== */
+$(function () {
+	$('#open-infoModal').click(function(e) {
+		$('#infoModal').modal();
+		e.preventDefault();
+	});
+	$('#open-settingModal').click(function(e) {
+		$('#settingModal').modal();
+		e.preventDefault();
+	});
+});
+
+/* ===============================================
+# お気に入りデータ削除
+=============================================== */
+$(function () {
+	$('#delete-favorite').click(function(e) {
+		_items = new Array();
+		//localStorageを格納
+		for (var i=0; i<localStorage.length; i++){
+			var k = localStorage.key(i);
+			var item = localStorage.getItem(k);
+			if (k.indexOf(prefix) == 0) {
+				console.log(k+'is '+prefix);
+				_items.push(k);
+			}
+		}
+		//localStorage削除
+		for (var i=0; i<_items.length; i++){
+			if (_items[i] != 'UKC-keyboardType') {
+				window.localStorage.removeItem(_items[i]);
+			}
+		}
+		//お気に入り表示クリア
+		$('td.favorite').each(function() {
+			$(this).find('span.icon').remove();
+		});
+		sortTable.trigger("sortReset");
+
+		e.preventDefault();
+	});
+});

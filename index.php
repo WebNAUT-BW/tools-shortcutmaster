@@ -29,60 +29,11 @@ require_once('ini.php');
 			</button>
 			<a class="navbar-brand" href="#"><?php echo($name); ?> [ver.<?php echo($ver); ?>]<!--  (Ultimate Keyboard Cheat-sheet) --></a>
 		</div>
-
-
 		<div class="collapse navbar-collapse">
-
 			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Keyboard Type <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li>
-							<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios1" value="keyboard-apple-sj-ten" checked>
-								Apple with ten key(Shift-JIS)
-								</label></a>
-						</li>
-						<li>
-							<a href="#"><label>
-									<input type="radio" name="keyboardType" id="optionsRadios2" value="keyboard-apple-sj">
-									Apple without ten key(Shift-JIS)
-								</label></a>
-						</li>
-						<li>
-							<a href="#"><label>
-									<input type="radio" name="keyboardType" id="optionsRadios3" value="keyboard-macbook-sj">
-									Macbook(Shift-JIS)
-								</label></a>
-						</li>
-						<!-- <li>
-							<a href="#"><label>
-								<input type="radio" name="keyboardType" id="optionsRadios4" value="keyboard-apple-us-ten">
-								Apple with ten key(US)
-								</label></a>
-						</li>
-						<li>
-							<a href="#"><label>
-									<input type="radio" name="keyboardType" id="optionsRadios5" value="keyboard-apple-us">
-									Apple without ten key(US)
-								</label></a>
-						</li>
-						<li>
-							<a href="#"><label>
-									<input type="radio" name="keyboardType" id="optionsRadios6" value="keyboard-macbook-us">
-									Macbook(US)
-								</label></a>
-						</li> -->
-						<li>
-							<a href="#"><label>
-									<input type="radio" name="keyboardType" id="optionsRadios7" value="keyboard-none">
-									None
-								</label></a>
-						</li>
-					</ul>
-				</li>
+				<li><a href="#" id="open-infoModal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
+				<li><a href="#" id="open-settingModal"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
 			</ul>
-
 		</div>
 	</div>
 </div>
@@ -467,6 +418,78 @@ require_once('ini.php');
 
 </div>
 <!-- /#keyboard-wrap --></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title">このサイトについて</h4>
+		</div>
+		<div class="modal-body">
+			<p>XXXするツールです。</p>
+			<h3>使い方</h3>
+			<ul>
+				<li>XXX</li>
+				<li>XXX</li>
+				<li>XXX</li>
+			</ul>
+			<h3>対象ブラウザ</h3>
+			<p>Google Chrome 最新版</p>
+			<h3>紹介記事</h3>
+			<p><a href="http://webnaut.jp/">WebNAUT</a></p>
+		</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="settingModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title">設定</h4>
+		</div>
+		<div class="modal-body">
+			<h3>キーボードタイプ</h3>
+			<ul class="list-unstyled">
+				<li>
+					<a href="#">
+						<label>
+							<input type="radio" name="keyboardType" id="optionsRadios1" value="keyboard-apple-sj-ten" checked>
+							Apple with ten key(Shift-JIS)
+						</label>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<label>
+							<input type="radio" name="keyboardType" id="optionsRadios2" value="keyboard-apple-sj">
+							Apple without ten key(Shift-JIS)
+						</label>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<label>
+							<input type="radio" name="keyboardType" id="optionsRadios3" value="keyboard-macbook-sj">
+							Macbook(Shift-JIS)
+						</label>
+					</a>
+				</li>
+			</ul>
+			<h3>お気に入りデータの削除</h3>
+			<button type="button" class="btn btn-danger" id="delete-favorite">削除</button>
+		</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>

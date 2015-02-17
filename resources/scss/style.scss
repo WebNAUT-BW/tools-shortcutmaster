@@ -33,6 +33,13 @@ body {
 .container {
 	width: 1200px!important;
 }
+#open-infoModal,
+#open-settingModal {
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 #keyboard-wrap {
 	position: fixed;
 	left: 0;
@@ -54,11 +61,11 @@ body {
 		text-transform:capitalize;
 	}
 
-	.col-num {width: 3%;}
-	.col-category {width: 15%;}
-	.col-command {width: 45%;}
-	.col-keys {width: 27%;}
-	.col-recommend {width: 5%;}
+	.col-num {width: 5%;}
+	// .col-category {width: 15%;}
+	.col-command {width: 30%;}
+	.col-keys {width: 35%;}
+	.col-recommend {width: 10%;}
 	.col-favorite {width: 5%;}
 
 	thead {
