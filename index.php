@@ -5,7 +5,7 @@ require_once('ini.php');
 <html lang="<?php echo($lang); ?>">
 <head>
 <meta charset="<?php echo($charset); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1200">
 <meta name="description" content="">
 <meta name="author" content="">
 <title><?php echo($name); ?>[ver.<?php echo($ver); ?>]</title>
@@ -27,7 +27,7 @@ require_once('ini.php');
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?php echo($name); ?>[ver.<?php echo($ver); ?>]<!--  (Ultimate Keyboard Cheat-sheet) --></a>
+			<a class="navbar-brand" href="#"><?php echo($name); ?> [ver.<?php echo($ver); ?>]<!--  (Ultimate Keyboard Cheat-sheet) --></a>
 		</div>
 
 
@@ -139,7 +139,7 @@ require_once('ini.php');
 		$file = fopen($dataDir.$files[$m], 'r');
 
 		echo ('<div class="tab-pane" id="'.$ids[$m].'">');
-		echo ('<h2 class="tab-h">'.$ids[$m].'</h2>');
+		// echo ('<h2 class="tab-h">'.$ids[$m].'</h2>');
 		echo ('
 				<table class="ovTable table table-bordered table-hover tablesorter">
 					<colgroup>
