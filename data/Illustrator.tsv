@@ -1,146 +1,146 @@
-ツールの選択	tool-01	選択ツール	v
-ツールの選択	tool-02	ダイレクト選択ツール	a
-ツールの選択	tool-03	自動選択ツール	y
-ツールの選択	tool-04	なげなわツール	q
-ツールの選択	tool-05	ペンツール	p
-ツールの選択	tool-06	アンカーポイントを追加ツール	shift,plus
-ツールの選択	tool-07	アンカーポイントを削除ツール	hyphen
-ツールの選択	tool-08	アンカーポイントの切り替えツール	shift,c
-ツールの選択	tool-09	文字ツール	t
-ツールの選択	tool-10	文字タッチツール	shift,t
-ツールの選択	tool-11	直線ツール	backslash
-ツールの選択	tool-12	長方形ツール	m
-ツールの選択	tool-13	楕円形ツール	l
-ツールの選択	tool-14	ブラシツール	b
-ツールの選択	tool-15	鉛筆ツール	n
-ツールの選択	tool-16	塗りブラシツール	shift,b
-ツールの選択	tool-17	消しゴムツール	shift,e
-ツールの選択	tool-18	はさみツール	c
-ツールの選択	tool-19	回転ツール	r
-ツールの選択	tool-20	リフレクトツール	o
-ツールの選択	tool-21	拡大・縮小ツール	s
-ツールの選択	tool-22	幅ツール	shift,w
-ツールの選択	tool-23	ワープツール	shift,r
-ツールの選択	tool-24	自由変形ツール	e
-ツールの選択	tool-25	シェイプ形成ツール	shift,m
-ツールの選択	tool-26	ライブペイントツール	k
-ツールの選択	tool-27	ライブペイント選択ツール	shift,l
-ツールの選択	tool-28	遠近グリッドツール	shift,p
-ツールの選択	tool-29	遠近図形選択ツール	shift,v
-ツールの選択	tool-30	メッシュツール	u
-ツールの選択	tool-31	グラデーションツール	g
-ツールの選択	tool-32	スポイトツール	i
-ツールの選択	tool-33	ブレンドツール	w
-ツールの選択	tool-34	シンボルスプレーツール	shift,s
-ツールの選択	tool-35	棒グラフ	j
-ツールの選択	tool-36	アートボードツール	shift,o
-ツールの選択	tool-37	スライスツール	shift,k
-ツールの選択	tool-38	手のひらツール	h
-ツールの選択	tool-39	ズームツール	z
-ツールの選択	tool-40	塗りと線を切り換え	x
-ツールの選択	tool-41	初期設定の塗りと線	d
-ツールの選択	tool-42	塗りと線を入れ換え	shift,x
-ツールの選択	tool-43	スクリーンモードを切り換え	f
-ツールの選択	tool-44	すべてのパレットを表示/隠す	tab
-ツールの選択	tool-45	ツールボックス以外を表示/隠す	shift,tab
-ツールの選択	tool-46	描画方法を切り替え	shift,d
-メニューコマンド	menu-01	一般	cmd,k
-メニューコマンド	menu-02	単位	cmd,shift,u
-メニューコマンド	menu-03	ほかを隠す	cmd,alt,h
-メニューコマンド	menu-04	Illustratorを終了	cmd,q
-ファイルメニュー	file-01	新規	cmd,n
-ファイルメニュー	file-02	テンプレートから新規	cmd,shift,n
-ファイルメニュー	file-03	開く	cmd,o
-ファイルメニュー	file-04	Bridgeで参照	cmd,alt,o
-ファイルメニュー	file-05	閉じる	cmd,w
-ファイルメニュー	file-06	保存	cmd,s
-ファイルメニュー	file-07	別名で保存	cmd,shift,s
-ファイルメニュー	file-08	複製を保存	cmd,alt,s
-ファイルメニュー	file-09	Web用に保存	cmd,shift,alt,s
-ファイルメニュー	file-10	復帰	cmd,alt,z
-ファイルメニュー	file-11	配置	cmd,shift,p
-ファイルメニュー	file-12	ドキュメント設定	cmd,alt,p
-ファイルメニュー	file-13	ファイル情報	cmd,shift,alt,i
-ファイルメニュー	file-14	プリント	cmd,p
-編集メニュー	edit-01	取り消し	cmd,z
-編集メニュー	edit-02	やり直し	cmd,shift,z
-編集メニュー	edit-03	カット	cmd,x
-編集メニュー	edit-04	コピー	cmd,c
-編集メニュー	edit-05	ペースト	cmd,v
-編集メニュー	edit-06	前面へペースト	cmd,f
-編集メニュー	edit-07	背面へペースト	cmd,b
-編集メニュー	edit-08	同じ位置にペースト	cmd,shift,v
-編集メニュー	edit-09	すべてのアートボードにペースト	cmd,shift,alt,v
-編集メニュー	edit-10	スペルチェック	cmd,i
-編集メニュー	edit-11	カラー設定	cmd,shift,k
-編集メニュー	edit-12	キーボードショートカット	cmd,shift,alt,k
-書式メニュー	format-01	アウトラインを作成	cmd,shift,o
-書式メニュー	format-02	制御文字を表示	cmd,alt,i
-オブジェクトメニュー	object-01	変形の繰り返し	cmd,d
-オブジェクトメニュー	object-02	移動	cmd,shift,m
-オブジェクトメニュー	object-03	最前面へ	cmd,shift,bra2
-オブジェクトメニュー	object-04	前面へ	cmd,bra2
-オブジェクトメニュー	object-05	背面へ	cmd,bra1
-オブジェクトメニュー	object-06	最背面へ	cmd,shift,bra1
-オブジェクトメニュー	object-07	グループ	cmd,g
-オブジェクトメニュー	object-08	グループ解除	cmd,shift,g
-オブジェクトメニュー	object-09	パスの連結	cmd,j
-オブジェクトメニュー	object-10	パスの平均	cmd,alt,j
-オブジェクトメニュー	object-11	ブレンドの作成	cmd,alt,b
-オブジェクトメニュー	object-12	ブレンドの解除	cmd,shift,alt,b
-オブジェクトメニュー	object-13	エンベロープをワープで作成	cmd,shift,alt,w
-オブジェクトメニュー	object-14	エンベロープをメッシュで作成	cmd,alt,m
-オブジェクトメニュー	object-15	エンベロープを最前面のオブジェクトで作成	cmd,alt,c
-オブジェクトメニュー	object-16	ライブペイントを作成	cmd,alt,x
-オブジェクトメニュー	object-17	クリッピングマスクを作成	cmd,num7
-オブジェクトメニュー	object-18	クリッピングマスクを解除	cmd,alt,num7
-オブジェクトメニュー	object-19	複合パスを作成	cmd,num8
-オブジェクトメニュー	object-20	複合パスを解除	cmd,shift,alt,num8
-表示メニュー	view-01	プレビュー	cmd,y
-表示メニュー	view-02	オーバープリントプレビュー	cmd,shift,alt,y
-表示メニュー	view-03	ピクセルプレビュー	cmd,alt,y
-表示メニュー	view-04	ズームイン	cmd,plus,or,cmd,equalTen
-表示メニュー	view-05	ズームアウト	cmd,hyphen
-表示メニュー	view-06	アートボードを全体表示	cmd,num0
-表示メニュー	view-07	すべてのアートボードを全体表示	cmd,alt,num0
-表示メニュー	view-08	100%表示	cmd,num1
-表示メニュー	view-09	境界線を隠す	cmd,h
-表示メニュー	view-10	アートボードを隠す	cmd,shift,h
-表示メニュー	view-11	テンプレートを表示	cmd,shift,w
-表示メニュー	view-12	定規を表示	cmd,r
-表示メニュー	view-13	アートボード定規に変更	cmd,alt,r
-表示メニュー	view-14	バウンディングボックスを隠す	cmd,shift,b
-表示メニュー	view-15	透明グリッドを表示	cmd,shift,d
-表示メニュー	view-16	テキストのスレッドを表示	cmd,shift,y
-表示メニュー	view-17	グラデーションガイドを隠す	cmd,alt,g
-表示メニュー	view-18	ガイドを隠す	cmd,semicolon
-表示メニュー	view-19	ガイドをロック	cmd,alt,semicolon
-表示メニュー	view-20	ガイドを作成	cmd,num5
-表示メニュー	view-21	ガイドを解除	cmd,alt,num5
-表示メニュー	view-22	スマートガイド	cmd,u
-表示メニュー	view-23	グリッドを表示	cmd,shift,i
-ウィンドウメニュー	window-01	最小化	cmd,m
-ウィンドウメニュー	window-02	アピアランス	shift,f6
-ウィンドウメニュー	window-03	カラー	f6
-ウィンドウメニュー	window-04	カラーガイド	shift,f3
-ウィンドウメニュー	window-05	グラデーション	cmd,f9
-ウィンドウメニュー	window-06	グラフィックスタイル	shift,f5
-ウィンドウメニュー	window-07	シンボル	cmd,shift,f11
-ウィンドウメニュー	window-08	ブラシ	f5
-ウィンドウメニュー	window-09	レイヤー	f7
-ウィンドウメニュー	window-10	変形	shift,f8
-ウィンドウメニュー	window-11	属性	cmd,f11
-ウィンドウメニュー	window-12	情報	cmd,f8
-ウィンドウメニュー	window-13	整列	shift,f7
-ウィンドウメニュー	window-14	OpenType	cmd,shift,alt,t
-ウィンドウメニュー	window-15	タブ	cmd,shift,t
-ウィンドウメニュー	window-16	文字	cmd,t
-ウィンドウメニュー	window-17	段落	cmd,alt,t
-ウィンドウメニュー	window-18	線	cmd,f10
-ウィンドウメニュー	window-19	透明	cmd,shift,f10
-選択	select-01	すべてを選択	cmd,a
-選択	select-02	作業アートボードのすべてを選択	cmd,alt,a
-選択	select-03	選択を解除	cmd,shift,a
-選択	select-04	再選択	cmd,num6
-選択	select-05	前面のオブジェクト	cmd,alt,bra2
-選択	select-06	背面のオブジェクト	cmd,alt,bra1
+ツールの選択	tool-01	選択ツール	v	0
+ツールの選択	tool-02	ダイレクト選択ツール	a	0
+ツールの選択	tool-03	自動選択ツール	y	0
+ツールの選択	tool-04	なげなわツール	q	0
+ツールの選択	tool-05	ペンツール	p	0
+ツールの選択	tool-06	アンカーポイントを追加ツール	shift,plus	0
+ツールの選択	tool-07	アンカーポイントを削除ツール	hyphen	0
+ツールの選択	tool-08	アンカーポイントの切り替えツール	shift,c	0
+ツールの選択	tool-09	文字ツール	t	0
+ツールの選択	tool-10	文字タッチツール	shift,t	0
+ツールの選択	tool-11	直線ツール	backslash	0
+ツールの選択	tool-12	長方形ツール	m	0
+ツールの選択	tool-13	楕円形ツール	l	0
+ツールの選択	tool-14	ブラシツール	b	0
+ツールの選択	tool-15	鉛筆ツール	n	0
+ツールの選択	tool-16	塗りブラシツール	shift,b	0
+ツールの選択	tool-17	消しゴムツール	shift,e	0
+ツールの選択	tool-18	はさみツール	c	0
+ツールの選択	tool-19	回転ツール	r	0
+ツールの選択	tool-20	リフレクトツール	o	0
+ツールの選択	tool-21	拡大・縮小ツール	s	0
+ツールの選択	tool-22	幅ツール	shift,w	0
+ツールの選択	tool-23	ワープツール	shift,r	0
+ツールの選択	tool-24	自由変形ツール	e	0
+ツールの選択	tool-25	シェイプ形成ツール	shift,m	0
+ツールの選択	tool-26	ライブペイントツール	k	0
+ツールの選択	tool-27	ライブペイント選択ツール	shift,l	0
+ツールの選択	tool-28	遠近グリッドツール	shift,p	0
+ツールの選択	tool-29	遠近図形選択ツール	shift,v	0
+ツールの選択	tool-30	メッシュツール	u	0
+ツールの選択	tool-31	グラデーションツール	g	0
+ツールの選択	tool-32	スポイトツール	i	0
+ツールの選択	tool-33	ブレンドツール	w	0
+ツールの選択	tool-34	シンボルスプレーツール	shift,s	0
+ツールの選択	tool-35	棒グラフ	j	0
+ツールの選択	tool-36	アートボードツール	shift,o	0
+ツールの選択	tool-37	スライスツール	shift,k	0
+ツールの選択	tool-38	手のひらツール	h	0
+ツールの選択	tool-39	ズームツール	z	0
+ツールの選択	tool-40	塗りと線を切り換え	x	0
+ツールの選択	tool-41	初期設定の塗りと線	d	0
+ツールの選択	tool-42	塗りと線を入れ換え	shift,x	0
+ツールの選択	tool-43	スクリーンモードを切り換え	f	0
+ツールの選択	tool-44	すべてのパレットを表示/隠す	tab	0
+ツールの選択	tool-45	ツールボックス以外を表示/隠す	shift,tab	0
+ツールの選択	tool-46	描画方法を切り替え	shift,d	0
+メニューコマンド	menu-01	一般	cmd,k	0
+メニューコマンド	menu-02	単位	cmd,shift,u	0
+メニューコマンド	menu-03	ほかを隠す	cmd,alt,h	0
+メニューコマンド	menu-04	Illustratorを終了	cmd,q	0
+ファイルメニュー	file-01	新規	cmd,n	0
+ファイルメニュー	file-02	テンプレートから新規	cmd,shift,n	0
+ファイルメニュー	file-03	開く	cmd,o	0
+ファイルメニュー	file-04	Bridgeで参照	cmd,alt,o	0
+ファイルメニュー	file-05	閉じる	cmd,w	0
+ファイルメニュー	file-06	保存	cmd,s	0
+ファイルメニュー	file-07	別名で保存	cmd,shift,s	0
+ファイルメニュー	file-08	複製を保存	cmd,alt,s	0
+ファイルメニュー	file-09	Web用に保存	cmd,shift,alt,s	0
+ファイルメニュー	file-10	復帰	cmd,alt,z	0
+ファイルメニュー	file-11	配置	cmd,shift,p	0
+ファイルメニュー	file-12	ドキュメント設定	cmd,alt,p	0
+ファイルメニュー	file-13	ファイル情報	cmd,shift,alt,i	0
+ファイルメニュー	file-14	プリント	cmd,p	0
+編集メニュー	edit-01	取り消し	cmd,z	0
+編集メニュー	edit-02	やり直し	cmd,shift,z	0
+編集メニュー	edit-03	カット	cmd,x	0
+編集メニュー	edit-04	コピー	cmd,c	0
+編集メニュー	edit-05	ペースト	cmd,v	0
+編集メニュー	edit-06	前面へペースト	cmd,f	0
+編集メニュー	edit-07	背面へペースト	cmd,b	0
+編集メニュー	edit-08	同じ位置にペースト	cmd,shift,v	0
+編集メニュー	edit-09	すべてのアートボードにペースト	cmd,shift,alt,v	0
+編集メニュー	edit-10	スペルチェック	cmd,i	0
+編集メニュー	edit-11	カラー設定	cmd,shift,k	0
+編集メニュー	edit-12	キーボードショートカット	cmd,shift,alt,k	0
+書式メニュー	format-01	アウトラインを作成	cmd,shift,o	0
+書式メニュー	format-02	制御文字を表示	cmd,alt,i	0
+オブジェクトメニュー	object-01	変形の繰り返し	cmd,d	0
+オブジェクトメニュー	object-02	移動	cmd,shift,m	0
+オブジェクトメニュー	object-03	最前面へ	cmd,shift,bra2	0
+オブジェクトメニュー	object-04	前面へ	cmd,bra2	0
+オブジェクトメニュー	object-05	背面へ	cmd,bra1	0
+オブジェクトメニュー	object-06	最背面へ	cmd,shift,bra1	0
+オブジェクトメニュー	object-07	グループ	cmd,g	0
+オブジェクトメニュー	object-08	グループ解除	cmd,shift,g	0
+オブジェクトメニュー	object-09	パスの連結	cmd,j	0
+オブジェクトメニュー	object-10	パスの平均	cmd,alt,j	0
+オブジェクトメニュー	object-11	ブレンドの作成	cmd,alt,b	0
+オブジェクトメニュー	object-12	ブレンドの解除	cmd,shift,alt,b	0
+オブジェクトメニュー	object-13	エンベロープをワープで作成	cmd,shift,alt,w	0
+オブジェクトメニュー	object-14	エンベロープをメッシュで作成	cmd,alt,m	0
+オブジェクトメニュー	object-15	エンベロープを最前面のオブジェクトで作成	cmd,alt,c	0
+オブジェクトメニュー	object-16	ライブペイントを作成	cmd,alt,x	0
+オブジェクトメニュー	object-17	クリッピングマスクを作成	cmd,num7	0
+オブジェクトメニュー	object-18	クリッピングマスクを解除	cmd,alt,num7	0
+オブジェクトメニュー	object-19	複合パスを作成	cmd,num8	0
+オブジェクトメニュー	object-20	複合パスを解除	cmd,shift,alt,num8	0
+表示メニュー	view-01	プレビュー	cmd,y	0
+表示メニュー	view-02	オーバープリントプレビュー	cmd,shift,alt,y	0
+表示メニュー	view-03	ピクセルプレビュー	cmd,alt,y	0
+表示メニュー	view-04	ズームイン	cmd,plus,or,cmd,equalTen	0
+表示メニュー	view-05	ズームアウト	cmd,hyphen	0
+表示メニュー	view-06	アートボードを全体表示	cmd,num0	0
+表示メニュー	view-07	すべてのアートボードを全体表示	cmd,alt,num0	0
+表示メニュー	view-08	100%表示	cmd,num1	0
+表示メニュー	view-09	境界線を隠す	cmd,h	0
+表示メニュー	view-10	アートボードを隠す	cmd,shift,h	0
+表示メニュー	view-11	テンプレートを表示	cmd,shift,w	0
+表示メニュー	view-12	定規を表示	cmd,r	0
+表示メニュー	view-13	アートボード定規に変更	cmd,alt,r	0
+表示メニュー	view-14	バウンディングボックスを隠す	cmd,shift,b	0
+表示メニュー	view-15	透明グリッドを表示	cmd,shift,d	0
+表示メニュー	view-16	テキストのスレッドを表示	cmd,shift,y	0
+表示メニュー	view-17	グラデーションガイドを隠す	cmd,alt,g	0
+表示メニュー	view-18	ガイドを隠す	cmd,semicolon	0
+表示メニュー	view-19	ガイドをロック	cmd,alt,semicolon	0
+表示メニュー	view-20	ガイドを作成	cmd,num5	0
+表示メニュー	view-21	ガイドを解除	cmd,alt,num5	0
+表示メニュー	view-22	スマートガイド	cmd,u	0
+表示メニュー	view-23	グリッドを表示	cmd,shift,i	0
+ウィンドウメニュー	window-01	最小化	cmd,m	0
+ウィンドウメニュー	window-02	アピアランス	shift,f6	0
+ウィンドウメニュー	window-03	カラー	f6	0
+ウィンドウメニュー	window-04	カラーガイド	shift,f3	0
+ウィンドウメニュー	window-05	グラデーション	cmd,f9	0
+ウィンドウメニュー	window-06	グラフィックスタイル	shift,f5	0
+ウィンドウメニュー	window-07	シンボル	cmd,shift,f11	0
+ウィンドウメニュー	window-08	ブラシ	f5	0
+ウィンドウメニュー	window-09	レイヤー	f7	0
+ウィンドウメニュー	window-10	変形	shift,f8	0
+ウィンドウメニュー	window-11	属性	cmd,f11	0
+ウィンドウメニュー	window-12	情報	cmd,f8	0
+ウィンドウメニュー	window-13	整列	shift,f7	0
+ウィンドウメニュー	window-14	OpenType	cmd,shift,alt,t	0
+ウィンドウメニュー	window-15	タブ	cmd,shift,t	0
+ウィンドウメニュー	window-16	文字	cmd,t	0
+ウィンドウメニュー	window-17	段落	cmd,alt,t	0
+ウィンドウメニュー	window-18	線	cmd,f10	0
+ウィンドウメニュー	window-19	透明	cmd,shift,f10	0
+選択	select-01	すべてを選択	cmd,a	0
+選択	select-02	作業アートボードのすべてを選択	cmd,alt,a	0
+選択	select-03	選択を解除	cmd,shift,a	0
+選択	select-04	再選択	cmd,num6	0
+選択	select-05	前面のオブジェクト	cmd,alt,bra2	0
+選択	select-06	背面のオブジェクト	cmd,alt,bra1	0

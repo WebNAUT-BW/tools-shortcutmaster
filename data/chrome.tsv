@@ -1,68 +1,68 @@
-タブとウィンドウ	tab-01	新しいウィンドウを開きます。	cmd,n
-タブとウィンドウ	tab-02	新しいタブを開きます。	cmd,t
-タブとウィンドウ	tab-03	新しいウィンドウをシークレット モードで開きます。	cmd,shift,n
-タブとウィンドウ	tab-04	パソコン上のファイルを Google Chrome で開きます。	cmd,o
-タブとウィンドウ	tab-05	現在のタブを開いたまま、バックグラウンドの新しいタブでリンクを開きます。	cmd,click
-タブとウィンドウ	tab-06	新しいタブでリンクを開き、新しく開いたタブに切り替えます。	cmd,shift,click
-タブとウィンドウ	tab-07	新しいウィンドウでリンクを開きます。	shift,click
-タブとウィンドウ	tab-08	最近閉じたタブをもう一度開きます。最後に閉じた 10 個までのタブが記憶されています。	cmd,shift,t
-タブとウィンドウ	tab-09	次のタブに切り替えます。	cmd,alt,curRight
-タブとウィンドウ	tab-10	前のタブに切り替えます。	cmd,alt,curLeft
-タブとウィンドウ	tab-11	現在のタブまたはポップアップを閉じます。	cmd,w
-タブとウィンドウ	tab-12	現在のウィンドウを閉じます。	cmd,shift,w
-タブとウィンドウ	tab-13	そのタブの閲覧履歴の前のページを表示します。	delete,or,cmd,bra1
-タブとウィンドウ	tab-14	そのタブの閲覧履歴の次のページを表示します。	shift,delete,or,cmd,bra2
-タブとウィンドウ	tab-15	ウインドウを最小化します。	cmd,m
-タブとウィンドウ	tab-16	Google Chrome を非表示にします。	cmd,h
-タブとウィンドウ	tab-17	他のウインドウをすべて非表示にします。	cmd,alt,h
-タブとウィンドウ	tab-18	Google Chrome を終了します。	cmd,q
-Google Chrome 機能	chrome-01	ブックマーク バーの表示/非表示を切り替えます。	cmd,shift,b
-Google Chrome 機能	chrome-02	ブックマーク マネージャを開きます。	cmd,alt,b
-Google Chrome 機能	chrome-03	[環境設定] ダイアログを開きます。	cmd,comma
-Google Chrome 機能	chrome-04	履歴ページを開きます。	cmd,y
-Google Chrome 機能	chrome-05	ダウンロード ページを開きます。	cmd,shift,j
-Google Chrome 機能	chrome-06	[閲覧履歴データを消去する] ダイアログを開きます。	cmd,shift,delete
-Google Chrome 機能	chrome-07	複数のユーザーを切り替えます。	cmd,shift,m
-アドレスバー	address-01	URL をハイライト表示します。	cmd,l
-アドレスバー	address-02	アドレスバーに「?」を入力します。「?」に続けて検索キーワードを入力すると、既定の検索エンジンを使用して検索が行われます。	cmd,alt,f
-アドレスバー	address-03	アドレスバー内の前の単語にカーソルを移動します。	alt,curLeft
-アドレスバー	address-04	アドレスバー内の次の単語にカーソルを移動します。	alt,curRight
-アドレスバー	address-05	アドレスバー内の前の単語をハイライト表示します。	shift,alt,curLeft
-アドレスバー	address-06	アドレスバー内の次の単語をハイライト表示します。	shift,alt,curRight
-アドレスバー	address-07	アドレスバー内のカーソルの前にある単語を削除します。	cmd,delete
-ウェブページ	page-01	現在のページを印刷します。	cmd,p
-ウェブページ	page-02	[ページ設定] ダイアログを開きます。	cmd,shift,p
-ウェブページ	page-03	現在のページを保存します。	cmd,s
-ウェブページ	page-04	現在のページをメールで送信します。	cmd,shift,i
-ウェブページ	page-05	現在のページを再読み込みします。	cmd,r
-ウェブページ	page-06	現在のページの読み込みを停止します。	cmd,comma
-ウェブページ	page-07	検索バーを開きます。	cmd,f
-ウェブページ	page-08	検索バーに入力したキーワードとの次の一致箇所を表示します。	cmd,g
-ウェブページ	page-09	検索バーに入力したキーワードとの前の一致箇所を表示します。	cmd,shift,g,or,shift,enter
-ウェブページ	page-10	選択箇所を検索に使用します。	cmd,e
-ウェブページ	page-11	選択ページにジャンプします。	cmd,j
-ウェブページ	page-12	デベロッパー ツールを開きます。	cmd,alt,i
-ウェブページ	page-13	JavaScript コンソールを開きます。	cmd,alt,j
-ウェブページ	page-14	現在のページのソースを開きます。	cmd,alt,u
-ウェブページ	page-15	要素の検証を開きます。	cmd,alt,c
-ウェブページ	page-16	リンク先をダウンロードします。	alt,click
-ウェブページ	page-17	現在のウェブページをブックマークとして保存します。	cmd,d
-ウェブページ	page-18	開いているすべてのタブを新しい 1 つのフォルダにブックマークとして保存します。	cmd,shift,d
-ウェブページ	page-19	ページを全画面モードで開きます。もう一度 _-shift-F を押すと全画面モードを終了します。	cmd,shift,f
-ウェブページ	page-20	ページ全体を拡大表示します。	cmd,plusTen
-ウェブページ	page-21	ページ全体を縮小表示します。	cmd,hyphen
-ウェブページ	page-22	ページ全体を通常のサイズに戻します。	cmd,num0
-ウェブページ	page-23	現在のタブでホームページを開きます。	cmd,shift,h
-ウェブページ	page-24	ウェブページを下にスクロールします。	space
-ウェブページ	page-25	ウェブを検索します。	cmd,alt,f
-テキスト	text-01	ハイライト表示されたコンテンツをクリップボードにコピーします。	cmd,c
-テキスト	text-02	現在表示しているページの URL をクリップボードにコピーします。	cmd,alt,c
-テキスト	text-03	クリップボードからコンテンツを貼り付けます。	cmd,v
-テキスト	text-04	コンテンツを元の書式設定なしで貼り付けます。	cmd,shift,alt,v
-テキスト	text-05	ハイライト表示されたコンテンツを削除して、クリップボードにコピーします。	cmd,x,or,shift,delete
-テキスト	text-06	最後の操作を取り消します。	cmd,z
-テキスト	text-07	最後の操作を繰り返します。	cmd,shift,z
-テキスト	text-08	ハイライト表示されたコンテンツを削除して、クリップボードにコピーします（カット）。	cmd,x
-テキスト	text-09	現在のページのテキストをすべて選択します。	cmd,a
-テキスト	text-10	[スペルと文法] ダイアログを開きます。	cmd,colon
-テキスト	text-11	現在のページのスペルと文法をチェックします。	cmd,semicolon
+タブとウィンドウ	tab-01	新しいウィンドウを開きます。	cmd,n	0
+タブとウィンドウ	tab-02	新しいタブを開きます。	cmd,t	0
+タブとウィンドウ	tab-03	新しいウィンドウをシークレット モードで開きます。	cmd,shift,n	0
+タブとウィンドウ	tab-04	パソコン上のファイルを Google Chrome で開きます。	cmd,o	0
+タブとウィンドウ	tab-05	現在のタブを開いたまま、バックグラウンドの新しいタブでリンクを開きます。	cmd,click	0
+タブとウィンドウ	tab-06	新しいタブでリンクを開き、新しく開いたタブに切り替えます。	cmd,shift,click	0
+タブとウィンドウ	tab-07	新しいウィンドウでリンクを開きます。	shift,click	0
+タブとウィンドウ	tab-08	最近閉じたタブをもう一度開きます。最後に閉じた 10 個までのタブが記憶されています。	cmd,shift,t	0
+タブとウィンドウ	tab-09	次のタブに切り替えます。	cmd,alt,curRight	0
+タブとウィンドウ	tab-10	前のタブに切り替えます。	cmd,alt,curLeft	0
+タブとウィンドウ	tab-11	現在のタブまたはポップアップを閉じます。	cmd,w	0
+タブとウィンドウ	tab-12	現在のウィンドウを閉じます。	cmd,shift,w	0
+タブとウィンドウ	tab-13	そのタブの閲覧履歴の前のページを表示します。	delete,or,cmd,bra1	0
+タブとウィンドウ	tab-14	そのタブの閲覧履歴の次のページを表示します。	shift,delete,or,cmd,bra2	0
+タブとウィンドウ	tab-15	ウインドウを最小化します。	cmd,m	0
+タブとウィンドウ	tab-16	Google Chrome を非表示にします。	cmd,h	0
+タブとウィンドウ	tab-17	他のウインドウをすべて非表示にします。	cmd,alt,h	0
+タブとウィンドウ	tab-18	Google Chrome を終了します。	cmd,q	0
+Google Chrome 機能	chrome-01	ブックマーク バーの表示/非表示を切り替えます。	cmd,shift,b	0
+Google Chrome 機能	chrome-02	ブックマーク マネージャを開きます。	cmd,alt,b	0
+Google Chrome 機能	chrome-03	[環境設定] ダイアログを開きます。	cmd,comma	0
+Google Chrome 機能	chrome-04	履歴ページを開きます。	cmd,y	0
+Google Chrome 機能	chrome-05	ダウンロード ページを開きます。	cmd,shift,j	0
+Google Chrome 機能	chrome-06	[閲覧履歴データを消去する] ダイアログを開きます。	cmd,shift,delete	0
+Google Chrome 機能	chrome-07	複数のユーザーを切り替えます。	cmd,shift,m	0
+アドレスバー	address-01	URL をハイライト表示します。	cmd,l	0
+アドレスバー	address-02	アドレスバーに「?」を入力します。「?」に続けて検索キーワードを入力すると、既定の検索エンジンを使用して検索が行われます。	cmd,alt,f	0
+アドレスバー	address-03	アドレスバー内の前の単語にカーソルを移動します。	alt,curLeft	0
+アドレスバー	address-04	アドレスバー内の次の単語にカーソルを移動します。	alt,curRight	0
+アドレスバー	address-05	アドレスバー内の前の単語をハイライト表示します。	shift,alt,curLeft	0
+アドレスバー	address-06	アドレスバー内の次の単語をハイライト表示します。	shift,alt,curRight	0
+アドレスバー	address-07	アドレスバー内のカーソルの前にある単語を削除します。	cmd,delete	0
+ウェブページ	page-01	現在のページを印刷します。	cmd,p	0
+ウェブページ	page-02	[ページ設定] ダイアログを開きます。	cmd,shift,p	0
+ウェブページ	page-03	現在のページを保存します。	cmd,s	0
+ウェブページ	page-04	現在のページをメールで送信します。	cmd,shift,i	0
+ウェブページ	page-05	現在のページを再読み込みします。	cmd,r	0
+ウェブページ	page-06	現在のページの読み込みを停止します。	cmd,comma	0
+ウェブページ	page-07	検索バーを開きます。	cmd,f	0
+ウェブページ	page-08	検索バーに入力したキーワードとの次の一致箇所を表示します。	cmd,g	0
+ウェブページ	page-09	検索バーに入力したキーワードとの前の一致箇所を表示します。	cmd,shift,g,or,shift,enter	0
+ウェブページ	page-10	選択箇所を検索に使用します。	cmd,e	0
+ウェブページ	page-11	選択ページにジャンプします。	cmd,j	0
+ウェブページ	page-12	デベロッパー ツールを開きます。	cmd,alt,i	0
+ウェブページ	page-13	JavaScript コンソールを開きます。	cmd,alt,j	0
+ウェブページ	page-14	現在のページのソースを開きます。	cmd,alt,u	0
+ウェブページ	page-15	要素の検証を開きます。	cmd,alt,c	0
+ウェブページ	page-16	リンク先をダウンロードします。	alt,click	0
+ウェブページ	page-17	現在のウェブページをブックマークとして保存します。	cmd,d	0
+ウェブページ	page-18	開いているすべてのタブを新しい 1 つのフォルダにブックマークとして保存します。	cmd,shift,d	0
+ウェブページ	page-19	ページを全画面モードで開きます。もう一度 _-shift-F を押すと全画面モードを終了します。	cmd,shift,f	0
+ウェブページ	page-20	ページ全体を拡大表示します。	cmd,plusTen	0
+ウェブページ	page-21	ページ全体を縮小表示します。	cmd,hyphen	0
+ウェブページ	page-22	ページ全体を通常のサイズに戻します。	cmd,num0	0
+ウェブページ	page-23	現在のタブでホームページを開きます。	cmd,shift,h	0
+ウェブページ	page-24	ウェブページを下にスクロールします。	space	0
+ウェブページ	page-25	ウェブを検索します。	cmd,alt,f	0
+テキスト	text-01	ハイライト表示されたコンテンツをクリップボードにコピーします。	cmd,c	0
+テキスト	text-02	現在表示しているページの URL をクリップボードにコピーします。	cmd,alt,c	0
+テキスト	text-03	クリップボードからコンテンツを貼り付けます。	cmd,v	0
+テキスト	text-04	コンテンツを元の書式設定なしで貼り付けます。	cmd,shift,alt,v	0
+テキスト	text-05	ハイライト表示されたコンテンツを削除して、クリップボードにコピーします。	cmd,x,or,shift,delete	0
+テキスト	text-06	最後の操作を取り消します。	cmd,z	0
+テキスト	text-07	最後の操作を繰り返します。	cmd,shift,z	0
+テキスト	text-08	ハイライト表示されたコンテンツを削除して、クリップボードにコピーします（カット）。	cmd,x	0
+テキスト	text-09	現在のページのテキストをすべて選択します。	cmd,a	0
+テキスト	text-10	[スペルと文法] ダイアログを開きます。	cmd,colon	0
+テキスト	text-11	現在のページのスペルと文法をチェックします。	cmd,semicolon	0
