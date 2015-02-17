@@ -54,6 +54,9 @@ $(document).ready(function() {
 # Favorite Select
 =============================================== */
 //クリック時にチェックボックスの値を記録
+
+var addItem = "<span class='icon'>★</span>"
+
 $(function () {
 	$( 'input:checkbox' ).change( function() {
 		var _val = $( this ).is(':checked');
@@ -62,73 +65,89 @@ $(function () {
 		// console.log('_id=' + _id);
 		window.localStorage.setItem('UKC-'+_id,_val);
 		if (_val == true){
-			$(this).parents('td.favorite label').append('★');
+			// $(this).parents('td.favorite label').append('★');
+			$(this).parents('td.favorite label').append(addItem);
 		} else {
 			$(this).parents('td.favorite').find('span.txtFavorite').remove();
 			$(this).parents('td.favorite').find('span.icon').remove();
-			//$(this).remove('★');
 		}
 		// var _keyboardBase = $('#keyboard-base');
 		// _keyboardBase.attr('class','');
 		// _keyboardBase.addClass(_val);
 		// window.localStorage.setItem("keyboardType",_val);
+
+		// ソートON
 		// teblesorterOn();
 	});
 });
 
 //ページロード時にチェックボックスの値を呼び出し、チェックを入れる
 $(document).ready(function() {
-	$('td.favorite').each(function() {
-		var _id = $( this ).parents('tr').attr('id');
-		// console.log('_id=' + _id);
-		var getItem = window.localStorage.getItem('UKC-'+_id);
-		// console.log('getItem=' + getItem);
-		if (getItem == 'true'){
-			console.log('_id=' + _id + ' is true');
-			$(this).find('input:checkbox').attr("checked", true);
-			$(this).find('label').append('★');
-		}
-	});
+	teblesorterInit ();
 });
 
 
 /* ===============================================
 # tablesorter Setting
 =============================================== */
-function teblesorterOn () {
-	$("#contentMain table").tablesorter({
-		sortList: [[5, 1]]
+var sortTable;
+
+function teblesorterInit () {
+	$('td.favorite').each(function(indx) {
+		var _id = $( this ).parents('tr').attr('id');
+		// console.log('_id=' + _id);
+		var getItem = window.localStorage.getItem('UKC-'+_id);
+		// console.log('getItem=' + getItem);
+
+		$(this).find('input:checkbox').attr("checked", false);
+		$(this).find('label').find('span.icon').remove();
+
+		if (getItem == 'true'){
+			console.log('_id=' + _id + ' is true');
+			$(this).find('input:checkbox').attr("checked", true);
+			$(this).find('label').append(addItem);
+		}
 	});
-} 
-$(function () {
 
 	//localStorage読み込み：ソート設定
 	var getItem = window.localStorage.getItem('UKC-sortOrder');
 	var sortListSetting;
+	console.log('sortListSetting=' + sortListSetting);
 	if (getItem == 'recommend') {
 		sortListSetting = [[4, 1]];
+		console.log('sortListSetting = recommend');
 	} else if(getItem == 'favorite') {
 		sortListSetting = [[5, 1]];
+		console.log('sortListSetting = favorite');
 	} else {
 		sortListSetting = '';
 	}
 
-	$("#contentMain table").tablesorter({
+	sortTable = $("#contentMain table").tablesorter({
 		sortList: sortListSetting,
 		// sortInitialOrder: "desc", //クリックを降順に限定するオプション（一旦不要）
 
 		//4（Reccomend）と5（Favorite）は降順しかさせないようにする
 		headers : {
-			4 : { lockedOrder: 'asc' },
-			5 : { lockedOrder: 'asc' }
+			4 : { lockedOrder: 'desc' },
+			5 : { lockedOrder: 'desc' }
 		}
 	});
-});
+
+}
+function teblesorterOn (sortListSetting) {
+	sortTable.trigger("sortReset");
+	sortTable.trigger("update")
+	sortTable.trigger("sorton", [[[5, 1]]]);
+}
+function teblesorterReset () {
+	console.log('reset');
+	sortTable.trigger("sortReset");
+}
 
 /* ===============================================
 # Tab Select
 =============================================== */
-
 //クリック時にチェックボックスの値を記録
 $(function () {
 	$( '#navMain li a' ).click( function() {
@@ -158,14 +177,13 @@ $(document).ready(function() {
 ソートをロックしたヘッダーに何故か'headerSortUp'のクラスが付かないので、'headerSorted'を付け替えて別途指定
 =============================================== */
 $(function () {
-	$('th.header').click(function(e) {
-		$('.header-favorite').removeClass('headerSorted');
-		$('.header-recommend').removeClass('headerSorted');
+	$('th.tablesorter-header').click(function(e) {
 		if ($(this).hasClass('header-recommend')) {
 			$(this).addClass('headerSorted');
 			window.localStorage.setItem("UKC-sortOrder","recommend");
 		} else if ($(this).hasClass('header-favorite')) {
 			$(this).addClass('headerSorted');
+			teblesorterOn();
 			window.localStorage.setItem("UKC-sortOrder","favorite");
 		} else {
 			window.localStorage.setItem("UKC-sortOrder","");

@@ -303,7 +303,6 @@ require_once('ini.php');
 
 			//Favoriteのセル出力
 			echo ('<td class="favorite"><label><input type="checkbox"></label></td>');
-			echo ('<td class="blank"></td>');
 			echo ('</tr>');
 			$cnt++;
 		}
@@ -472,7 +471,7 @@ require_once('ini.php');
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="resources/js/jquery.tablesorter.js"></script>
+<script src="resources/js/jquery.tablesorter.min.js"></script>
 <script src="resources/js/util.js"></script>
 </body>
 </html>
