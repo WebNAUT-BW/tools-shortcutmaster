@@ -30,7 +30,9 @@ body {
 	padding-top: 80px;
 }
 
-
+.container {
+	width: 1200px!important;
+}
 #keyboard-wrap {
 	position: fixed;
 	left: 0;
@@ -39,8 +41,11 @@ body {
 	background-color: rgba(0,0,0, 0.3);
 }
 
-#navMain li {
-	text-transform:capitalize;
+#navMain {
+	margin-bottom: 30px;
+	li {
+		text-transform:capitalize;
+	}
 }
 
 #contentMain {
@@ -97,7 +102,7 @@ body {
 			-moz-osx-font-smoothing: grayscale;
 			font-size: 110%;
 			content:"\e152";
-		} 
+		}
 		th.tablesorter-headerAsc:after {
 			position: absolute;
 			// top: 12px;
@@ -120,18 +125,20 @@ body {
 		td button{
 			text-transform:capitalize;
 			margin-right: 5px;
+			margin-top: 2px;
+			margin-bottom: 2px;
+			background-color: #428BCA;
+			color: #fff;
+			border: none;
 			&.btn-and,&.btn-or {
 				text-transform:none;
-				border: none;
 				background-color: transparent;
+				color: #333;
 				&:hover {
-					border: none;
 					background-color: transparent;
 				}
 			}
 			&:hover {
-				background-color: #fff;
-				border-color: #ccc;
 				cursor: default;
 			}
 		}
@@ -142,6 +149,7 @@ td.favorite {
 	font-size: 20px;
 	text-align: center;
 	padding: 0!important;
+	color: #428BCA;
 	label {
 		cursor: pointer;
 		display: inline-block;
@@ -155,7 +163,7 @@ td.favorite {
 		display: none;
 	}
 	tr:hover &:hover {
-		background-color: #000;
+		background-color: #428BCA;
 		color: #fff;
 	}
 }
