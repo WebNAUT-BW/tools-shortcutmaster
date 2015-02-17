@@ -1,32 +1,30 @@
 /* ===============================================
-# Table Mouseover
+# 行をマウスオーバー時にスタイルを当てる
 =============================================== */
 $(function () {
-	$('.ovTable tbody tr').on('mouseover' ,function(event) {
-		event.preventDefault();
+	$('.ovTable tbody tr').on('mouseover' ,function(e) {
 		/* Act on the event */
 		//console.log('hover');
 		var _this = $(this);
 		var _tableClass = $(this).attr('class');
-
 		$('#keyboard-wrap').attr('class','');
 		$('#keyboard-wrap').addClass(_tableClass);
 		//console.log(_getClass);
-
+		e.preventDefault();
 	});
-	$('.ovTable tbody tr').on('mouseout' ,function(event) {
-		event.preventDefault();
+	$('.ovTable tbody tr').on('mouseout' ,function(e) {
 		$('#keyboard-wrap').attr('class','');
+		e.preventDefault();
 	});
 });
 
 /* ===============================================
-# keyboardType Select
+# キーボード選択状態の制御
 =============================================== */
-//ラジオボタン選択時に選択状態を記録
+//キーボード選択時に選択状態を記録
 $(function () {
-	$( 'input[name="keyboardType"]:radio' ).change( function() {
-		var _val = $( this ).val();
+	$('input[name="keyboardType"]:radio').change( function() {
+		var _val = $(this).val();
 		var _keyboardBase = $('#keyboard-base');
 		_keyboardBase.attr('class','');
 		_keyboardBase.addClass(_val);
@@ -34,160 +32,133 @@ $(function () {
 	});
 });
 
-//ページロード時にキーボード選択状態を呼び出し、チェックを入れる
+//ページロード時にキーボード選択状態を呼び出し設定する
 $(document).ready(function() {
-	var data = window.localStorage.getItem("UKC-keyboardType");
+	var _data = window.localStorage.getItem("UKC-keyboardType");
 	var _input = $('input[name="keyboardType"]');
-	if (data == "") {
-		return;
-	} else {
-		// console.log('data=' + data);
-		$("input[value='" + data  + "']:radio").attr('checked', 'checked');
+	if (!_data == "") {
+		$("input[value='" + _data  + "']:radio").attr('checked', 'checked');
 		var _keyboardBase = $('#keyboard-base');
 		_keyboardBase.attr('class','');
-		_keyboardBase.addClass(data);
+		_keyboardBase.addClass(_data);
 		return;
 	}
 });
 
 /* ===============================================
-# Favorite Select
+# お気に入り（Favorite）選択状態の制御
 =============================================== */
-//クリック時にチェックボックスの値を記録
-
+//お気に入り選択時に選択状態を記録
 var addItem = "<span class='icon'>★</span>"
-
 $(function () {
-	$( 'input:checkbox' ).change( function() {
-		var _val = $( this ).is(':checked');
-		var _id = $( this ).parents('tr').attr('id');
+	$('input:checkbox').change( function() {
+		var _val = $(this).is(':checked');
+		var _id = $(this).parents('tr').attr('id');
 		// console.log('_val=' + _val);
 		// console.log('_id=' + _id);
 		window.localStorage.setItem('UKC-'+_id,_val);
 		if (_val == true){
-			// $(this).parents('td.favorite label').append('★');
 			$(this).parents('td.favorite label').append(addItem);
 		} else {
-			$(this).parents('td.favorite').find('span.txtFavorite').remove();
 			$(this).parents('td.favorite').find('span.icon').remove();
 		}
-		// var _keyboardBase = $('#keyboard-base');
-		// _keyboardBase.attr('class','');
-		// _keyboardBase.addClass(_val);
-		// window.localStorage.setItem("keyboardType",_val);
-
-		// ソートON
-		// teblesorterOn();
 	});
 });
 
-//ページロード時にチェックボックスの値を呼び出し、チェックを入れる
+//ページロード時にお気に入り選択状態を呼び出し設定する
 $(document).ready(function() {
 	teblesorterInit ();
 });
 
+/* ===============================================
+# タブ選択状態の制御
+=============================================== */
+//タブ切り替え時に選択状態を記録
+$(function () {
+	$( '#navMain li a' ).click( function() {
+		var _val = $(this).html();
+		var _eq = $(this).parents('li').index();
+		window.localStorage.setItem('UKC-tabSelect',_val);
+	});
+});
+
+//ページロード時にタブ選択状態を呼び出し設定する
+$(document).ready(function() {
+	var _getItem = window.localStorage.getItem('UKC-tabSelect');
+	//getItemなし
+	if (_getItem == null) {
+		$('#navMain li:first-child').addClass('active');
+		$('#contentMain .tab-pane:first-child').addClass('active');
+	//getItemあり
+	} else {
+		$('#navMain li a:contains(' + _getItem +')').parents('li').addClass('active');
+		$('#contentMain #' + _getItem).addClass('active');
+	}
+});
 
 /* ===============================================
-# tablesorter Setting
+# ソート状態の記録
+=============================================== */
+$(function () {
+	$('th.tablesorter-header').click(function(e) {
+		//ソートしたセルを記録
+		var _dataColumn = $(this).attr('data-column');
+		window.localStorage.setItem("UKC-sortOrder",_dataColumn);
+		if (_dataColumn == 5) {
+			//Favoriteの場合設定をリセットして再度ソートさせる
+			teblesorterOn();
+		}
+
+		//クラスを見て降順か昇順かの状態を取得して記録
+		var _this = $(this);
+		sortTable
+			//ソート完了後の処理
+			.bind("sortEnd",function(e, table) {
+				if (_this.hasClass('tablesorter-headerDesc')) {
+					window.localStorage.setItem("UKC-sortOrderSc",1);
+				} else if (_this.hasClass('tablesorter-headerAsc')) {
+					window.localStorage.setItem("UKC-sortOrderSc",0);
+				} else {
+					window.localStorage.setItem("UKC-sortOrderSc","");
+				}
+		});
+		e.preventDefault();
+	});
+});
+
+/* ===============================================
+# tablesorter 初期設定
 =============================================== */
 var sortTable;
-
 function teblesorterInit () {
 	$('td.favorite').each(function(indx) {
-		var _id = $( this ).parents('tr').attr('id');
-		// console.log('_id=' + _id);
-		var getItem = window.localStorage.getItem('UKC-'+_id);
-		// console.log('getItem=' + getItem);
-
-		$(this).find('input:checkbox').attr("checked", false);
-		$(this).find('label').find('span.icon').remove();
-
-		if (getItem == 'true'){
-			console.log('_id=' + _id + ' is true');
+		var _id = $(this).parents('tr').attr('id');
+		var _getItem = window.localStorage.getItem('UKC-'+_id);
+		if (_getItem == 'true'){
 			$(this).find('input:checkbox').attr("checked", true);
 			$(this).find('label').append(addItem);
 		}
 	});
 
 	//localStorage読み込み：ソート設定
-	var getItem = window.localStorage.getItem('UKC-sortOrder');
-	var sortListSetting;
-	console.log('sortListSetting=' + sortListSetting);
-	if (getItem == 'recommend') {
-		sortListSetting = [[4, 1]];
-		console.log('sortListSetting = recommend');
-	} else if(getItem == 'favorite') {
-		sortListSetting = [[5, 1]];
-		console.log('sortListSetting = favorite');
-	} else {
-		sortListSetting = '';
-	}
-
+	var _getItem = window.localStorage.getItem('UKC-sortOrder');
+	var _getItemSc = window.localStorage.getItem('UKC-sortOrderSc');
+	var _sortListSetting = [[_getItem,_getItemSc]];
 	sortTable = $("#contentMain table").tablesorter({
-		sortList: sortListSetting,
-		// sortInitialOrder: "desc", //クリックを降順に限定するオプション（一旦不要）
-
+		sortList: _sortListSetting,
 		//4（Reccomend）と5（Favorite）は降順しかさせないようにする
 		headers : {
 			4 : { lockedOrder: 'desc' },
 			5 : { lockedOrder: 'desc' }
 		}
 	});
-
 }
-function teblesorterOn (sortListSetting) {
+
+/* ===============================================
+# tablesorter 再設定（お気に入りソート用）
+=============================================== */
+function teblesorterOn () {
 	sortTable.trigger("sortReset");
 	sortTable.trigger("update")
 	sortTable.trigger("sorton", [[[5, 1]]]);
 }
-function teblesorterReset () {
-	console.log('reset');
-	sortTable.trigger("sortReset");
-}
-
-/* ===============================================
-# Tab Select
-=============================================== */
-//クリック時にチェックボックスの値を記録
-$(function () {
-	$( '#navMain li a' ).click( function() {
-		var _val = $(this).html();
-		var _eq = $(this).parents('li').index();
-		// console.log('_val=' + _val);
-		// console.log('_eq=' + _eq);
-		window.localStorage.setItem('UKC-tabSelect',_val);
-	});
-});
-$(document).ready(function() {
-	var getItem = window.localStorage.getItem('UKC-tabSelect');
-	console.log('getItem=' + getItem);
-	if (getItem == null) {
-		console.log("getItemなし");
-		$('#navMain li:first-child').addClass('active');
-		$('#contentMain .tab-pane:first-child').addClass('active');
-	} else {
-		console.log("getItemあり");
-		$('#navMain li a:contains(' + getItem +')').parents('li').addClass('active');
-		$('#contentMain #' + getItem).addClass('active');
-	}
-});
-
-/* ===============================================
-# Header Class Control：
-ソートをロックしたヘッダーに何故か'headerSortUp'のクラスが付かないので、'headerSorted'を付け替えて別途指定
-=============================================== */
-$(function () {
-	$('th.tablesorter-header').click(function(e) {
-		if ($(this).hasClass('header-recommend')) {
-			$(this).addClass('headerSorted');
-			window.localStorage.setItem("UKC-sortOrder","recommend");
-		} else if ($(this).hasClass('header-favorite')) {
-			$(this).addClass('headerSorted');
-			teblesorterOn();
-			window.localStorage.setItem("UKC-sortOrder","favorite");
-		} else {
-			window.localStorage.setItem("UKC-sortOrder","");
-		}
-		e.preventDefault();
-	});
-});
