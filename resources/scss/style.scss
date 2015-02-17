@@ -141,10 +141,12 @@ body {
 td.favorite {
 	font-size: 20px;
 	text-align: center;
+	padding: 0!important;
 	label {
 		cursor: pointer;
 		display: inline-block;
-		height: 16px;
+		height: 40px;
+		padding: 8px;
 		width: 100%;
 		position: relative;
 		margin-bottom: 0;
@@ -152,8 +154,9 @@ td.favorite {
 	input {
 		display: none;
 	}
-	.txtFavorite {
-		@include hide-text;
+	tr:hover &:hover {
+		background-color: #000;
+		color: #fff;
 	}
 }
 
