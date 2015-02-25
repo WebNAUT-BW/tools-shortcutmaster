@@ -20,6 +20,7 @@ body {
 
 .container {
 	width: 1200px!important;
+	position: relative;
 }
 #open-infoModal,
 #open-settingModal {
@@ -37,13 +38,62 @@ body {
 }
 
 #navMain {
+	background-color: #fff;
 	margin-bottom: 30px;
 	li {
 		text-transform:capitalize;
 	}
 }
-
+.github {
+	position: absolute;
+	top: 53px;
+	right: 0;
+	z-index: 10;
+}
+.step-cont2,
+.step-cont3,
+.step-cont4 {
+	visibility: hidden;
+}
+.step-cont2 {
+	position: absolute;
+	width: 1170px;
+	height: 39px;
+	top: 0;
+	left: 0;
+}
+.step-cont3 {
+	position: absolute;
+	width: 1170px;
+	height: 54px;
+	top: 38px;
+	left: 0;
+}
+.step-cont4 {
+	position: absolute;
+	width: 75px;
+	height: 54px;
+	top: 38px;
+	left: 1095px;
+}
+.introjs-helperLayer {
+	background-color: transparent;
+	border: 3px solid #F54635;
+	@include border-radius(6px);
+}
+.introjs-helperNumberLayer {
+	background-color: #F54635;
+	border: none;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+}
+.introjs-bullets {
+	display: none;
+}
 #contentMain {
+	position: relative;
 	margin-bottom: 350px;
 	.tab-h {
 		text-transform:capitalize;
@@ -59,6 +109,7 @@ body {
 	thead {
 		th {
 			position: relative;
+			background-color: #fff;
 			&:after {
 				position: absolute;
 				top: -20px;
@@ -116,6 +167,7 @@ body {
 	tbody {
 		td {
 			vertical-align: middle;
+			background-color: #fff;
 		}
 		td button{
 			text-transform:capitalize;

@@ -48,6 +48,7 @@
 <link rel="shortcut icon" href="resources/img/favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="resources/img/apple-touch-icon.png">
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+<link href="resources/css/introjs.css" rel="stylesheet">
 <link href="resources/css/style.css" rel="stylesheet">
 <link href="resources/css/keyboard.css" rel="stylesheet">
 <meta name="twitter:card" content="summary">
@@ -113,7 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 ?>
 
-<ul class="nav nav-tabs" id="navMain">
+<ul class="nav nav-tabs" id="navMain" data-step="1" data-intro="タブでリストを切り替えます">
 	<?php
 		for($m = 0; $m < count($files); $m++) {
 			echo ('<li><a href="#'.$ids[$m].'" data-toggle="tab">'.$ids[$m].'</a></li>');
@@ -121,8 +122,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	?>
 </ul>
 
+
 <!-- Tab panes -->
 <div id="contentMain" class="tab-content">
+<div class="step-cont2" data-step="2" data-intro="リストの見出しをクリックすと項目を並べ替えられます。"></div>
+<div class="step-cont3" data-step="3" data-intro="項目にマウスオーバーすると該当キーがハイライトします"></div>
+<div class="step-cont4" data-step="4" data-intro="Favorite列をクリックしてお気に入りを登録できます"></div>
 
 <?php
 	for($m = 0; $m < count($files); $m++) {
@@ -459,7 +464,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<h4 class="modal-title">このサイトについて</h4>
 		</div>
 		<div class="modal-body">
-			<p>XXXするツールです。</p>
+			<p>キーボードショートカットキーのWeb版チートシート。<br>MacのShift-JISタイプ3種類（テンキーあり／なし／Macbook）のキーボードを視覚化して表現しています。</p>
 			<h3>使い方</h3>
 			<ul>
 				<li>XXX</li>
@@ -522,5 +527,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="resources/js/bootstrap.min.js"></script>
 <script src="resources/js/jquery.tablesorter.min.js"></script>
 <script src="resources/js/util.js"></script>
+<script src="resources/js/intro.js"></script>
 </body>
 </html>
