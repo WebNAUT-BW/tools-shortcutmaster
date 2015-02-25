@@ -6,13 +6,13 @@ $dataDir = './data/';
 $charset = 'utf-8';
 
 //Version
-$ver = '1.01';
+$ver = '1.0';
 
 //language
 $lang = 'ja';
 
 //Name
-$name = 'U.K.C.';
+$name = 'ShortcutMaster for Mac';
 
 //URL
 $url = '';

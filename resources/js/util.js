@@ -1,4 +1,4 @@
-var prefix = 'UKC-';
+var prefix = 'SCM-';
 
 /* ===============================================
 # 行をマウスオーバー時にスタイルを当てる
@@ -196,7 +196,7 @@ $(function () {
 		}
 		//localStorage削除
 		for (var i=0; i<_items.length; i++){
-			if (_items[i] != 'UKC-keyboardType') {
+			if (_items[i] != (prefix + 'keyboardType')) {
 				window.localStorage.removeItem(_items[i]);
 			}
 		}

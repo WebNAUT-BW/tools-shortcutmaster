@@ -1,5 +1,5 @@
 *.scssc
-*.css
+.css
 *.rb
 _zip/
 _psd/
