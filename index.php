@@ -41,14 +41,23 @@
 <head>
 <meta charset="<?php echo($charset); ?>">
 <meta name="viewport" content="width=1200">
-<meta name="description" content="">
+<meta name="description" content="キーボードショートカットキーのWeb版チートシート／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT">
+<meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,ShortcutMaster" />
 <meta name="author" content="">
 <title><?php echo($name); ?>[ver.<?php echo($ver); ?>]</title>
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<link href="resources/css/style.css" rel="stylesheet" media="screen">
-<link href="resources/css/keyboard.css" rel="stylesheet" media="screen">
+<link rel="shortcut icon" href="resources/img/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="resources/img/apple-touch-icon.png">
+<link href="resources/css/bootstrap.min.css" rel="stylesheet">
+<link href="resources/css/style.css" rel="stylesheet">
+<link href="resources/css/keyboard.css" rel="stylesheet">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@WebNAUT_BW">
+<meta property="og:title" content="ShortcutMaster for Mac | WebNAUT" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://webnaut.jp/tools/ShortcutMaster/" />
+<meta property="og:site_name" content="Print1" />
+<meta property="og:description" content="キーボードショートカットキーのWeb版チートシート／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT" />
+<meta property="og:image" content="http://webnaut.jp/tools/ShortcutMaster/resources/img/og.png" />
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -83,8 +92,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 </div>
 
-
-
 <?php
 	$files = array();
 	$ids = array();
@@ -104,29 +111,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		// echo ('<p class="btn btn-default">'.$ids[$m].'</p>');
 	}
 
-?> 
-
-
-
-
-
-
+?>
 
 <ul class="nav nav-tabs" id="navMain">
 	<?php
 		for($m = 0; $m < count($files); $m++) {
 			echo ('<li><a href="#'.$ids[$m].'" data-toggle="tab">'.$ids[$m].'</a></li>');
 		}
-	?> 
+	?>
 </ul>
 
-
-<table>
-
-
-
-
-</table>
 <!-- Tab panes -->
 <div id="contentMain" class="tab-content">
 
@@ -311,20 +305,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			');
 
 	}
-?> 
-
-
+?>
 </div>
 
-
 <!-- 
-
 <div id="footer">
 	<div class="container">
 	</div>
 </div>
  -->
-
 
 <div id="keyboard-wrap">
 <div id="keyboard-base" class="keyboard-apple-sj-ten">
@@ -457,13 +446,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<li class="mod-key" id="key-colonUs"><span class="key-text">: / ;</span></li>
 		<li class="mod-key" id="key-quotation"><span class="key-text">" / '</span></li>
 		<li class="mod-key" id="key-ctrlRight"><span class="key-text">control</span></li>
-
 	</ul>
-
-
 </div>
 <!-- /#keyboard-wrap --></div>
-
 
 <!-- Modal -->
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
@@ -489,7 +474,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
 
 <!-- Modal -->
 <div class="modal fade" id="settingModal" tabindex="-1" role="dialog" aria-labelledby="settingModalLabel" aria-hidden="true">
@@ -534,11 +518,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="resources/js/jquery-1.11.0.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
 <script src="resources/js/jquery.tablesorter.min.js"></script>
 <script src="resources/js/util.js"></script>
 </body>
