@@ -1,5 +1,40 @@
 <?php
-require_once('ini.php');
+	//tsv file path
+	$dataDir = './data/';
+
+	//Charset
+	$charset = 'utf-8';
+
+	//Version
+	$ver = '1.0';
+
+	//language
+	$lang = 'ja';
+
+	//Name
+	$name = 'ShortcutMaster for Mac';
+
+	//URL
+	$url = '';
+
+	//Attr(Category,Id,Command,Keys,Recommend)
+	$attr = array(
+		array(
+			'label' => 'Category'
+		),
+		array(
+			'label' => 'Id'
+		),
+		array(
+			'label' => 'Command'
+		),
+		array(
+			'label' => 'Keys'
+		),
+		array(
+			'label' => 'Recommend'
+		)
+	);
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo($lang); ?>">
@@ -16,6 +51,16 @@ require_once('ini.php');
 <link href="resources/css/keyboard.css" rel="stylesheet" media="screen">
 </head>
 <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N22MPZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N22MPZ');</script>
+<!-- End Google Tag Manager -->
+<a class="github" href="https://github.com/WebNAUT-BW/tools-shortcutmaster" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 <div class="container">
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
