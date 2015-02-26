@@ -71,6 +71,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N22MPZ');</script>
 <!-- End Google Tag Manager -->
 <a class="github" href="https://github.com/WebNAUT-BW/tools-shortcutmaster" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+<div id="snsArea">
+	<div class="snsArea-twitter">
+		<a href="https://twitter.com/share" data-text="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」 | WebNAUT" class="twitter-share-button" data-count="vertical">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</div>
+	<div class="snsArea-facebook">
+		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwebnaut.jp%2Ftools%2FShortcutMaster%2F&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+	</div>
+	<div class="snsArea-hatena">
+		<a href="http://webnaut.jp/tools/ShortcutMaster/" class="hatena-bookmark-button" data-hatena-bookmark-title="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+	</div>
+</div>
 <div class="container">
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">

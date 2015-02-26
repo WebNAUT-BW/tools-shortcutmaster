@@ -17,7 +17,24 @@
 body {
 	padding-top: 80px;
 }
+#snsArea {
+	position: absolute;
+	right: 0;
+	top: 200px;
+	width: 100px;
+	padding: 10px;
+	background-color: #eee;
+	@include border-radius(10px 0 0 10px);
+	.snsArea-twitter {
+		margin-bottom: 10px;
+	}
+	.snsArea-facebook {
+		margin-bottom: 10px;
+	}
+	.snsArea-hatena {
 
+	}
+}
 .container {
 	width: 1200px!important;
 	position: relative;
