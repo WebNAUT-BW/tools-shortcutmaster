@@ -169,6 +169,10 @@ function teblesorterOn () {
 # モーダル
 =============================================== */
 $(function () {
+	$('#open-infoModal').click(function(e) {
+		$('#infoModal').modal();
+		e.preventDefault();
+	});
 	$('#open-settingModal').click(function(e) {
 		$('#settingModal').modal();
 		e.preventDefault();
