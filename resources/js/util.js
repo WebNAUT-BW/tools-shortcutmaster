@@ -180,27 +180,32 @@ $(function () {
 =============================================== */
 $(function () {
 	$('#delete-favorite').click(function(e) {
-		_items = new Array();
-		//localStorageを格納
-		for (var i=0; i<localStorage.length; i++){
-			var k = localStorage.key(i);
-			var item = localStorage.getItem(k);
-			if (k.indexOf(prefix) == 0) {
-				_items.push(k);
+		if (confirm('お気に入りデータを全て削除します\nよろしいですか？')) {
+			_items = new Array();
+			//localStorageを格納
+			for (var i=0; i<localStorage.length; i++){
+				var k = localStorage.key(i);
+				var item = localStorage.getItem(k);
+				if (k.indexOf(prefix) == 0) {
+					_items.push(k);
+				}
 			}
-		}
-		//localStorage削除
-		for (var i=0; i<_items.length; i++){
-			if (_items[i] != (prefix + 'keyboardType')) {
-				window.localStorage.removeItem(_items[i]);
+			//localStorage削除
+			for (var i=0; i<_items.length; i++){
+				if (_items[i] != (prefix + 'keyboardType')) {
+					window.localStorage.removeItem(_items[i]);
+				}
 			}
-		}
-		//お気に入り表示クリア
-		$('td.favorite').each(function() {
-			$(this).find('span.icon').remove();
-		});
-		sortTable.trigger("sortReset");
+			//お気に入り表示クリア
+			$('td.favorite').each(function() {
+				$(this).find('span.icon').remove();
+			});
+			sortTable.trigger("sortReset");
 
+			alert('削除しました。');
+		} else {
+			return false;
+		}
 		e.preventDefault();
 	});
 });
