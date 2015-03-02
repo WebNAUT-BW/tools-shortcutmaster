@@ -18,21 +18,20 @@ body {
 	padding-top: 80px;
 }
 #snsArea {
-	position: absolute;
-	right: 0;
-	top: 200px;
-	width: 100px;
-	padding: 10px;
-	background-color: #eee;
-	@include border-radius(10px 0 0 10px);
+	margin-top: 15px;
+	.snsArea-twitter,
+	.snsArea-facebook,
+	.snsArea-hatena {
+		float: left;
+	}
 	.snsArea-twitter {
-		margin-bottom: 10px;
+		width: 110px;
 	}
 	.snsArea-facebook {
-		margin-bottom: 10px;
+		width: 120px;
 	}
 	.snsArea-hatena {
-
+		width: 130px;
 	}
 }
 .container {
@@ -66,48 +65,6 @@ body {
 	top: 53px;
 	right: 0;
 	z-index: 10;
-}
-.step-cont2,
-.step-cont3,
-.step-cont4 {
-	visibility: hidden;
-}
-.step-cont2 {
-	position: absolute;
-	width: 1170px;
-	height: 39px;
-	top: 0;
-	left: 0;
-}
-.step-cont3 {
-	position: absolute;
-	width: 1170px;
-	height: 54px;
-	top: 38px;
-	left: 0;
-}
-.step-cont4 {
-	position: absolute;
-	width: 75px;
-	height: 54px;
-	top: 38px;
-	left: 1095px;
-}
-.introjs-helperLayer {
-	background-color: transparent;
-	border: 3px solid #F54635;
-	@include border-radius(6px);
-}
-.introjs-helperNumberLayer {
-	background-color: #F54635;
-	border: none;
-	padding: 5px;
-	width: 30px;
-	height: 30px;
-	font-size: 20px;
-}
-.introjs-bullets {
-	display: none;
 }
 #contentMain {
 	position: relative;
@@ -182,9 +139,12 @@ body {
 		}
 	}
 	tbody {
+		tr:hover {
+			background-color: #eee;
+		}
 		td {
 			vertical-align: middle;
-			background-color: #fff;
+			// background-color: #fff;
 		}
 		td button{
 			text-transform:capitalize;

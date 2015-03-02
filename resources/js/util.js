@@ -176,59 +176,6 @@ $(function () {
 });
 
 /* ===============================================
-# 使い方表示
-=============================================== */
-$(function () {
-	$('#open-infoModal').click(function(e) {
-		// introJs().start();
-		runIntroJs();
-		e.preventDefault();
-	});
-	//初回表示時のみ使い方を表示
-	var initialFlag = localStorage.getItem(prefix+"initial");
-	if(!initialFlag){
-		runIntroJs();
-		localStorage.setItem(prefix+"initial",true);
-	}
-
-	//クラスを当て替える要素
-	var introJsElement = [];
-	introJsElement[0] = "";
-	introJsElement[1] = "";
-	introJsElement[2] = $('thead tr');
-	introJsElement[3] = $('tr:first-child td');
-	introJsElement[4] = $('tr:first-child td.favorite');
-
-	//introJsの実行
-	function runIntroJs() {
-		resetClassIntroJs();
-		//callbackでクラス付与
-		introJs().start().onbeforechange(function(targetElementId) {  
-			var _step = $(targetElementId).attr("data-step");
-			resetClassIntroJs();
-			addClassIntroJs(_step);
-		});
-	}
-
-	//クラス付与
-	function addClassIntroJs(num) {
-		if (introJsElement[num]) {
-			introJsElement[num].addClass('introjs-showElement');
-			introJsElement[num].addClass('introjs-relativePosition');
-		}
-	}
-	//クラス付与リセット
-	function resetClassIntroJs() {
-		for (var i = 0; i < introJsElement.length; i++) {
-			if (introJsElement[i]) {
-				introJsElement[i].removeClass('introjs-showElement');
-				introJsElement[i].removeClass('introjs-relativePosition');
-			}
-		};
-	}
-});
-
-/* ===============================================
 # お気に入りデータ削除
 =============================================== */
 $(function () {

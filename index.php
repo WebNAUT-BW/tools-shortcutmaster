@@ -42,7 +42,7 @@
 <meta charset="<?php echo($charset); ?>">
 <meta name="viewport" content="width=1200">
 <meta name="description" content="キーボードショートカットキーのWeb版チートシート／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT">
-<meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,ShortcutMaster" />
+<meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,Shortcut Master" />
 <meta name="author" content="">
 <title><?php echo($name); ?>[ver.<?php echo($ver); ?>]</title>
 <link rel="shortcut icon" href="resources/img/favicon.ico" />
@@ -55,10 +55,10 @@
 <meta name="twitter:site" content="@WebNAUT_BW">
 <meta property="og:title" content="ShortcutMaster for Mac | WebNAUT" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://webnaut.jp/tools/ShortcutMaster/" />
+<meta property="og:url" content="http://webnaut.jp/tools/shortcutmaster/" />
 <meta property="og:site_name" content="Print1" />
 <meta property="og:description" content="キーボードショートカットキーのWeb版チートシート／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT" />
-<meta property="og:image" content="http://webnaut.jp/tools/ShortcutMaster/resources/img/og.png" />
+<meta property="og:image" content="http://webnaut.jp/tools/shortcutmaster/resources/img/og.png" />
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -71,33 +71,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N22MPZ');</script>
 <!-- End Google Tag Manager -->
 <a class="github" href="https://github.com/WebNAUT-BW/tools-shortcutmaster" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-<div id="snsArea">
-	<div class="snsArea-twitter">
-		<a href="https://twitter.com/share" data-text="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」 | WebNAUT" class="twitter-share-button" data-count="vertical">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	</div>
-	<div class="snsArea-facebook">
-		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwebnaut.jp%2Ftools%2FShortcutMaster%2F&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
-	</div>
-	<div class="snsArea-hatena">
-		<a href="http://webnaut.jp/tools/ShortcutMaster/" class="hatena-bookmark-button" data-hatena-bookmark-title="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-	</div>
-</div>
 <div class="container">
 
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><?php echo($name); ?> [ver.<?php echo($ver); ?>]<!--  (Ultimate Keyboard Cheat-sheet) --></a>
+			<a class="navbar-brand" href="#"><?php echo($name); ?> [ver.<?php echo($ver); ?>]</a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
+				<li id="snsArea">
+					<div class="snsArea-twitter">
+						<a href="https://twitter.com/share" data-text="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」 | WebNAUT" class="twitter-share-button">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+					<div class="snsArea-facebook">
+						<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwebnaut.jp%2Ftools%2FShortcutMaster%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+					</div>
+					<div class="snsArea-hatena">
+						<a href="http://webnaut.jp/tools/ShortcutMaster/" class="hatena-bookmark-button" data-hatena-bookmark-title="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+					</div>
+				</li>
 				<li><a href="#" id="open-infoModal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
 				<li><a href="#" id="open-settingModal"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
 			</ul>
@@ -126,7 +120,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 ?>
 
-<ul class="nav nav-tabs" id="navMain" data-step="1" data-intro="タブでリストを切り替えます">
+<ul class="nav nav-tabs" id="navMain">
 	<?php
 		for($m = 0; $m < count($files); $m++) {
 			echo ('<li><a href="#'.$ids[$m].'" data-toggle="tab">'.$ids[$m].'</a></li>');
@@ -137,9 +131,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Tab panes -->
 <div id="contentMain" class="tab-content">
-<div class="step-cont2" data-step="2" data-intro="リストの見出しをクリックすと項目を並べ替えられます。"></div>
-<div class="step-cont3" data-step="3" data-intro="項目にマウスオーバーすると該当キーがハイライトします"></div>
-<div class="step-cont4" data-step="4" data-intro="Favorite列をクリックしてお気に入りを登録できます"></div>
 
 <?php
 	for($m = 0; $m < count($files); $m++) {
@@ -325,7 +316,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ?>
 </div>
 
-<!-- 
+<!--
 <div id="footer">
 	<div class="container">
 	</div>
@@ -527,6 +518,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</label>
 					</a>
 				</li>
+				<li>
+					<a href="#">
+						<label>
+							<input type="radio" name="keyboardType" id="optionsRadios3" value="keyboard-none">
+							None
+						</label>
+					</a>
+				</li>
 			</ul>
 			<h3>お気に入りデータの削除</h3>
 			<button type="button" class="btn btn-danger" id="delete-favorite">削除</button>
@@ -539,6 +538,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="resources/js/bootstrap.min.js"></script>
 <script src="resources/js/jquery.tablesorter.min.js"></script>
 <script src="resources/js/util.js"></script>
-<script src="resources/js/intro.js"></script>
 </body>
 </html>
