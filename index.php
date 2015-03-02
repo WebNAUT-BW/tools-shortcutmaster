@@ -11,6 +11,9 @@
 	//language
 	$lang = 'ja';
 
+	//description
+	$description = 'キーボードショートカットキーのWeb版チートシート';
+
 	//Name
 	$name = 'ShortcutMaster for Mac';
 
@@ -41,7 +44,7 @@
 <head>
 <meta charset="<?php echo($charset); ?>">
 <meta name="viewport" content="width=1200">
-<meta name="description" content="キーボードショートカットキーのWeb版チートシート／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT">
+<meta name="description" content="<?php echo($description); ?>／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT">
 <meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,ShortcutMaster" />
 <meta name="author" content="">
 <title><?php echo($name); ?></title>
@@ -57,7 +60,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://webnaut.jp/tools/shortcutmaster/" />
 <meta property="og:site_name" content="Print1" />
-<meta property="og:description" content="キーボードショートカットキーのWeb版チートシート／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT" />
+<meta property="og:description" content="<?php echo($description); ?>／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT" />
 <meta property="og:image" content="http://webnaut.jp/tools/shortcutmaster/resources/img/og.png" />
 </head>
 <body>
@@ -82,14 +85,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<ul class="nav navbar-nav navbar-right">
 				<li id="snsArea">
 					<div class="snsArea-twitter">
-						<a href="https://twitter.com/share" data-text="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」 | WebNAUT" class="twitter-share-button">Tweet</a>
+						<a href="https://twitter.com/share" data-text="<?php echo($description); ?>「ShortcutMaster for Mac」 | WebNAUT" class="twitter-share-button">Tweet</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 					</div>
 					<div class="snsArea-facebook">
 						<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwebnaut.jp%2Ftools%2FShortcutMaster%2F&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
 					</div>
 					<div class="snsArea-hatena">
-						<a href="http://webnaut.jp/tools/ShortcutMaster/" class="hatena-bookmark-button" data-hatena-bookmark-title="キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+						<a href="http://webnaut.jp/tools/ShortcutMaster/" class="hatena-bookmark-button" data-hatena-bookmark-title="<?php echo($description); ?>「ShortcutMaster for Mac」" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 					</div>
 				</li>
 				<li><a href="#" id="open-infoModal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
