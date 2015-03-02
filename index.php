@@ -59,7 +59,7 @@
 <meta property="og:title" content="ShortcutMaster for Mac | WebNAUT" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://webnaut.jp/tools/shortcutmaster/" />
-<meta property="og:site_name" content="Print1" />
+<meta property="og:site_name" content="ShortcutMaster for Mac" />
 <meta property="og:description" content="<?php echo($description); ?>／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT" />
 <meta property="og:image" content="http://webnaut.jp/tools/shortcutmaster/resources/img/og.png" />
 </head>
@@ -79,11 +79,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><?php echo($name); ?></a>
+			<span id="logo"><?php echo($name); ?></span>
 		</div>
 		<div class="collapse navbar-collapse">
+			<p id="navbar-copyright" class="navbar-text navbar-right"><a href="#" class="navbar-link">WebNAUT by beeworks</a><br>Copyright (c) Beeworks Co., Ltd All rights reserved</p>
 			<ul class="nav navbar-nav navbar-right">
-				<li id="snsArea">
+				<li id="navbar-snsArea">
 					<div class="snsArea-twitter">
 						<a href="https://twitter.com/share" data-text="<?php echo($description); ?>「ShortcutMaster for Mac」 | WebNAUT" class="twitter-share-button">Tweet</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -95,6 +96,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<a href="http://webnaut.jp/tools/ShortcutMaster/" class="hatena-bookmark-button" data-hatena-bookmark-title="<?php echo($description); ?>「ShortcutMaster for Mac」" data-hatena-bookmark-layout="standard-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 					</div>
 				</li>
+			</ul>
+			<ul id="navbar-control" class="nav navbar-nav navbar-right">
 				<li><a href="#" id="open-infoModal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
 				<li><a href="#" id="open-settingModal"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
 			</ul>
@@ -115,12 +118,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		}
 		closedir($dh);
 	}
-
-	for($m = 0; $m < count($files); $m++) {
-		// echo ('<p class="btn btn-default">'.$files[$m].'</p>');
-		// echo ('<p class="btn btn-default">'.$ids[$m].'</p>');
-	}
-
 ?>
 
 <ul class="nav nav-tabs" id="navMain">
@@ -131,7 +128,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	?>
 </ul>
 
-
 <!-- Tab panes -->
 <div id="contentMain" class="tab-content">
 
@@ -140,7 +136,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$file = fopen($dataDir.$files[$m], 'r');
 
 		echo ('<div class="tab-pane" id="'.$ids[$m].'">');
-		// echo ('<h2 class="tab-h">'.$ids[$m].'</h2>');
 		echo ('
 				<table class="ovTable table table-bordered table-hover tablesorter">
 					<colgroup>
@@ -319,13 +314,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 ?>
 </div>
 
-<!--
-<div id="footer">
-	<div class="container">
-	</div>
-</div>
- -->
-
 <div id="keyboard-wrap">
 <div id="keyboard-base" class="keyboard-apple-sj-ten">
 	<ul>
@@ -490,7 +478,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<h3>対象ブラウザ</h3>
 			<p>Google Chrome 最新版</p>
 			<h3>紹介記事</h3>
-			<p><a href="http://webnaut.jp/">WebNAUT</a></p>
+			<p><a href="http://webnaut.jp/markup/1138.html">WebNAUT</a></p>
 		</div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->

@@ -6,12 +6,10 @@ var prefix = 'SCM-';
 $(function () {
 	$('.ovTable tbody tr').on('mouseover' ,function(e) {
 		/* Act on the event */
-		//console.log('hover');
 		var _this = $(this);
 		var _tableClass = $(this).attr('class');
 		$('#keyboard-wrap').attr('class','');
 		$('#keyboard-wrap').addClass(_tableClass);
-		//console.log(_getClass);
 		e.preventDefault();
 	});
 	$('.ovTable tbody tr').on('mouseout' ,function(e) {
@@ -56,8 +54,6 @@ $(function () {
 	$('input:checkbox').change( function() {
 		var _val = $(this).is(':checked');
 		var _id = $(this).parents('tr').attr('id');
-		// console.log('_val=' + _val);
-		// console.log('_id=' + _id);
 		window.localStorage.setItem(prefix+_id,_val);
 		if (_val == true){
 			$(this).parents('td.favorite label').append(addItem);
@@ -65,11 +61,6 @@ $(function () {
 			$(this).parents('td.favorite').find('span.icon').remove();
 		}
 	});
-});
-
-//ページロード時にお気に入り選択状態を呼び出し設定する
-$(document).ready(function() {
-	teblesorterInit ();
 });
 
 /* ===============================================
@@ -131,6 +122,11 @@ $(function () {
 /* ===============================================
 # tablesorter 初期設定
 =============================================== */
+//ページロード時にお気に入り選択状態を呼び出し設定する
+$(document).ready(function() {
+	teblesorterInit ();
+});
+
 var sortTable;
 function teblesorterInit () {
 	$('td.favorite').each(function(indx) {
@@ -190,7 +186,6 @@ $(function () {
 			var k = localStorage.key(i);
 			var item = localStorage.getItem(k);
 			if (k.indexOf(prefix) == 0) {
-				console.log(k+'is '+prefix);
 				_items.push(k);
 			}
 		}
