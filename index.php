@@ -42,9 +42,9 @@
 <meta charset="<?php echo($charset); ?>">
 <meta name="viewport" content="width=1200">
 <meta name="description" content="キーボードショートカットキーのWeb版チートシート／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT">
-<meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,Shortcut Master" />
+<meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,ShortcutMaster" />
 <meta name="author" content="">
-<title><?php echo($name); ?>[ver.<?php echo($ver); ?>]</title>
+<title><?php echo($name); ?></title>
 <link rel="shortcut icon" href="resources/img/favicon.ico" />
 <link rel="apple-touch-icon-precomposed" href="resources/img/apple-touch-icon.png">
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
@@ -76,7 +76,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#"><?php echo($name); ?> [ver.<?php echo($ver); ?>]</a>
+			<a class="navbar-brand" href="#"><?php echo($name); ?></a>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
