@@ -18,7 +18,7 @@
 	$name = 'ShortcutMaster for Mac';
 
 	//URL
-	$url = '';
+	$url = 'http://webnaut.jp/tools/shortcutmaster/';
 
 	//Attr(Category,Id,Command,Keys,Recommend)
 	$attr = array(
@@ -48,8 +48,7 @@
 <meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,ShortcutMaster" />
 <meta name="author" content="">
 <title><?php echo($name); ?></title>
-<link rel="shortcut icon" href="resources/img/favicon.ico" />
-<link rel="apple-touch-icon-precomposed" href="resources/img/apple-touch-icon.png">
+<link rel="shortcut icon" href="resources/img/favicon.png" />
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
 <link href="resources/css/introjs.css" rel="stylesheet">
 <link href="resources/css/style.css" rel="stylesheet">
@@ -61,7 +60,7 @@
 <meta property="og:url" content="http://webnaut.jp/tools/shortcutmaster/" />
 <meta property="og:site_name" content="ShortcutMaster for Mac" />
 <meta property="og:description" content="<?php echo($description); ?>／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT" />
-<meta property="og:image" content="http://webnaut.jp/tools/shortcutmaster/resources/img/og.png" />
+<meta property="og:image" content="http://webnaut.jp/tools/shortcutmaster/resources/img/og.gif" />
 </head>
 <body>
 <!-- Google Tag Manager -->
@@ -82,7 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<span id="logo"><?php echo($name); ?></span>
 		</div>
 		<div class="collapse navbar-collapse">
-			<p id="navbar-copyright" class="navbar-text navbar-right"><a href="#" class="navbar-link">WebNAUT by beeworks</a><br>Copyright (c) Beeworks Co., Ltd All rights reserved</p>
+			<p id="navbar-copyright" class="navbar-text navbar-right"><a href="http://webnaut.jp/" target="_blank" class="navbar-link">WebNAUT by beeworks</a><br>Copyright (c) Beeworks Co., Ltd All rights reserved</p>
 			<ul class="nav navbar-nav navbar-right">
 				<li id="navbar-snsArea">
 					<div class="snsArea-twitter">
