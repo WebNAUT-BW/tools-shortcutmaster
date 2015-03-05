@@ -29,7 +29,8 @@ body {
 	margin-top: 15px;
 	.snsArea-twitter,
 	.snsArea-facebook,
-	.snsArea-hatena {
+	.snsArea-hatena,
+	.snsArea-github {
 		float: left;
 	}
 	.snsArea-twitter {
@@ -40,6 +41,9 @@ body {
 	}
 	.snsArea-hatena {
 		width: 130px;
+	}
+	.snsArea-snsArea-github {
+		width: 110px;
 	}
 }
 #navbar-copyright {
