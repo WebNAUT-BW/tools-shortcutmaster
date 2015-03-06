@@ -1,0 +1,197 @@
+メニューと編集	menu-001	環境設定	cmd,u	0
+メニューと編集	menu-002	アクション	f9	0
+メニューと編集	menu-003	ウィンドウを複製	alt,cmd,k	0
+メニューと編集	menu-004	カラー	shift,cmd,f9	0
+メニューと編集	menu-005	コンパイルエラー	alt,f2	0
+メニューと編集	menu-006	コンポーネント	cmd,f7	0
+メニューと編集	menu-007	シーン	shift,f2	0
+メニューと編集	menu-008	タイムライン	alt,cmd,t	0
+メニューと編集	menu-009	ツール	cmd,f2	0
+メニューと編集	menu-010	パネルを隠す	f4	0
+メニューと編集	menu-011	ヒストリー	cmd,f10	0
+メニューと編集	menu-012	プロパティ	cmd,f3	0
+メニューと編集	menu-013	ライブラリ	cmd,l	0
+メニューと編集	menu-014	出力	f2	0
+メニューと編集	menu-015	変形	cmd,t	0
+メニューと編集	menu-016	情報	cmd,i	0
+メニューと編集	menu-017	整列	cmd,k	0
+メニューと編集	menu-018	色見本	cmd,f9	0
+メニューと編集	menu-019	Flash ヘルプ	f1	0
+メニューと編集	menu-020	ガイドをロック	alt,cmd,semicolon	0
+メニューと編集	menu-021	ガイドを編集	alt,shift,cmd,g	0
+メニューと編集	menu-022	ガイドを表示	cmd,semicolon	0
+メニューと編集	menu-023	グリッドを編集	alt,cmd,g	0
+メニューと編集	menu-024	グリッドを表示	cmd,apostrophe	0
+メニューと編集	menu-025	シェイプヒントを追加	shift,cmd,h	0
+メニューと編集	menu-026	最適化	alt,shift,cmd,c	0
+メニューと編集	menu-027	高度なストレート	alt,shift,cmd,n	0
+メニューと編集	menu-028	高度なスムーズ	alt,shift,cmd,m	0
+メニューと編集	menu-029	スクリーンモードを切り替え	ctrl,cmd,f	0
+メニューと編集	menu-030	標準スクリーンモード	esc	0
+メニューと編集	menu-031	すべてのフレームを選択	alt,cmd,a	0
+メニューと編集	menu-032	キーフレームに変換	f6	0
+メニューと編集	menu-033	キーフレームに配分	shift,cmd,k	0
+メニューと編集	menu-034	キーフレームを削除	shift,f6	0
+メニューと編集	menu-035	フレームをカット	alt,cmd,x	0
+メニューと編集	menu-036	フレームをクリア	alt,delete	0
+メニューと編集	menu-037	フレームをコピー	alt,cmd,c	0
+メニューと編集	menu-038	フレームをペースト	alt,cmd,v	0
+メニューと編集	menu-039	フレームを削除	shift,f5	0
+メニューと編集	menu-040	フレームを挿入	f5	0
+メニューと編集	menu-041	レイヤーに配分	shift,cmd,d	0
+メニューと編集	menu-042	空白キーフレームに変換	f7	0
+ツール	tool-001	3D 回転	shift,w,or,w	0
+ツール	tool-002	3D 移動	shift,g,or,g	0
+ツール	tool-003	なげなわ	shift,l,or,l	0
+ツール	tool-004	インクボトル	shift,s,or,s	0
+ツール	tool-005	オブジェクトモデル	shift,j,or,j	0
+ツール	tool-006	グラデーションの変形	shift,f,or,f	0
+ツール	tool-007	グローバル変形	shift,d,or,d	0
+ツール	tool-008	スポイト	shift,i,or,i	0
+ツール	tool-009	ズーム	shift,z,or,z	0
+ツール	tool-010	ダイレクト選択	shift,a,or,a	0
+ツール	tool-011	テキスト	shift,t,or,t	0
+ツール	tool-012	ハンド	shift,h,or,h	0
+ツール	tool-013	バケツ	shift,k,or,k	0
+ツール	tool-014	ブラシ	shift,b,or,b	0
+ツール	tool-015	ペン	shift,p,or,p	0
+ツール	tool-016	ペン、アンカーを削除	shift,hyphen,or,hyphen	0
+ツール	tool-017	ペン、アンカーを変換	shift,c,or,c	0
+ツール	tool-018	ペン、アンカーを追加	shift,equalTen,or,equalTen	0
+ツール	tool-019	多角形モードなげなわ	shift,l,or,l	0
+ツール	tool-020	楕円	shift,o,or,o	0
+ツール	tool-021	楕円プリミティブ	shift,o,or,o	0
+ツール	tool-022	消しゴム	shift,e,or,e	0
+ツール	tool-023	矩形	shift,r,or,r	0
+ツール	tool-024	矩形プリミティブ	shift,r,or,r	0
+ツール	tool-025	線	shift,n,or,n	0
+ツール	tool-026	線のサイズを大きくする	shift,bra2,or,bra2	0
+ツール	tool-027	線のサイズを小さくする	shift,bra1,or,bra1	0
+ツール	tool-028	線幅	shift,u,or,u	0
+ツール	tool-029	自動選択	shift,l,or,l	0
+ツール	tool-030	自由変形	shift,q,or,q	0
+ツール	tool-031	選択	shift,v,or,v	0
+ツール	tool-032	鉛筆	shift,y,or,y	0
+テキスト関連	text-001	スタイル イタリック	shift,cmd,i	0
+テキスト関連	text-002	スタイル ボールド	shift,cmd,b	0
+テキスト関連	text-003	行 中央揃え	shift,cmd,c	0
+テキスト関連	text-004	行 右揃え	shift,cmd,r	0
+テキスト関連	text-005	行 均等配置	shift,cmd,j	0
+テキスト関連	text-006	行 左揃え	shift,cmd,l	0
+テキスト関連	text-007	文字間隔 リセット	alt,cmd,curUp	0
+テキスト関連	text-008	文字間隔 広く	alt,cmd,curRight	0
+テキスト関連	text-009	文字間隔 狭く	alt,cmd,curLeft	0
+ファイル操作	file-001	Bridge で参照	alt,cmd,o	0
+ファイル操作	file-002	すべて閉じる	alt,cmd,w	0
+ファイル操作	file-003	パブリッシュ	alt,shift,f12	0
+ファイル操作	file-004	パブリッシュ設定	shift,cmd,f12	0
+ファイル操作	file-005	保存	cmd,s	0
+ファイル操作	file-006	名前を付けて保存	shift,cmd,s	0
+ファイル操作	file-007	新規	cmd,n	0
+ファイル操作	file-008	閉じる	cmd,w	0
+ファイル操作	file-009	開く	cmd,o	0
+ファイル操作	file-010	ムービーを書き出し	alt,shift,cmd,s	0
+ファイル操作	file-011	ステージに読み込み	cmd,r	0
+ファイル操作	file-012	外部ライブラリを開く	shift,cmd,o	0
+デバッグ・プレビュー	debug-001	すべてのブレークポイントを削除	alt,shift,cmd,b	0
+デバッグ・プレビュー	debug-002	ステップアウト	alt,f8	0
+デバッグ・プレビュー	debug-003	ステップイン	alt,f6	0
+デバッグ・プレビュー	debug-004	ステップオーバー	alt,f7	0
+デバッグ・プレビュー	debug-005	ブレークポイントを切り替え	alt,cmd,b	0
+デバッグ・プレビュー	debug-006	終了	alt,f12	0
+デバッグ・プレビュー	debug-007	続行	alt,f5	0
+デバッグ・プレビュー	debug-008	ムービーをデバッグ	shift,cmd,return,or,shift,cmd,enter	0
+デバッグ・プレビュー	debug-009	アウトライン表示	alt,shift,cmd,o	0
+デバッグ・プレビュー	debug-010	アンチエイリアス	alt,shift,cmd,a	0
+デバッグ・プレビュー	debug-011	アンチエイリアステキスト	alt,shift,cmd,t	0
+デバッグ・プレビュー	debug-012	高速表示	alt,shift,cmd,f	0
+デバッグ・プレビュー	debug-013	ムービープレビュー	cmd,return,or,cmd,enter	0
+制御	control-001	グループ	cmd,g	0
+制御	control-002	グループ解除	shift,cmd,g	0
+制御	control-003	シンボルに変換	f8	0
+制御	control-004	ドキュメント	cmd,j	0
+制御	control-005	分解	cmd,b	0
+制御	control-006	1 フレーム戻す	comma	0
+制御	control-007	1 フレーム進める	period	0
+制御	control-008	サウンドをミュート	alt,cmd,m	0
+制御	control-009	シーンプレビュー	alt,cmd,return,or,alt,cmd,enter	0
+制御	control-010	再生	return,or,enter	0
+制御	control-011	巻戻し	shift,comma	0
+制御	control-012	最後のフレームへ	shift,period	0
+制御	control-013	オブジェクトに吸着	shift,cmd,u	0
+制御	control-014	ガイドに吸着	shift,cmd,semicolon	0
+制御	control-015	グリッドに吸着	shift,cmd,apostrophe	0
+制御	control-016	吸着して配置を編集	cmd,slash	0
+制御	control-017	伸縮と回転	alt,cmd,s	0
+制御	control-018	反時計回りに 90° 回転	shift,cmd,num7	0
+制御	control-019	変形の解除	shift,cmd,z	0
+制御	control-020	時計回りに 90° 回転	shift,cmd,num9	0
+制御	control-021	新規シンボル	cmd,f8	0
+移動	move-001	ステージにフォーカスを戻す	alt,cmd,home	0
+移動	move-002	前	pageUp	0
+移動	move-003	前のタブ	shift,cmd,tab,or,ctrl,shift,at	0
+移動	move-004	前のパネルフォーカス	shift,cmd,f6	0
+移動	move-005	最初	home	0
+移動	move-006	最後	end	0
+移動	move-007	次	pageDown	0
+移動	move-008	次のタブ	cmd,tab,or,ctrl,shift,at	0
+移動	move-009	次のパネルフォーカス	cmd,f6	0
+編集	edit-001	すべての選択を解除	shift,cmd,a	0
+編集	edit-002	すべて選択	cmd,a	0
+編集	edit-003	やり直し	cmd,y	0
+編集	edit-004	カット	cmd,x	0
+編集	edit-005	コピー	cmd,c	0
+編集	edit-006	コードをアウトデント	cmd,bra2	0
+編集	edit-007	コードをインデント	cmd,bra1	0
+編集	edit-008	シンボルを編集	cmd,e	0
+編集	edit-009	ペースト	cmd,v	0
+編集	edit-010	前を検索	shift,f3	0
+編集	edit-011	取り消し	cmd,z	0
+編集	edit-012	同じ位置にペースト	shift,cmd,v	0
+編集	edit-013	検索して置換	cmd,f	0
+編集	edit-014	次を検索	f3	0
+編集	edit-015	消去	delete	0
+編集	edit-016	複製	cmd,d	0
+編集	edit-017	選択範囲にコメントを追加	cmd,m	0
+編集	edit-018	選択範囲のコメントを削除	shift,cmd,m	0
+編集	edit-019	選択範囲を上に移動	curUp	0
+編集	edit-020	選択範囲を上に移動 (高速)	shift,curUp	0
+編集	edit-021	選択範囲を下に移動	curDown	0
+編集	edit-022	選択範囲を下に移動 (高速)	shift,curDown	0
+編集	edit-023	選択範囲を右に移動	curRight	0
+編集	edit-024	選択範囲を右に移動 (高速)	shift,curRight	0
+編集	edit-025	選択範囲を左に移動	curLeft	0
+編集	edit-026	選択範囲を左に移動 (高速)	shift,curLeft	0
+行揃え	align-001	ステージを基準	alt,cmd,num8	0
+行揃え	align-002	上揃え	alt,cmd,num4	0
+行揃え	align-003	下揃え	alt,cmd,num6	0
+行揃え	align-004	中央揃え (垂直方向)	alt,cmd,num5	0
+行揃え	align-005	中央揃え (水平方向)	alt,cmd,num2	0
+行揃え	align-006	右揃え	alt,cmd,num3	0
+行揃え	align-007	垂直方向均等配置	alt,cmd,num9	0
+行揃え	align-008	左揃え	alt,cmd,num1	0
+行揃え	align-009	幅を合わせる	alt,shift,cmd,num7	0
+行揃え	align-010	水平方向均等配置	alt,cmd,num7	0
+行揃え	align-011	高さを合わせる	alt,shift,cmd,num9	0
+表示	view-001	コードヒントを表示	ctrl,space	0
+表示	view-002	シェイプヒントを表示	alt,cmd,i	0
+表示	view-003	フレームスクリプトナビゲーターを表示	alt,cmd,bra1	0
+表示	view-004	ペーストボード	shift,cmd,w	0
+表示	view-005	ルーラー	alt,shift,cmd,r	0
+表示	view-006	拡大	cmd,equalTen	0
+表示	view-007	縮小	cmd,hyphen	0
+表示	view-008	自動フォーマット	shift,cmd,f	0
+表示	view-009	選択状態を非表示	shift,cmd,e	0
+表示	view-010	隠し文字	shift,cmd,num8	0
+表示	view-011	表示比率100%	cmd,num1	0
+表示	view-012	表示比率400%	cmd,num4	0
+表示	view-013	表示比率800%	cmd,num8	0
+表示	view-014	すべて表示	cmd,num3	0
+表示	view-015	ステージの中央を表示	cmd,num0	0
+表示	view-016	ステージ全体を表示	cmd,num2	0
+表示	view-017	すべてのロックを解除	alt,shift,cmd,l	0
+表示	view-018	ひとつ前面へ	cmd,curUp	0
+表示	view-019	ひとつ背面へ	cmd,curDown	0
+表示	view-020	ロック	alt,cmd,l	0
+表示	view-021	最前面へ	shift,cmd,curUp	0
+表示	view-022	最背面へ	shift,cmd,curDown	0

@@ -1,146 +1,388 @@
-ツールの選択	tool-01	選択ツール	v,or,esc	0
-ツールの選択	tool-02	ダイレクト選択ツール	a	0
-ツールの選択	tool-03	選択ツールとダイレクト選択ツールの切り替え	cmd,ctrl,tab	0
-ツールの選択	tool-04	ページツール	shift,p	0
-ツールの選択	tool-05	間隔ツール	u	0
-ツールの選択	tool-06	ペンツール	p	0
-ツールの選択	tool-07	アンカーポイントを追加ツール	equalTen	0
-ツールの選択	tool-08	アンカーポイントを削除ツール	hyphen	0
-ツールの選択	tool-09	アンカーポイントの切り替えツール	shift,c	0
-ツールの選択	tool-10	文字ツール	t	0
-ツールの選択	tool-11	パス上文字ツール	shift,t	0
-ツールの選択	tool-12	鉛筆ツール	n	0
-ツールの選択	tool-13	線ツール	backslash	0
-ツールの選択	tool-14	長方形フレームツール	f	0
-ツールの選択	tool-15	長方形ツール	m	0
-ツールの選択	tool-16	楕円形ツール	l	0
-ツールの選択	tool-17	回転ツール	r	0
-ツールの選択	tool-18	拡大／縮小ツール	s	0
-ツールの選択	tool-19	シアーツール	o	0
-ツールの選択	tool-20	自由変形ツール	e	0
-ツールの選択	tool-21	スポイトツール	i	0
-ツールの選択	tool-22	ものさしツール	k	0
-ツールの選択	tool-23	グラデーションスウォッチツール	g	0
-ツールの選択	tool-24	はさみツール	c	0
-ツールの選択	tool-25	手のひらツール	h	0
-ツールの選択	tool-26	一時的に手のひらツールを選択	alt,space	0
-ツールの選択	tool-27	ズームツール	z	0
-ツールの選択	tool-28	一時的にズームインツールを選択	cmd,space	0
-ツールの選択	tool-29	塗りと線の切り替え	x	0
-ツールの選択	tool-30	塗りと線を入れ替え	shift,x	0
-ツールの選択	tool-31	テキストのフォーマット設定に切替	j	0
-ツールの選択	tool-32	カラーを適用	comma	0
-ツールの選択	tool-33	グラデーションを適用	period	0
-ツールの選択	tool-34	カラー適用なし	slash	0
-ツールの選択	tool-35	標準モードとプレビューモードの切り替え	w	0
-ツールの選択	tool-36	横組みグリッドツール	y	0
-ツールの選択	tool-37	縦組みグリッドツール	q	0
-ツールの選択	tool-38	グラデーションぼかしツール	shift,g	0
-ファイルメニュー	file-01	Bridge で参照	alt,cmd,o	0
-ファイルメニュー	file-02	ドキュメント設定	alt,cmd,p	0
-ファイルメニュー	file-03	ファイル情報	alt,shift,cmd,i	0
-ファイルメニュー	file-04	プリント	cmd,p	0
-ファイルメニュー	file-05	保存	cmd,s	0
-ファイルメニュー	file-06	別名で保存	cmd,shift,s	0
-ファイルメニュー	file-07	新規ドキュメント	cmd,n	0
-ファイルメニュー	file-08	書き出し	cmd,e	0
-ファイルメニュー	file-09	複製を保存	cmd,alt,s	0
-ファイルメニュー	file-10	配置	cmd,d	0
-ファイルメニュー	file-11	閉じる	cmd,w	0
-ファイルメニュー	file-12	開く	cmd,o	0
-編集メニュー	edit-01	すべてをチェックイン	cmd,shift,alt,f9	0
-編集メニュー	edit-02	すべてを選択	cmd,a	0
-編集メニュー	edit-03	やり直し	cmd,shift,z	0
-編集メニュー	edit-04	カット	cmd,x	0
-編集メニュー	edit-05	クイック適用	cmd,return	0
-編集メニュー	edit-06	コピー	cmd,c	0
-編集メニュー	edit-07	コンテンツを更新	cmd,alt,f5	0
-編集メニュー	edit-08	ストーリーエディタで編集	cmd,y	0
-編集メニュー	edit-09	チェックアウト	cmd,f9	0
-編集メニュー	edit-10	チェックイン	cmd,shift,f9	0
-編集メニュー	edit-11	フォーマットなしでペースト	cmd,shift,v	0
-編集メニュー	edit-12	ペースト	cmd,v	0
-編集メニュー	edit-13	取り消し	cmd,z	0
-編集メニュー	edit-14	検索と置換	cmd,f	0
-編集メニュー	edit-15	次を検索	cmd,alt,f	0
-編集メニュー	edit-16	欧文スペルチェック	cmd,i	0
-編集メニュー	edit-17	消去	delete	0
-編集メニュー	edit-18	繰り返し複製	cmd,alt,u	0
-編集メニュー	edit-19	複製	cmd,shift,alt,d	0
-編集メニュー	edit-20	選択を解除	cmd,shift,a	0
-編集メニュー	edit-21	選択範囲内へペースト	cmd,alt,v	0
-レイアウトメニュー	layout-01	ページを追加	cmd,shift,p	0
-レイアウトメニュー	layout-02	ページへ移動	cmd,j	0
-レイアウトメニュー	layout-03	先頭ページ	cmd,shift,pageUp	0
-レイアウトメニュー	layout-04	前に戻る	cmd,pageUp	0
-レイアウトメニュー	layout-05	前スプレッド	alt,pageUp	0
-レイアウトメニュー	layout-06	前ページ	shift,pageUp	0
-レイアウトメニュー	layout-07	最終ページ	cmd,shift,pageDown	0
-レイアウトメニュー	layout-08	次に進む	cmd,pageDown	0
-レイアウトメニュー	layout-09	次スプレッド	alt,pageDown	0
-レイアウトメニュー	layout-10	次ページ	shift,pageDown	0
-書式メニュー	format-01	スペース文字を挿入（EM スペース）	cmd,shift,m	0
-書式メニュー	format-02	スペース文字を挿入（EN スペース）	cmd,shift,n	0
-書式メニュー	format-03	スペース文字を挿入（分散禁止スペース）	cmd,alt,x	0
-書式メニュー	format-04	スペース文字を挿入（細いスペース）	cmd,alt,shift,m	0
-書式メニュー	format-05	タブ	cmd,shift,t	0
-書式メニュー	format-06	分割文字の挿入（強制改行）	shift,return	0
-書式メニュー	format-07	分割文字の挿入（改フレーム）	shift,enter	0
-書式メニュー	format-08	分割文字の挿入（改ページ）	cmd,enter	0
-書式メニュー	format-09	分割文字の挿入（改段）	enter	0
-書式メニュー	format-10	制御文字を隠す	cmd,alt,i	0
-書式メニュー	format-11	注釈（注釈モード）	cmd,f8	0
-書式メニュー	format-12	特殊文字の挿入（右インデント タブ）※テキストモード	shift,tab	0
-書式メニュー	format-13	特殊文字の挿入（ここまでインデント文字）※テキストモード	cmd,backslash	0
-書式メニュー	format-14	特殊文字の挿入（任意ハイフン）※テキストモード	cmd,shift,hyphen	0
-書式メニュー	format-15	特殊文字の挿入（分散禁止ハイフン）※テキストモード	cmd,alt,hyphen	0
-書式メニュー	format-16	特殊文字の挿入（現在のページ番号）※テキストモード	cmd,shift,alt,n	0
-オブジェクトメニュー	object-01	オブジェクトサイズの調整（フレームに均等に流し込む）	cmd,shift,alt,c	0
-オブジェクトメニュー	object-02	オブジェクトサイズの調整（内容を縦横比率に応じて合わせる）	cmd,shift,alt,e	0
-オブジェクトメニュー	object-03	クリッピングパス（オプション）	cmd,shift,alt,k	0
-オブジェクトメニュー	object-04	グループ	cmd,g	0
-オブジェクトメニュー	object-05	グループ解除	cmd,shift,g	0
-オブジェクトメニュー	object-06	複合パスを作成	cmd,num8	0
-オブジェクトメニュー	object-07	ロック	cmd,l	0
-オブジェクトメニュー	object-08	ロック解除	cmd,alt,l	0
-オブジェクトメニュー	object-09	変形を再実行	cmd,alt,num3	0
-オブジェクトメニュー	object-10	変形シーケンスを再実行	cmd,alt,num4	0
-オブジェクトメニュー	object-11	効果（ドロップシャドウ）	cmd,alt,m	0
-オブジェクトメニュー	object-12	変形（移動）	cmd,shift,m	0
-オブジェクトメニュー	object-13	選択（前面のオブジェクト）	cmd,alt,bra2	0
-オブジェクトメニュー	object-14	選択（最前面のオブジェクト）	cmd,shift,alt,bra2	0
-オブジェクトメニュー	object-15	選択（最背面のオブジェクト）	cmd,shift,alt,bra1	0
-オブジェクトメニュー	object-16	選択（背面のオブジェクト）	cmd,alt,bra1	0
-オブジェクトメニュー	object-17	重ね順（前面へ）	cmd,bra2	0
-オブジェクトメニュー	object-18	重ね順（最前面へ）	cmd,shift,bra2	0
-オブジェクトメニュー	object-19	重ね順（最背面へ）	cmd,shift,bra1	0
-オブジェクトメニュー	object-20	重ね順（背面へ）	cmd,bra1	0
-表示メニュー	view-01	100% 表示	cmd,num1	0
-表示メニュー	view-02	オーバープリントプレビュー	cmd,shift,alt,y	0
-表示メニュー	view-03	ガイドにスナップ	cmd,shift,alt,num8	0
-表示メニュー	view-04	ガイドのロック	cmd,alt,num6	0
-表示メニュー	view-05	ガイドを隠す	cmd,num6	0
-表示メニュー	view-06	グリッドとガイド（スマートガイド）	cmd,u	0
-表示メニュー	view-07	グリッドにスナップ	cmd,shift,alt,num9	0
-表示メニュー	view-08	スプレッド全体	cmd,alt,num0	0
-表示メニュー	view-09	ズームアウト	cmd,hyphen	0
-表示メニュー	view-10	ズームイン	cmd,plus,or,cmd,equalTen	0
-表示メニュー	view-11	テキスト連結を隠す	cmd,alt,y	0
-表示メニュー	view-12	ドキュメントグリッドを表示	cmd,alt,num9	0
-表示メニュー	view-13	フレーム枠を表示	cmd,ctrl,h	0
-表示メニュー	view-14	ベースライングリッドを表示	cmd,alt,num7	0
-表示メニュー	view-15	ページ全体	cmd,num0	0
-表示メニュー	view-16	ペーストボード全体	cmd,shift,alt,num0	0
-表示メニュー	view-17	定規を隠す	cmd,r	0
-表示メニュー	view-18	表示画質（オブジェクト単位の表示設定を消去）	cmd,shift,f2	0
-表示メニュー	view-19	表示画質（高速表示）	cmd,shift,alt,z	0
-ウィンドウメニュー	window-01	最小化	cmd,m,or,cmd,ctrl,m	0
-テキスト関連	text-01	アウトラインを作成	cmd,shift,o	0
-テキスト関連	text-02	テキストを削除せずにアウトラインを作成する	cmd,shift,alt,o	0
-テキスト関連	text-03	中央揃え	cmd,shift,c	0
-テキスト関連	text-04	縦中横	cmd,alt,h	0
-テキスト関連	text-05	縦中横設定	cmd,shift,h	0
-テキスト関連	text-06	自動縦中横設定	cmd,shift,alt,h	0
-テキスト関連	text-07	頭末合わせ	cmd,shift,f	0
-テキスト関連	text-08	下線	cmd,shift,u	0
-テキスト関連	text-09	段落境界線	cmd,alt,j	0
+アプリケーションメニュー	app-001	環境設定 > 一般…	デフォルト:,cmd,k	0
+ファイルメニュー	file-001	Bridge で参照…	デフォルト:,alt,cmd,o	0
+ファイルメニュー	file-002	ドキュメント設定…	デフォルト:,alt,cmd,p	0
+ファイルメニュー	file-003	ファイル情報…	デフォルト:,alt,shift,cmd,i	0
+ファイルメニュー	file-004	プリント…	デフォルト:,cmd,p	0
+ファイルメニュー	file-005	保存	デフォルト:,cmd,s	0
+ファイルメニュー	file-006	別名で保存…	デフォルト:,shift,cmd,s	0
+ファイルメニュー	file-007	新規 > ドキュメント…	デフォルト:,cmd,n	0
+ファイルメニュー	file-008	書き出し…	デフォルト:,cmd,e	0
+ファイルメニュー	file-009	複製を保存…	デフォルト:,alt,cmd,s	0
+ファイルメニュー	file-010	配置…	デフォルト:,cmd,d	0
+ファイルメニュー	file-011	閉じる	デフォルト:,cmd,w	0
+ファイルメニュー	file-012	開く…	デフォルト:,cmd,o	0
+編集メニュー	edit-001	すべてをチェックイン	デフォルト:,alt,shift,cmd,f9	0
+編集メニュー	edit-002	すべてを選択	デフォルト:,cmd,a	0
+編集メニュー	edit-003	やり直し	デフォルト:,shift,cmd,z	0
+編集メニュー	edit-004	カット	デフォルト:,cmd,x	0
+編集メニュー	edit-005	クイック適用…	デフォルト:,cmd,return	0
+編集メニュー	edit-006	コピー	デフォルト:,cmd,c	0
+編集メニュー	edit-007	コンテンツを更新	デフォルト:,ctrl,cmd,f5	0
+編集メニュー	edit-008	ストーリーエディターで編集	デフォルト:,cmd,y	0
+編集メニュー	edit-009	チェックアウト	デフォルト:,cmd,f9	0
+編集メニュー	edit-010	チェックイン	デフォルト:,shift,cmd,f9	0
+編集メニュー	edit-011	フォーマットなしでペースト	デフォルト:,shift,cmd,v	0
+編集メニュー	edit-012	ペースト	デフォルト:,cmd,v	0
+編集メニュー	edit-013	取り消し	デフォルト:,cmd,z	0
+編集メニュー	edit-014	検索と置換…	デフォルト:,cmd,f	0
+編集メニュー	edit-015	検索方向を切り換え	デフォルト:,alt,cmd,return	0
+編集メニュー	edit-016	次を検索	デフォルト:,alt,cmd,f	0
+編集メニュー	edit-017	欧文スペルチェック > 欧文スペルチェック…	デフォルト:,cmd,i	0
+編集メニュー	edit-018	消去	デフォルト:,delete,or,cmd,delete,or,del,or,cmd,del	0
+編集メニュー	edit-019	繰り返し複製…	デフォルト:,alt,cmd,u	0
+編集メニュー	edit-020	複製	デフォルト:,alt,shift,cmd,d	0
+編集メニュー	edit-021	選択を解除	デフォルト:,shift,cmd,a	0
+編集メニュー	edit-022	選択範囲内へペースト	デフォルト:,alt,cmd,v	0
+レイアウトメニュー	layout-001	ページ > ページを追加	デフォルト:,shift,cmd,p	0
+レイアウトメニュー	layout-002	ページへ移動…	デフォルト:,cmd,j,or,プレゼンテーションモード:,cmd,j	0
+レイアウトメニュー	layout-003	先頭ページ	デフォルト:,shift,cmd,pageUp	0
+レイアウトメニュー	layout-004	前に戻る	デフォルト:,cmd,pageUp	0
+レイアウトメニュー	layout-005	前スプレッド	デフォルト:,alt,pageUp,or,プレゼンテーションモード:,shift,space,or,プレゼンテーションモード:,delete,or,プレゼンテーションモード:,curUp,or,プレゼンテーションモード:,pageUp	0
+レイアウトメニュー	layout-006	前ページ	デフォルト:,shift,pageUp,or,テキスト:,shift,pageUp	0
+レイアウトメニュー	layout-007	右スプレッド	プレゼンテーションモード:,curRight	0
+レイアウトメニュー	layout-008	左スプレッド	プレゼンテーションモード:,curLeft	0
+レイアウトメニュー	layout-009	最終ページ	デフォルト:,shift,cmd,pageDown	0
+レイアウトメニュー	layout-010	次に進む	デフォルト:,cmd,pageDown	0
+レイアウトメニュー	layout-011	次スプレッド	デフォルト:,alt,pageDown,or,プレゼンテーションモード:,space,or,プレゼンテーションモード:,curDown,or,プレゼンテーションモード:,return,or,プレゼンテーションモード:,pageDown	0
+レイアウトメニュー	layout-012	次ページ	デフォルト:,shift,pageDown,or,テキスト:,shift,pageDown	0
+書式メニュー	text-001	アウトラインを作成	デフォルト:,shift,cmd,o	0
+書式メニュー	text-002	スペース文字を挿入 > EM スペース	テキスト:,shift,cmd,m	0
+書式メニュー	text-003	スペース文字を挿入 > EN スペース	テキスト:,shift,cmd,n	0
+書式メニュー	text-004	スペース文字を挿入 > 分散禁止スペース	テキスト:,alt,cmd,x	0
+書式メニュー	text-005	スペース文字を挿入 > 細いスペース	テキスト:,alt,shift,cmd,m	0
+書式メニュー	text-006	タブ	デフォルト:,shift,cmd,t	0
+書式メニュー	text-007	テキストを削除せずにアウトラインを作成する	デフォルト:,alt,shift,cmd,o	0
+書式メニュー	text-008	分割文字の挿入 > 強制改行	テキスト:,shift,return	0
+書式メニュー	text-009	分割文字の挿入 > 改フレーム	テキスト:,shift,enter	0
+書式メニュー	text-010	分割文字の挿入 > 改ページ	テキスト:,cmd,enter	0
+書式メニュー	text-011	分割文字の挿入 > 改段	テキスト:,enter	0
+書式メニュー	text-012	制御文字を表示	デフォルト:,alt,cmd,i	0
+書式メニュー	text-013	変更をトラック > 前の変更	テキスト:,cmd,pageUp	0
+書式メニュー	text-014	変更をトラック > 次の変更	テキスト:,cmd,pageDown	0
+書式メニュー	text-015	注釈 > 注釈モード	テキスト:,cmd,f8	0
+書式メニュー	text-016	特殊文字の挿入 > その他 > 右インデント タブ	テキスト:,shift,tab	0
+書式メニュー	text-017	特殊文字の挿入 > その他 > ｢ここまでインデント｣ 文字	テキスト:,cmd,backslash	0
+書式メニュー	text-018	特殊文字の挿入 > ハイフンおよびダッシュ > 任意ハイフン	テキスト:,shift,cmd,hyphen	0
+書式メニュー	text-019	特殊文字の挿入 > ハイフンおよびダッシュ > 分散禁止ハイフン	テキスト:,alt,cmd,hyphen	0
+書式メニュー	text-020	特殊文字の挿入 > マーカー > 現在のページ番号	テキスト:,alt,shift,cmd,n	0
+書式メニュー	text-021	特殊文字の挿入 > 引用符 > 半角一重引用符 (アポストロフィ)	テキスト:,ctrl,apostrophe	0
+書式メニュー	text-022	特殊文字の挿入 > 引用符 > 半角二重引用符	テキスト:,ctrl,shift,apostrophe	0
+オブジェクトメニュー	object-001	オブジェクトサイズの調整 > フレームに均等に流し込む	デフォルト:,alt,shift,cmd,c	0
+オブジェクトメニュー	object-002	オブジェクトサイズの調整 > 内容を縦横比率に応じて合わせる	デフォルト:,alt,shift,cmd,e	0
+オブジェクトメニュー	object-003	クリッピングパス > オプション…	デフォルト:,alt,shift,cmd,k	0
+オブジェクトメニュー	object-004	グループ	デフォルト:,cmd,g	0
+オブジェクトメニュー	object-005	グループ解除	デフォルト:,shift,cmd,g	0
+オブジェクトメニュー	object-006	スプレッド上のすべてをロック解除	デフォルト:,alt,cmd,l	0
+オブジェクトメニュー	object-007	スプレッド上のすべてを表示	デフォルト:,alt,cmd,num3	0
+オブジェクトメニュー	object-008	パス > 複合パスを作成	デフォルト:,cmd,num8	0
+オブジェクトメニュー	object-009	ロック	デフォルト:,cmd,l	0
+オブジェクトメニュー	object-010	再変形 > 変形シーケンスを再実行	デフォルト:,alt,cmd,num4	0
+オブジェクトメニュー	object-011	効果 > ドロップシャドウ…	デフォルト:,alt,cmd,m	0
+オブジェクトメニュー	object-012	変形 > 移動…	デフォルト:,shift,cmd,m	0
+オブジェクトメニュー	object-013	選択 > 内容	デフォルト:,shift,esc	0
+オブジェクトメニュー	object-014	選択 > 前面のオブジェクト	デフォルト:,alt,cmd,bra2	0
+オブジェクトメニュー	object-015	選択 > 最前面のオブジェクト	デフォルト:,alt,shift,cmd,bra2	0
+オブジェクトメニュー	object-016	選択 > 最背面のオブジェクト	デフォルト:,alt,shift,cmd,bra1	0
+オブジェクトメニュー	object-017	選択 > 背面のオブジェクト	デフォルト:,alt,cmd,bra1	0
+オブジェクトメニュー	object-018	選択 > 親のフレーム	デフォルト:,esc	0
+オブジェクトメニュー	object-019	重ね順 > 前面へ	デフォルト:,cmd,bra2	0
+オブジェクトメニュー	object-020	重ね順 > 最前面へ	デフォルト:,shift,cmd,bra2	0
+オブジェクトメニュー	object-021	重ね順 > 最背面へ	デフォルト:,shift,cmd,bra1	0
+オブジェクトメニュー	object-022	重ね順 > 背面へ	デフォルト:,cmd,bra1	0
+オブジェクトメニュー	object-023	隠す	デフォルト:,cmd,num3	0
+表メニュー	table-001	セルの属性 > テキスト…	表:,alt,cmd,b	0
+表メニュー	table-002	削除 > 列	表:,shift,delete	0
+表メニュー	table-003	削除 > 行	表:,cmd,delete	0
+表メニュー	table-004	挿入 > 列…	表:,alt,cmd,num9	0
+表メニュー	table-005	挿入 > 行…	表:,cmd,num9	0
+表メニュー	table-006	表の属性 > 表の設定…	デフォルト:,alt,shift,cmd,b	0
+表メニュー	table-007	表を挿入…	テキスト:,alt,shift,cmd,t	0
+表メニュー	table-008	選択 > セル	表:,cmd,slash	0
+表メニュー	table-009	選択 > 列	表:,alt,cmd,num3	0
+表メニュー	table-010	選択 > 行	表:,cmd,num3	0
+表メニュー	table-011	選択 > 表	表:,alt,cmd,a	0
+表示メニュー	view-001	100% 表示	デフォルト:,cmd,num1	0
+表示メニュー	view-002	エクストラ > コンベヤーを隠す	デフォルト:,alt,b	0
+表示メニュー	view-003	エクストラ > テキスト連結を表示	デフォルト:,alt,cmd,y	0
+表示メニュー	view-004	エクストラ > フレーム枠を隠す	デフォルト:,ctrl,cmd,h	0
+表示メニュー	view-005	オーバープリントプレビュー	デフォルト:,alt,shift,cmd,y	0
+表示メニュー	view-006	グリッドとガイド > ガイドにスナップ	デフォルト:,alt,shift,cmd,num8	0
+表示メニュー	view-007	グリッドとガイド > ガイドをロック	デフォルト:,alt,cmd,num6	0
+表示メニュー	view-008	グリッドとガイド > ガイドを隠す	デフォルト:,cmd,num6	0
+表示メニュー	view-009	グリッドとガイド > グリッドにスナップ	デフォルト:,alt,shift,cmd,num9	0
+表示メニュー	view-010	グリッドとガイド > スマートガイド	デフォルト:,cmd,u	0
+表示メニュー	view-011	グリッドとガイド > ドキュメントグリッドを隠す	デフォルト:,alt,cmd,num9	0
+表示メニュー	view-012	グリッドとガイド > ベースライングリッドを表示	デフォルト:,alt,cmd,num7	0
+表示メニュー	view-013	スクリーンモード > プレゼンテーション	プレゼンテーションモード:,esc,or,デフォルト:,shift,w,or,プレゼンテーションモード:,shift,w	0
+表示メニュー	view-014	スクリーンモード > プレゼンテーションの背景をグレーに設定	プレゼンテーションモード:,g	0
+表示メニュー	view-015	スクリーンモード > プレゼンテーションの背景を白に設定	プレゼンテーションモード:,w	0
+表示メニュー	view-016	スクリーンモード > プレゼンテーションの背景を黒に設定	プレゼンテーションモード:,b	0
+表示メニュー	view-017	スプレッド全体	デフォルト:,alt,cmd,num0	0
+表示メニュー	view-018	ズームアウト	デフォルト:,cmd,hyphen	0
+表示メニュー	view-019	ズームイン	デフォルト:,cmd,semicolon	0
+表示メニュー	view-020	ページ全体	デフォルト:,cmd,num0	0
+表示メニュー	view-021	ペーストボード全体	デフォルト:,alt,shift,cmd,num0	0
+表示メニュー	view-022	定規を隠す	デフォルト:,cmd,r	0
+表示メニュー	view-023	表示画質 > オブジェクト単位の表示設定を消去	デフォルト:,shift,cmd,f2	0
+表示メニュー	view-024	表示画質 > 高速表示	デフォルト:,alt,shift,cmd,z	0
+ウィンドウメニュー	window-001	アレンジ > 最小化	デフォルト:,cmd,m,or,ctrl,cmd,m	0
+ウィンドウメニュー	window-002	インタラクティブ > EPUB インタラクティビティプレビュー	デフォルト:,alt,shift,return,or,alt,shift,enter	0
+ウィンドウメニュー	window-003	インタラクティブ > SWF プレビュー	デフォルト:,shift,cmd,return,or,shift,cmd,enter	0
+ウィンドウメニュー	window-004	オブジェクトとレイアウト > 整列	デフォルト:,shift,f7	0
+ウィンドウメニュー	window-005	カラー > カラー	デフォルト:,f6	0
+ウィンドウメニュー	window-006	カラー > スウォッチ	デフォルト:,f5	0
+ウィンドウメニュー	window-007	コントロール	デフォルト:,shift,cmd,num6	0
+ウィンドウメニュー	window-008	スタイル > オブジェクトスタイル	デフォルト:,cmd,f7	0
+ウィンドウメニュー	window-009	スタイル > 文字スタイル	デフォルト:,shift,cmd,f11,or,shift,f11	0
+ウィンドウメニュー	window-010	スタイル > 段落スタイル	デフォルト:,cmd,f11,or,f11	0
+ウィンドウメニュー	window-011	ページ	デフォルト:,cmd,f12,or,f12	0
+ウィンドウメニュー	window-012	ユーティリティ > スクリプト	デフォルト:,alt,cmd,f11	0
+ウィンドウメニュー	window-013	リンク	デフォルト:,shift,cmd,d	0
+ウィンドウメニュー	window-014	レイヤー	デフォルト:,f7	0
+ウィンドウメニュー	window-015	出力 > 分版	デフォルト:,shift,f6	0
+ウィンドウメニュー	window-016	効果	デフォルト:,shift,cmd,f10	0
+ウィンドウメニュー	window-017	情報	デフォルト:,f8	0
+ウィンドウメニュー	window-018	書式と表 > 字形	デフォルト:,alt,shift,f11	0
+ウィンドウメニュー	window-019	書式と表 > 文字	デフォルト:,cmd,t	0
+ウィンドウメニュー	window-020	書式と表 > 段落	デフォルト:,alt,cmd,t	0
+ウィンドウメニュー	window-021	書式と表 > 索引	デフォルト:,shift,f8	0
+ウィンドウメニュー	window-022	書式と表 > 表	デフォルト:,shift,f9	0
+ウィンドウメニュー	window-023	線	デフォルト:,cmd,f10,or,f10	0
+オブジェクト編集	objEdit-001	1% 比率増加	デフォルト:,cmd,period	0
+オブジェクト編集	objEdit-002	1% 比率減少	デフォルト:,cmd,comma	0
+オブジェクト編集	objEdit-003	10 倍上にずらす	デフォルト:,shift,curUp	0
+オブジェクト編集	objEdit-004	10 倍下にずらす	デフォルト:,shift,curDown	0
+オブジェクト編集	objEdit-005	10 倍右にずらす	デフォルト:,shift,curRight	0
+オブジェクト編集	objEdit-006	10 倍左にずらす	デフォルト:,shift,curLeft	0
+オブジェクト編集	objEdit-007	10 分の 1 上にずらす	デフォルト:,shift,cmd,curUp	0
+オブジェクト編集	objEdit-008	10 分の 1 下にずらす	デフォルト:,shift,cmd,curDown	0
+オブジェクト編集	objEdit-009	10 分の 1 右にずらす	デフォルト:,shift,cmd,curRight	0
+オブジェクト編集	objEdit-010	10 分の 1 左にずらす	デフォルト:,shift,cmd,curLeft	0
+オブジェクト編集	objEdit-011	5% 比率増加	デフォルト:,alt,cmd,period	0
+オブジェクト編集	objEdit-012	5% 比率減少	デフォルト:,alt,cmd,comma	0
+オブジェクト編集	objEdit-013	すべてのガイドを選択	デフォルト:,alt,cmd,g	0
+オブジェクト編集	objEdit-014	パスの描写を終了	デフォルト:,enter,or,return	0
+オブジェクト編集	objEdit-015	ライブ編集モードの切り替え	デフォルト:,num4	0
+オブジェクト編集	objEdit-016	上にずらす	デフォルト:,curUp	0
+オブジェクト編集	objEdit-017	上端に固定	デフォルト:,ctrl,shift,curUp	0
+オブジェクト編集	objEdit-018	下にずらす	デフォルト:,curDown	0
+オブジェクト編集	objEdit-019	下端に固定	デフォルト:,ctrl,shift,curDown	0
+オブジェクト編集	objEdit-020	右にずらす	デフォルト:,curRight	0
+オブジェクト編集	objEdit-021	右端に固定	デフォルト:,ctrl,shift,curRight	0
+オブジェクト編集	objEdit-022	垂直方向にサイズ変更	デフォルト:,ctrl,shift,v	0
+オブジェクト編集	objEdit-023	左にずらす	デフォルト:,curLeft	0
+オブジェクト編集	objEdit-024	左端に固定	デフォルト:,ctrl,shift,curLeft	0
+オブジェクト編集	objEdit-025	水平方向にサイズ変更	デフォルト:,ctrl,shift,h	0
+オブジェクト編集	objEdit-026	複製を 10 倍上にずらす	デフォルト:,alt,shift,curUp	0
+オブジェクト編集	objEdit-027	複製を 10 倍下にずらす	デフォルト:,alt,shift,curDown	0
+オブジェクト編集	objEdit-028	複製を 10 倍右にずらす	デフォルト:,alt,shift,curRight	0
+オブジェクト編集	objEdit-029	複製を 10 倍左にずらす	デフォルト:,alt,shift,curLeft	0
+オブジェクト編集	objEdit-030	複製を 10 分の 1 上にずらす	デフォルト:,alt,shift,cmd,curUp	0
+オブジェクト編集	objEdit-031	複製を 10 分の 1 下にずらす	デフォルト:,alt,shift,cmd,curDown	0
+オブジェクト編集	objEdit-032	複製を 10 分の 1 右にずらす	デフォルト:,alt,shift,cmd,curRight	0
+オブジェクト編集	objEdit-033	複製を 10 分の 1 左にずらす	デフォルト:,alt,shift,cmd,curLeft	0
+オブジェクト編集	objEdit-034	複製を上にずらす	デフォルト:,alt,curUp	0
+オブジェクト編集	objEdit-035	複製を下にずらす	デフォルト:,alt,curDown	0
+オブジェクト編集	objEdit-036	複製を右にずらす	デフォルト:,alt,curRight	0
+オブジェクト編集	objEdit-037	複製を左にずらす	デフォルト:,alt,curLeft	0
+ツール	tool-001	はさみツール	デフォルト:,c	0
+ツール	tool-002	ものさしツール	デフォルト:,k	0
+ツール	tool-003	アンカーポイントの切り換えツール	デフォルト:,shift,c	0
+ツール	tool-004	カラーを適用	デフォルト:,comma	0
+ツール	tool-005	グラデーションぼかしツール	デフォルト:,shift,g	0
+ツール	tool-006	グラデーションを適用	デフォルト:,period	0
+ツール	tool-007	グラデーションスウォッチツール	デフォルト:,g	0
+ツール	tool-008	コンテンツ収集ツールとコンテンツ配置ツールを切り替える	デフォルト:,b	0
+ツール	tool-009	シアーツール	デフォルト:,o	0
+ツール	tool-010	スポイトツールとカラーテーマツールを切り替え	デフォルト:,i	0
+ツール	tool-011	ズームツール	デフォルト:,z	0
+ツール	tool-012	ダイレクト選択ツール	デフォルト:,a	0
+ツール	tool-013	テキストとオブジェクトコントロールを切り替える	デフォルト:,j	0
+ツール	tool-014	デフォルトとプレビュー表示設定間を切り替える	デフォルト:,w	0
+ツール	tool-015	ペンツール	デフォルト:,p	0
+ツール	tool-016	ページツール	デフォルト:,shift,p	0
+ツール	tool-017	初期値の塗りと線のカラーを適用	デフォルト:,d	0
+ツール	tool-018	回転ツール	デフォルト:,r	0
+ツール	tool-019	塗りと線のカラーを入れ替える	デフォルト:,shift,x	0
+ツール	tool-020	塗りと線を入れ替え	デフォルト:,x	0
+ツール	tool-021	手のひらツール	デフォルト:,h	0
+ツール	tool-022	拡大 / 縮小ツール	デフォルト:,s	0
+ツール	tool-023	楕円形ツール	デフォルト:,l	0
+ツール	tool-024	横組みグリッドツール	デフォルト:,y	0
+ツール	tool-025	横組みパスツール	デフォルト:,shift,t	0
+ツール	tool-026	横組み文字ツール	デフォルト:,t	0
+ツール	tool-027	線ツール	デフォルト:,backslash	0
+ツール	tool-028	縦組みグリッドツール	デフォルト:,q	0
+ツール	tool-029	自由変形ツール	デフォルト:,e	0
+ツール	tool-030	適用なし	デフォルト:,slash	0
+ツール	tool-031	選択ツール	デフォルト:,v,or,テキスト:,esc	0
+ツール	tool-032	鉛筆ツール	デフォルト:,n	0
+ツール	tool-033	長方形ツール	デフォルト:,m	0
+ツール	tool-034	長方形フレームツール	デフォルト:,f	0
+ツール	tool-035	間隔ツール	デフォルト:,u	0
+テキストと表	textTable-001	(テキスト) 上部のセルを選択	表:,shift,curUp	0
+テキストと表	textTable-002	(テキスト) 下部のセルを選択	表:,shift,curDown	0
+テキストと表	textTable-003	(テキスト) 右のセルを選択	表:,shift,curRight	0
+テキストと表	textTable-004	(テキスト) 左のセルを選択	表:,shift,curLeft	0
+テキストと表	textTable-005	1 単語右へ移動	テキスト:,cmd,curRight	0
+テキストと表	textTable-006	1 単語左へ移動	テキスト:,cmd,curLeft	0
+テキストと表	textTable-007	1 文字右へ移動	テキスト:,curRight	0
+テキストと表	textTable-008	1 文字左へ移動	テキスト:,curLeft	0
+テキストと表	textTable-009	1 行上へ移動	テキスト:,curUp	0
+テキストと表	textTable-010	1 行下へ移動	テキスト:,curDown	0
+テキストと表	textTable-011	カーニング / 字送り x 5 増加	テキスト:,alt,cmd,curRight	0
+テキストと表	textTable-012	カーニング / 字送り x 5 減少	テキスト:,alt,cmd,curLeft	0
+テキストと表	textTable-013	カーニング / 字送りを増加	テキスト:,alt,shift,curRight,or,alt,curRight	0
+テキストと表	textTable-014	カーニング / 字送りを減少	テキスト:,alt,shift,curLeft,or,alt,curLeft	0
+テキストと表	textTable-015	カーニングと字送りのリセット	テキスト:,alt,cmd,q	0
+テキストと表	textTable-016	ストーリーの先頭へ移動	テキスト:,cmd,home	0
+テキストと表	textTable-017	ストーリーの先頭まで選択	テキスト:,shift,cmd,home	0
+テキストと表	textTable-018	ストーリーの最後へ移動	テキスト:,cmd,end	0
+テキストと表	textTable-019	ストーリーの終わりまで選択	テキスト:,shift,cmd,end	0
+テキストと表	textTable-020	セル / テキストの選択へトグル	表:,esc	0
+テキストと表	textTable-021	テキストを置換	テキスト:,cmd,f3	0
+テキストと表	textTable-022	テキストを置換して次を検索	テキスト:,shift,f3	0
+テキストと表	textTable-023	フォントサイズ x 5 増加	デフォルト:,alt,shift,cmd,period	0
+テキストと表	textTable-024	フォントサイズ x 5 減少	デフォルト:,alt,shift,cmd,comma	0
+テキストと表	textTable-025	フレーム内の 1 行目に移動	表:,pageUp	0
+テキストと表	textTable-026	フレーム内の最終行へ移動	表:,pageDown	0
+テキストと表	textTable-027	ベースライングリッドに揃える	デフォルト:,alt,shift,cmd,g	0
+テキストと表	textTable-028	ベースラインシフト x 5 増加	テキスト:,alt,shift,cmd,curUp	0
+テキストと表	textTable-029	ベースラインシフト x 5 減少	テキスト:,alt,shift,cmd,curDown	0
+テキストと表	textTable-030	ベースラインシフトを増加	テキスト:,alt,shift,curUp	0
+テキストと表	textTable-031	ベースラインシフトを減少	テキスト:,alt,shift,curDown	0
+テキストと表	textTable-032	ポイントサイズを増加	デフォルト:,shift,cmd,period	0
+テキストと表	textTable-033	ポイントサイズを減少	デフォルト:,shift,cmd,comma	0
+テキストと表	textTable-034	上へ 1 行選択	テキスト:,shift,curUp	0
+テキストと表	textTable-035	上へ移動	表:,curUp	0
+テキストと表	textTable-036	下へ 1 行選択	テキスト:,shift,curDown	0
+テキストと表	textTable-037	下へ移動	表:,curDown	0
+テキストと表	textTable-038	中央揃え	デフォルト:,shift,cmd,c	0
+テキストと表	textTable-039	全ストーリーを再計算	デフォルト:,alt,cmd,slash	0
+テキストと表	textTable-040	列内の先頭セルへ移動	表:,alt,pageUp	0
+テキストと表	textTable-041	列内の最終セルへ移動	表:,alt,pageDown	0
+テキストと表	textTable-042	削除	表:,del	0
+テキストと表	textTable-043	前の 1 段落を選択	テキスト:,shift,cmd,curUp	0
+テキストと表	textTable-044	前のセルへ移動	表:,shift,tab	0
+テキストと表	textTable-045	前の段落へ移動	テキスト:,cmd,curUp	0
+テキストと表	textTable-046	単語間隔 x 5 増加	デフォルト:,alt,shift,cmd,backslash	0
+テキストと表	textTable-047	単語間隔 x 5 減少	デフォルト:,alt,shift,cmd,delete	0
+テキストと表	textTable-048	単語間隔の増加	デフォルト:,alt,cmd,backslash,or,ctrl,alt,cmd,backslash	0
+テキストと表	textTable-049	単語間隔の減少	デフォルト:,alt,cmd,delete	0
+テキストと表	textTable-050	右 / 下揃え	デフォルト:,shift,cmd,r	0
+テキストと表	textTable-051	右の 1 文字を削除	テキスト:,del,or,shift,del	0
+テキストと表	textTable-052	右へ 1 単語選択	テキスト:,shift,cmd,curRight	0
+テキストと表	textTable-053	右へ 1 文字選択	テキスト:,shift,curRight	0
+テキストと表	textTable-054	右へ移動	表:,curRight	0
+テキストと表	textTable-055	均等配置	デフォルト:,shift,cmd,j	0
+テキストと表	textTable-056	太字を適用	デフォルト:,shift,cmd,b	0
+テキストと表	textTable-057	左 / 上揃え	デフォルト:,shift,cmd,l	0
+テキストと表	textTable-058	左の 1 文字を削除	テキスト:,delete,or,shift,delete	0
+テキストと表	textTable-059	左へ 1 単語選択	テキスト:,shift,cmd,curLeft	0
+テキストと表	textTable-060	左へ 1 文字選択	テキスト:,shift,curLeft	0
+テキストと表	textTable-061	左へ移動	表:,curLeft	0
+テキストと表	textTable-062	後ろの 1 段落を選択	テキスト:,shift,cmd,curDown	0
+テキストと表	textTable-063	改フレームして行開始	表:,shift,enter	0
+テキストと表	textTable-064	改段して行開始	表:,enter	0
+テキストと表	textTable-065	斜体を適用	デフォルト:,shift,cmd,i	0
+テキストと表	textTable-066	検索文字列に読み込み後次を検索	テキスト:,shift,f1	0
+テキストと表	textTable-067	標準を適用	デフォルト:,shift,cmd,y	0
+テキストと表	textTable-068	次のセルへ移動	表:,tab	0
+テキストと表	textTable-069	次の段落へ移動	テキスト:,cmd,curDown	0
+テキストと表	textTable-070	次を検索	テキスト:,shift,f2	0
+テキストと表	textTable-071	消去	表:,delete	0
+テキストと表	textTable-072	環境に無いフォントリストの更新	デフォルト:,alt,shift,cmd,slash	0
+テキストと表	textTable-073	自動縦中横設定…	デフォルト:,alt,shift,cmd,h	0
+テキストと表	textTable-074	英文引用符の環境設定を切り替え	デフォルト:,alt,shift,cmd,apostrophe	0
+テキストと表	textTable-075	行の先頭まで選択	テキスト:,shift,home	0
+テキストと表	textTable-076	行の先頭セルへ移動	表:,alt,home	0
+テキストと表	textTable-077	行の最終セルへ移動	表:,alt,end	0
+テキストと表	textTable-078	行の終わりまで選択	テキスト:,shift,end	0
+テキストと表	textTable-079	行末へ移動	テキスト:,end	0
+テキストと表	textTable-080	行送り x 5 増加	テキスト:,alt,cmd,curDown	0
+テキストと表	textTable-081	行送り x 5 減少	テキスト:,alt,cmd,curUp	0
+テキストと表	textTable-082	行送りの増加	テキスト:,alt,curDown	0
+テキストと表	textTable-083	行送りの減少	テキスト:,alt,curUp	0
+テキストと表	textTable-084	行頭へ移動	テキスト:,home	0
+テキストと表	textTable-085	選択したテキストを検索文字列に読み込み	テキスト:,cmd,f1	0
+テキストと表	textTable-086	選択したテキストを置換文字列に読み込み	テキスト:,cmd,f2	0
+テキストと表	textTable-087	頭末合わせ	デフォルト:,shift,cmd,f	0
+パネルメニュー	panel-001	EPUB インタラクティビティプレビュー > ドキュメントをプレビュー	デフォルト:,alt,shift,cmd,return,or,alt,shift,cmd,enter	0
+パネルメニュー	panel-002	タグ > 自動タグ	テキスト:,alt,shift,cmd,f7	0
+パネルメニュー	panel-003	ページ > すべてのページアイテムをオーバーライド	デフォルト:,alt,shift,cmd,l	0
+パネルメニュー	panel-004	文字 > 下線	デフォルト:,shift,cmd,u	0
+パネルメニュー	panel-005	文字 > 打ち消し線	デフォルト:,ctrl,shift,cmd,slash,or,shift,cmd,slash	0
+パネルメニュー	panel-006	文字スタイル > スタイル再定義	テキスト:,alt,shift,cmd,c	0
+パネルメニュー	panel-007	段落 > ジャスティフィケーション…	デフォルト:,alt,shift,cmd,j	0
+パネルメニュー	panel-008	段落 > 段落境界線…	デフォルト:,alt,cmd,j	0
+パネルメニュー	panel-009	段落スタイル > スタイル再定義	テキスト:,alt,shift,cmd,r	0
+パネルメニュー	panel-010	索引 > 新規相互参照…	デフォルト:,cmd,num7	0
+パネルメニュー	panel-011	索引 > 新規索引項目の追加 (逆方向)	テキスト:,alt,shift,cmd,bra2	0
+パネルメニュー	panel-012	索引 > 新規索引項目を追加	テキスト:,alt,shift,cmd,bra1	0
+日本語文字組版	ja-001	グリッドのプリント・書き出し…	デフォルト:,alt,shift,cmd,p	0
+日本語文字組版	ja-002	グリッドフォーマットの適用	デフォルト:,alt,cmd,e	0
+日本語文字組版	ja-003	グリッドフォーマットを適用せずにペースト	デフォルト:,alt,shift,cmd,v	0
+日本語文字組版	ja-004	フレームグリッドを隠す	デフォルト:,shift,cmd,e	0
+日本語文字組版	ja-005	フレームグリッド設定…	デフォルト:,cmd,b	0
+日本語文字組版	ja-006	ルビの位置と間隔…	デフォルト:,alt,cmd,r	0
+日本語文字組版	ja-007	レイアウトグリッドにスナップ	デフォルト:,alt,shift,cmd,a	0
+日本語文字組版	ja-008	レイアウトグリッドを表示	デフォルト:,alt,cmd,a	0
+日本語文字組版	ja-009	割注	デフォルト:,alt,cmd,w	0
+日本語文字組版	ja-010	割注設定…	デフォルト:,alt,cmd,z	0
+日本語文字組版	ja-011	合成フォント…	デフォルト:,alt,shift,cmd,f	0
+日本語文字組版	ja-012	圏点設定…	デフォルト:,alt,cmd,k	0
+日本語文字組版	ja-013	基本設定…	デフォルト:,shift,cmd,x	0
+日本語文字組版	ja-014	文字数を隠す	デフォルト:,alt,cmd,c	0
+日本語文字組版	ja-015	禁則処理セット…	デフォルト:,shift,cmd,k	0
+日本語文字組版	ja-016	縦中横	デフォルト:,alt,cmd,h	0
+日本語文字組版	ja-017	縦中横設定…	デフォルト:,shift,cmd,h	0
+日本語文字組版	ja-018	詳細設定…	デフォルト:,alt,shift,cmd,x	0
+構造ナビゲーション	arcNav-001	XML 選択を上に拡張	XML選択:,shift,curUp	0
+構造ナビゲーション	arcNav-002	XML 選択を上に移動	XML選択:,curUp	0
+構造ナビゲーション	arcNav-003	XML 選択を下に拡張	XML選択:,shift,curDown	0
+構造ナビゲーション	arcNav-004	XML 選択を下に移動	XML選択:,curDown	0
+構造ナビゲーション	arcNav-005	先頭 XML ノードを選択	XML選択:,home	0
+構造ナビゲーション	arcNav-006	前の検証エラーを表示	XML選択:,cmd,curLeft	0
+構造ナビゲーション	arcNav-007	最初の XML ノードまで選択	XML選択:,shift,home	0
+構造ナビゲーション	arcNav-008	最後の XML ノードまで選択	XML選択:,shift,end	0
+構造ナビゲーション	arcNav-009	最終 XML ノードを選択	XML選択:,end	0
+構造ナビゲーション	arcNav-010	構造ウィンドウ枠を一画面上へスクロール	XML選択:,pageUp	0
+構造ナビゲーション	arcNav-011	構造ウィンドウ枠を一画面下へスクロール	XML選択:,pageDown	0
+構造ナビゲーション	arcNav-012	次の検証エラーを表示	XML選択:,cmd,curRight	0
+構造ナビゲーション	arcNav-013	要素と子の要素を折りたたみ	XML選択:,alt,curLeft	0
+構造ナビゲーション	arcNav-014	要素と子の要素を拡大	XML選択:,alt,curRight	0
+構造ナビゲーション	arcNav-015	要素を折りたたみ	XML選択:,curLeft	0
+構造ナビゲーション	arcNav-016	要素を拡大	XML選択:,curRight	0
+表示、ナビゲーション	viewNav-001	1 画面上へスクロール	デフォルト:,pageUp,or,テキスト:,pageUp	0
+表示、ナビゲーション	viewNav-002	1 画面下へスクロール	デフォルト:,pageDown,or,テキスト:,pageDown	0
+表示、ナビゲーション	viewNav-003	1 番目の特色プレートを表示	デフォルト:,alt,shift,cmd,num5	0
+表示、ナビゲーション	viewNav-004	2 番目の特色プレートを表示	デフォルト:,alt,shift,cmd,num6	0
+表示、ナビゲーション	viewNav-005	200% サイズ	デフォルト:,cmd,num2	0
+表示、ナビゲーション	viewNav-006	3 番目の特色プレートを表示	デフォルト:,alt,shift,cmd,num7	0
+表示、ナビゲーション	viewNav-007	400% サイズ	デフォルト:,cmd,num4	0
+表示、ナビゲーション	viewNav-008	50% サイズ	デフォルト:,cmd,num5	0
+表示、ナビゲーション	viewNav-009	すべてのパネルを表示 / 隠す	デフォルト:,tab	0
+表示、ナビゲーション	viewNav-010	すべてのプレートを表示	デフォルト:,alt,shift,cmd,accent	0
+表示、ナビゲーション	viewNav-011	すべてを保存	デフォルト:,alt,shift,cmd,s	0
+表示、ナビゲーション	viewNav-012	すべて閉じる	デフォルト:,alt,shift,cmd,w	0
+表示、ナビゲーション	viewNav-013	イエロープレートを表示	デフォルト:,alt,shift,cmd,num3	0
+表示、ナビゲーション	viewNav-014	オブジェクト全体を表示	デフォルト:,alt,cmd,num1	0
+表示、ナビゲーション	viewNav-015	サイドタブですべてのパネルを開く / 閉じる	デフォルト:,alt,cmd,tab	0
+表示、ナビゲーション	viewNav-016	シアンプレートを表示	デフォルト:,alt,shift,cmd,num1	0
+表示、ナビゲーション	viewNav-017	スレッド内の先頭のフレームへ	デフォルト:,alt,shift,cmd,pageUp	0
+表示、ナビゲーション	viewNav-018	スレッド内の前のフレームへ	デフォルト:,alt,cmd,pageUp	0
+表示、ナビゲーション	viewNav-019	スレッド内の最後のフレームへ	デフォルト:,alt,shift,cmd,pageDown	0
+表示、ナビゲーション	viewNav-020	スレッド内の次のフレームへ	デフォルト:,alt,cmd,pageDown	0
+表示、ナビゲーション	viewNav-021	ズーム % ボックスにアクセス	デフォルト:,alt,cmd,num5	0
+表示、ナビゲーション	viewNav-022	ツールボックス以外のすべてのパネルを表示 / 非表示	デフォルト:,shift,tab	0
+表示、ナビゲーション	viewNav-023	ドキュメントを閉じる	デフォルト:,shift,cmd,w	0
+表示、ナビゲーション	viewNav-024	ブラックプレートを表示	デフォルト:,alt,shift,cmd,num4	0
+表示、ナビゲーション	viewNav-025	マゼンタプレートを表示	デフォルト:,alt,shift,cmd,num2	0
+表示、ナビゲーション	viewNav-026	先頭スプレッド	デフォルト:,home,or,デフォルト:,alt,shift,pageUp,or,プレゼンテーションモード:,home	0
+表示、ナビゲーション	viewNav-027	前のウィンドウ	プレゼンテーションモード:,shift,cmd,tab,or,shift,cmd,accent	0
+表示、ナビゲーション	viewNav-028	単位システムをトグル	デフォルト:,alt,shift,cmd,u	0
+表示、ナビゲーション	viewNav-029	強制再描画	デフォルト:,shift,f5	0
+表示、ナビゲーション	viewNav-030	新規デフォルトドキュメント	デフォルト:,alt,cmd,n	0
+表示、ナビゲーション	viewNav-031	最終スプレッド	デフォルト:,end,or,デフォルト:,alt,shift,pageDown,or,プレゼンテーションモード:,end	0
+表示、ナビゲーション	viewNav-032	次のウィンドウ	プレゼンテーションモード:,cmd,tab,or,cmd,accent	0
+表示、ナビゲーション	viewNav-033	現在のビューと前のビューを切り替える	デフォルト:,alt,cmd,num2	0

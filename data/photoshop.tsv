@@ -1,109 +1,175 @@
-ツールの選択	tool-01	移動ツール	v	0
-ツールの選択	tool-02	長方形選択ツール<br>楕円形選択ツール	m	0
-ツールの選択	tool-03	なげなわツール<br>多角形選択ツール<br>マグネット選択ツール	l	0
-ツールの選択	tool-04	自動選択ツール<br>クイック選択ツール	w	0
-ツールの選択	tool-05	切り抜きツール<br>遠近法の切り抜きツール<br>スライスツール<br>スライス選択ツール	c	0
-ツールの選択	tool-06	スポイトツール<br>カラーサンプラーツール<br>ものさしツール<br>注釈ツール	i	0
-ツールの選択	tool-07	スポット修復ブラシツール<br>修復ブラシツール<br>パッチツール<br>コンテンツに応じた移動ツール<br>赤目修正ツール	j	0
-ツールの選択	tool-08	ブラシツール<br>鉛筆ツール<br>色の置き換えツール<br>混合ブラシツール	b	0
-ツールの選択	tool-09	コピースタンプツール<br>パターンスタンプツール	s	0
-ツールの選択	tool-10	ヒストリーブラシツール<br>アートヒストリーブラシツール	y	0
-ツールの選択	tool-11	消しゴムツール<br>背景消しゴムツール<br>マジック消しゴムツール	e	0
-ツールの選択	tool-12	グラデーションツール<br>塗りつぶしツール	g	0
-ツールの選択	tool-13	覆い焼きツール<br>焼き込みツール<br>スポンジツール	o	0
-ツールの選択	tool-14	ペンツール<br>フリーフォームペンツール	p	0
-ツールの選択	tool-15	横書き文字ツール<br>縦書き文字ツール<br>横書き文字マスクツール<br>縦書き文字マスクツール	t	0
-ツールの選択	tool-16	パスコンポーネント選択ツール<br>パス選択ツール	a	0
-ツールの選択	tool-17	長方形ツール<br>角丸長方形ツール<br>楕円形ツール<br>多角形ツール<br>ラインツール<br>カスタムシェイプツール	u	0
-ツールの選択	tool-20	手のひらツール	h	0
-ツールの選択	tool-21	回転ビューツール	r	0
-ツールの選択	tool-22	ズームツール	z	0
-ツールの選択	tool-23	描画色と背景色を初期設定に戻す	d	0
-ツールの選択	tool-24	描画色と背景色を入れ替え	x	0
-ツールの選択	tool-25	クイックマスクモードで編集<br>画像描画モードで編集	q	0
-ツールの選択	tool-26	スクリーンモードを切り替え	f	0
-画像の表示	screen-01	開いているドキュメントを順番に表示する	ctrl,tab	0
-画像の表示	screen-02	前のドキュメントに切り替える	shift,cmd,`	0
-画像の表示	screen-03	Photoshop でファイルを閉じて Bridge を開く	shift,cmd,w	0
-画像の表示	screen-04	画像描画モードとクイックマスクモードを切り替える	q	0
-画像の表示	screen-05	標準スクリーンモード、メニューバー付きフルスクリーンモード、フルスクリーンモードを切り替える（順方向）	f	0
-画像の表示	screen-06	標準スクリーンモード、メニューバー付きフルスクリーンモード、フルスクリーンモードを切り替える（逆方向）	shift,f	0
-画像の表示	screen-07	カンバスの色を順番に切り替える	space,f	0
-画像の表示	screen-08	カンバスの色を逆順に切り替える	space,shift,f	0
-画像の表示	screen-09	100 ％で表示する	cmd,num1	0
-画像の表示	screen-10	手のひらツールに切り替える（テキスト編集モードの場合を除く）	space	0
-画像の表示	screen-11	手のひらツールで複数のドキュメントを同時にパンする	shift,drug	0
-画像の表示	screen-12	ズームインツールに切り替える	cmd,space	0
-画像の表示	screen-13	ズームアウトツールに切り替える	alt,cmd,space	0
-画像の表示	screen-14	ズームツールのドラッグ時に点線のボックスを移動	space,drug	0
-画像の表示	screen-15	手のひらツールで画像をスクロールする	space,drug	0
-画像の表示	screen-16	上下に 1 画面ずつスクロールする	pageUp,or,pageDown	0
-画像の表示	screen-17	上下に 10 単位ずつスクロールする	shift,pageUp,or,pageDown	0
-画像の表示	screen-18	画面の表示を左上または右下に移動する	home,or,end	0
-画像の表示	screen-19	レイヤーマスクの半透明カラーのオン / オフを切り替える（レイヤーマスクの選択が必要）	shift,alt,backslash	0
-画像の表示	screen-20	色の校正	cmd,y	0
-画像の表示	screen-21	色域外警告を表示	shift,cmd,y	0
-画像の表示	screen-22	画面の拡大（ズームイン）	cmd,plus	0
-画像の表示	screen-23	画面の縮小（ズームアウト）	cmd,hyphen	0
-画像の表示	screen-24	画面サイズに合わせて表示	cmd,num0	0
-画像の表示	screen-25	ピクセル等倍で表示	cmd,num1	0
-画像の表示	screen-26	エクストラの表示／非表示	cmd,h	0
-画像の表示	screen-27	定規の表示／非表示	cmd,r	0
-画像の表示	screen-28	スクロール	space,drug	0
-画像の表示	screen-29	カンバスの表示を拡大／縮小	cmd,space,drug	0
-ファイル操作	file-01	新規書類を作成	cmd,n	0
-ファイル操作	file-02	書類を開く	cmd,o	0
-ファイル操作	file-03	Adobe Bridgeを起動	alt,cmd,o	0
-ファイル操作	file-04	書類を閉じる	cmd,w	0
-ファイル操作	file-05	すべての書類を閉じる	alt,cmd,w	0
-ファイル操作	file-06	書類を閉じてAdobe Bridgeを起動	shift,cmd,w	0
-ファイル操作	file-07	ファイルを保存	cmd,s	0
-ファイル操作	file-08	別名で保存	shift,cmd,s	0
-ファイル操作	file-09	Web用に保存	alt,shift,cmd,s	0
-ファイル操作	file-10	書類を開いた直後の状態に復帰する	f12	0
-ファイル操作	file-11	ファイルの情報を見る	alt,shift,cmd,i	0
-ファイル操作	file-12	印刷する	cmd,p	0
-画像処理	image-01	フェード	shift,cmd,f	0
-画像処理	image-02	選択範囲を自由に変形する	cmd,t	0
-画像処理	image-03	[塗りつぶし]ダイアログボックスを表示する	shift,f5	0
-画像処理	image-04	コンテンツに応じて拡大・縮小	alt,shift,cmd,c	0
-画像処理	image-05	画面解像度を変更する	alt,cmd,i	0
-画像処理	image-06	カンバスサイズを変更する	alt,cmd,c	0
-色調補正	color-01	レベル補正	cmd,l	0
-色調補正	color-02	トーンカーブ	cmd,m	0
-色調補正	color-03	色相・彩度	cmd,u	0
-色調補正	color-04	カラーバランス	cmd,b	0
-色調補正	color-05	白黒	alt,shift,cmd,b	0
-色調補正	color-06	階調の反転	cmd,i	0
-色調補正	color-07	彩度を下げる	shift,cmd,u	0
-色調補正	color-08	自動トーン補正	shift,cmd,l	0
-色調補正	color-09	自動コントラスト	alt,shift,cmd,l	0
-色調補正	color-10	カラーバランス	alt,cmd,b	0
-レイヤー操作	layer-01	新規レイヤーの作成	shift,cmd,n	0
-レイヤー操作	layer-02	選択範囲をコピーしてレイヤーを作成	cmd,j	0
-レイヤー操作	layer-03	選択範囲をカットしてレイヤーを作成	shift,cmd,j	0
-レイヤー操作	layer-04	すべてのレイヤーを選択	alt,cmd,a	0
-レイヤー操作	layer-05	レイヤーを名前で検索	alt,shift,cmd,f	0
-レイヤー操作	layer-06	クリッピングマスクを作成	alt,cmd,g	0
-レイヤー操作	layer-07	レイヤーをグループ化	cmd,g	0
-レイヤー操作	layer-08	レイヤーのグループ解除	shift,cmd,g	0
-レイヤー操作	layer-09	レイヤーを最前面に移動	shift,cmd,bra2	0
-レイヤー操作	layer-10	レイヤーを前面に移動	cmd,bra2	0
-レイヤー操作	layer-11	レイヤーを背面に移動	cmd,bra1	0
-レイヤー操作	layer-12	レイヤーを最背面に移動	shift,cmd,bra1	0
-レイヤー操作	layer-13	レイヤーをレイヤーの不透明度を設定	num0,num1,num2,num3,num4,num5,num6,num7,num8,num9	0
-レイヤー操作	layer-14	レイヤーの結合	cmd,e	0
-レイヤー操作	layer-15	表示レイヤーの結合	shift,cmd,e	0
-選択範囲	select-01	すべてを選択	cmd,a	0
-選択範囲	select-02	選択を解除	cmd,d	0
-選択範囲	select-03	解除した選択範囲を再選択	shift,cmd,d	0
-選択範囲	select-04	選択範囲を反転	shift,cmd,i	0
-選択範囲	select-05	すべてのレイヤーを選択	alt,cmd,a	0
-選択範囲	select-06	レイヤーを名前で検索	alt,shift,cmd,f	0
-選択範囲	select-07	選択範囲作成中に範囲を移動	選択範囲作成中に,space,drug	0
-選択範囲	select-08	境界をぼかす	shift,f6	0
-フィルター	filter-01	フィルターの再適用	cmd,f	0
-フィルター	filter-02	広角補正	shift,cmd,a	0
-フィルター	filter-03	レンズ補正	shift,cmd,r	0
-フィルター	filter-04	ゆがみ	shift,cmd,x	0
-フィルター	filter-05	Vanishing Point	alt,cmd,v	0
+Photoshop	ps-001	環境設定 > 一般…	cmd,k	0
+Photoshop	ps-002	Photoshop を隠す	ctrl,cmd,h	0
+Photoshop	ps-003	他を隠す	alt,cmd,h	0
+Photoshop	ps-004	Photoshop を終了	cmd,q	0
+ファイル	file-001	新規...	cmd,n	0
+ファイル	file-002	開く...	cmd,o	0
+ファイル	file-003	Bridge で参照...	alt,cmd,o,or,shift,cmd,o	0
+ファイル	file-004	閉じる	cmd,w	0
+ファイル	file-005	すべてを閉じる	alt,cmd,w	0
+ファイル	file-006	閉じて Bridge を起動...	shift,cmd,w	0
+ファイル	file-007	保存	cmd,s	0
+ファイル	file-008	別名で保存...	shift,cmd,s,or,alt,cmd,s	0
+ファイル	file-009	復帰	f12	0
+ファイル	file-010	アセットを抽出...	alt,shift,cmd,w	0
+ファイル	file-011	Web 用に保存...	alt,shift,cmd,s	0
+ファイル	file-012	ファイル情報...	alt,shift,cmd,i	0
+ファイル	file-013	プリント...	cmd,p	0
+ファイル	file-014	1 部プリント	alt,shift,cmd,p	0
+編集	edit-001	取り消し / やり直し	cmd,z,or,f1	0
+編集	edit-002	1 段階進む	shift,cmd,z	0
+編集	edit-003	1 段階戻る	alt,cmd,z	0
+編集	edit-004	フェード...	shift,cmd,f	0
+編集	edit-005	カット	cmd,x,or,f2	0
+編集	edit-006	コピー	cmd,c,or,f3	0
+編集	edit-007	結合部分をコピー	shift,cmd,c	0
+編集	edit-008	ペースト	cmd,v,or,f4	0
+編集	edit-009	特殊ペースト > 選択範囲内へペースト	shift,cmd,v	0
+編集	edit-010	塗りつぶし...	shift,f5	0
+編集	edit-011	コンテンツに応じて拡大・縮小	alt,shift,cmd,c	0
+編集	edit-012	自由変形	cmd,t	0
+編集	edit-013	変形 > 再実行	shift,cmd,t	0
+編集	edit-014	カラー設定...	shift,cmd,k	0
+編集	edit-015	キーボードショートカット...	alt,shift,cmd,k	0
+編集	edit-016	メニュー...	alt,shift,cmd,m	0
+イメージ	image-001	色調補正 > レベル補正...	cmd,l	0
+イメージ	image-002	色調補正 > トーンカーブ...	cmd,m	0
+イメージ	image-003	色調補正 > 色相・彩度...	cmd,u	0
+イメージ	image-004	色調補正 > カラーバランス...	cmd,b	0
+イメージ	image-005	色調補正 > 白黒...	alt,shift,cmd,b	0
+イメージ	image-006	色調補正 > 階調の反転	cmd,i	0
+イメージ	image-007	色調補正 > 彩度を下げる	shift,cmd,u	0
+イメージ	image-008	自動トーン補正	shift,cmd,l	0
+イメージ	image-009	自動コントラスト	alt,shift,cmd,l	0
+イメージ	image-010	自動カラー補正	shift,cmd,b	0
+イメージ	image-011	画像解像度...	alt,cmd,i	0
+イメージ	image-012	カンバスサイズ...	alt,cmd,c	0
+イメージ	image-013	解析 > 計測値を記録	shift,cmd,m	0
+レイヤー	layer-001	新規 > レイヤー...	shift,cmd,n	0
+レイヤー	layer-002	新規 > 選択範囲をコピーしたレイヤー	cmd,j	0
+レイヤー	layer-003	新規 > 選択範囲をカットしたレイヤー	shift,cmd,j	0
+レイヤー	layer-004	クリッピングマスクを作成 / 解除	alt,cmd,g	0
+レイヤー	layer-005	レイヤーをグループ化	cmd,g	0
+レイヤー	layer-006	レイヤーのグループ解除	shift,cmd,g	0
+レイヤー	layer-007	レイヤーを非表示	cmd,comma	0
+レイヤー	layer-008	重ね順 > 最前面へ	shift,cmd,bra2	0
+レイヤー	layer-009	重ね順 > 前面へ	cmd,bra2	0
+レイヤー	layer-010	重ね順 > 背面へ	cmd,bra1	0
+レイヤー	layer-011	重ね順 > 最背面へ	shift,cmd,bra1	0
+レイヤー	layer-012	レイヤーをロック...	cmd,slash	0
+レイヤー	layer-013	レイヤーを結合	cmd,e	0
+レイヤー	layer-014	表示レイヤーを結合	shift,cmd,e	0
+選択範囲	select-001	すべてを選択	cmd,a	0
+選択範囲	select-002	選択を解除	cmd,d	0
+選択範囲	select-003	再選択	shift,cmd,d	0
+選択範囲	select-004	選択範囲を反転	shift,cmd,i,or,shift,f7	0
+選択範囲	select-005	すべてのレイヤー	alt,cmd,a	0
+選択範囲	select-006	レイヤーを検索	alt,shift,cmd,f	0
+選択範囲	select-007	マスクを調整...	alt,cmd,r	0
+選択範囲	select-008	選択範囲を変更 > 境界をぼかす…	shift,f6	0
+フィルター	filter-001	フィルターの再実行	cmd,f	0
+フィルター	filter-002	広角補正...	alt,shift,cmd,a	0
+フィルター	filter-003	Camera Raw フィルター...	shift,cmd,a	0
+フィルター	filter-004	レンズ補正...	shift,cmd,r	0
+フィルター	filter-005	ゆがみ...	shift,cmd,x	0
+フィルター	filter-006	Vanishing Point...	alt,cmd,v	0
+3D	3d-001	ポリゴンを表示・非表示 > 選択範囲内	alt,cmd,x	0
+3D	3d-002	ポリゴンを表示・非表示 > すべての領域を表示	alt,shift,cmd,x	0
+3D	3d-003	レンダリング	alt,shift,cmd,r	0
+表示	view-001	色の校正	cmd,y	0
+表示	view-002	色域外警告	shift,cmd,y	0
+表示	view-003	ズームイン	cmd,plus,or,cmd,semicolon	0
+表示	view-004	ズームアウト	cmd,hyphen	0
+表示	view-005	画面サイズに合わせる	cmd,num0	0
+表示	view-006	100%	cmd,num1,or,alt,cmd,num0	0
+表示	view-007	エクストラ	cmd,h	0
+表示	view-008	表示・非表示 > ターゲットパス	shift,cmd,h	0
+表示	view-009	表示・非表示 > グリッド	cmd,at	0
+表示	view-010	表示・非表示 > ガイド	cmd,colon	0
+表示	view-011	定規	cmd,r	0
+表示	view-012	スナップ	shift,cmd,colon	0
+表示	view-013	ガイドをロック	alt,cmd,colon	0
+ウィンドウ	window-001	アレンジ > 最小化	ctrl,cmd,m	0
+ウィンドウ	window-002	アクション	alt,f9	0
+ウィンドウ	window-003	カラー	f6	0
+ウィンドウ	window-004	ブラシ	f5	0
+ウィンドウ	window-005	レイヤー	f7	0
+ウィンドウ	window-006	情報	f8	0
+ヘルプ	help-001	Photoshop オンラインヘルプ...	shift,cmd,slash	0
+3D	panel-3d-001	レンダリング	alt,shift,cmd,r	0
+ヒストリー	panel-history-01	1 段階進む	shift,cmd,z	0
+ヒストリー	panel-history-02	1 段階戻る	alt,cmd,z	0
+レイヤー	panel-layer-001	新規レイヤー...	shift,cmd,n	0
+レイヤー	panel-layer-002	レイヤーをロック...	cmd,slash	0
+レイヤー	panel-layer-003	クリッピングマスクを作成 / 解除	alt,cmd,g	0
+レイヤー	panel-layer-004	レイヤーを結合	cmd,e	0
+レイヤー	panel-layer-005	表示レイヤーを結合	shift,cmd,e	0
+計測ログ	panel-log-001	計測値を記録	shift,cmd,m	0
+ツール	tool-001	移動ツール	v	0
+ツール	tool-002	長方形選択ツール	m	0
+ツール	tool-003	楕円形選択ツール	m	0
+ツール	tool-004	なげなわツール	l	0
+ツール	tool-005	多角形選択ツール	l	0
+ツール	tool-006	マグネット選択ツール	l	0
+ツール	tool-007	クイック選択ツール	w	0
+ツール	tool-008	自動選択ツール	w	0
+ツール	tool-009	スポイトツール	i	0
+ツール	tool-010	3D マテリアルスポイトツール	i	0
+ツール	tool-011	カラーサンプラーツール	i	0
+ツール	tool-012	ものさしツール	i	0
+ツール	tool-013	注釈ツール	i	0
+ツール	tool-014	カウントツール	i	0
+ツール	tool-015	切り抜きツール	c	0
+ツール	tool-016	遠近法の切り抜きツール	c	0
+ツール	tool-017	スライスツール	c	0
+ツール	tool-018	スライス選択ツール	c	0
+ツール	tool-019	スポット修復ブラシツール	j	0
+ツール	tool-020	修復ブラシツール	j	0
+ツール	tool-021	パッチツール	j	0
+ツール	tool-022	コンテンツに応じた移動ツール	j	0
+ツール	tool-023	赤目修正ツール	j	0
+ツール	tool-024	ブラシツール	b	0
+ツール	tool-025	鉛筆ツール	b	0
+ツール	tool-026	色の置き換えツール	b	0
+ツール	tool-027	混合ブラシツール	b	0
+ツール	tool-028	コピースタンプツール	s	0
+ツール	tool-029	パターンスタンプツール	s	0
+ツール	tool-030	ヒストリーブラシツール	y	0
+ツール	tool-031	アートヒストリーブラシツール	y	0
+ツール	tool-032	消しゴムツール	e	0
+ツール	tool-033	背景消しゴムツール	e	0
+ツール	tool-034	マジック消しゴムツール	e	0
+ツール	tool-035	グラデーションツール	g	0
+ツール	tool-036	塗りつぶしツール	g	0
+ツール	tool-037	3D マテリアルドロップツール	g	0
+ツール	tool-038	覆い焼きツール	o	0
+ツール	tool-039	焼き込みツール	o	0
+ツール	tool-040	スポンジツール	o	0
+ツール	tool-041	ペンツール	p	0
+ツール	tool-042	フリーフォームペンツール	p	0
+ツール	tool-043	横書き文字ツール	t	0
+ツール	tool-044	縦書き文字ツール	t	0
+ツール	tool-045	横書き文字マスクツール	t	0
+ツール	tool-046	縦書き文字マスクツール	t	0
+ツール	tool-047	パスコンポーネント選択ツール	a	0
+ツール	tool-048	パス選択ツール	a	0
+ツール	tool-049	長方形ツール	u	0
+ツール	tool-050	角丸長方形ツール	u	0
+ツール	tool-051	楕円形ツール	u	0
+ツール	tool-052	多角形ツール	u	0
+ツール	tool-053	ラインツール	u	0
+ツール	tool-054	カスタムシェイプツール	u	0
+ツール	tool-055	手のひらツール	h	0
+ツール	tool-056	回転ビューツール	r	0
+ツール	tool-057	ズームツール	z	0
+ツール	tool-058	初期設定の描画色と背景色	d	0
+ツール	tool-059	描画色と背景色を入れ替え	x	0
+ツール	tool-060	画像描画モード / クイックマスクモードの切り替え	q	0
+ツール	tool-061	スクリーンモードの切り替え	f	0
+ツール	tool-062	透明ピクセルのロックを切り替え	slash	0
+ツール	tool-063	ブラシサイズを減少	bra1	0
+ツール	tool-064	ブラシサイズを増加	bra2	0
+ツール	tool-065	前のブラシ	comma	0
+ツール	tool-066	次のブラシ	period	0
+ツール	tool-067	最初のブラシ	cmd,comma	0
+ツール	tool-068	最後のブラシ	cmd,period	0

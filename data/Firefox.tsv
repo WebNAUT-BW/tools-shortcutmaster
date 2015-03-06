@@ -1,0 +1,102 @@
+ナビゲーション	nav-001	戻る	cmd,curLeft,or,cmd,bra1,or,delete	0
+ナビゲーション	nav-002	進む	cmd,curRight,or,cmd,bra2,or,shift,delete	0
+ナビゲーション	nav-003	ホームページ	alt,home	0
+ナビゲーション	nav-004	ファイルを開く	cmd,o	0
+ナビゲーション	nav-005	再読み込み	f5,or,cmd,r	0
+ナビゲーション	nav-006	再読み込み (キャッシュ上書き)	cmd,shift,r	0
+ナビゲーション	nav-007	読み込み中止	esc,or,cmd,period	0
+現在のページ	page-001	ページの終端へ移動	end,or,cmd,curDown	0
+現在のページ	page-002	ページの先頭へ移動	home,or,cmd,curUp	0
+現在のページ	page-003	次のフレームへ移動	f6	0
+現在のページ	page-004	前のフレームへ移動	shift,f6	0
+現在のページ	page-005	プリント	cmd,p	0
+現在のページ	page-006	別名でページを保存	cmd,s	0
+現在のページ	page-007	ズームイン	cmd,plus	0
+現在のページ	page-008	ズームアウト	cmd,hyphen	0
+現在のページ	page-009	ズームをリセット	cmd,num0	0
+編集	edit-001	コピー	cmd,c	0
+編集	edit-002	カット	cmd,x	0
+編集	edit-003	削除	delete	0
+編集	edit-004	ペースト	cmd,v	0
+編集	edit-005	ペースト (プレーンテキストとして)	cmd,shift,v	0
+編集	edit-006	やり直す	cmd,shift,z	0
+編集	edit-007	すべて選択	cmd,a	0
+編集	edit-008	やり直す	cmd,z	0
+検索	search-001	このページを検索	cmd,f	0
+検索	search-002	次を検索	f3,or,cmd,g	0
+検索	search-003	前を検索	shift,f3,or,cmd,shift,g	0
+検索	search-004	クイック検索でテキストを検索	slash	0
+検索	search-005	クイック検索バーを閉じる	esc	0
+検索	search-006	検索バー	cmd,k	0
+検索	search-007	検索エンジンの選択と管理	alt,curUp	0
+検索	search-008	(検索バーの選択時)	alt,curDown	0
+ウインドウ とタブ	window-001	タブを閉じる	cmd,w	0
+ウインドウ とタブ	window-002	ウインドウ を閉じる	cmd,shift,w	0
+ウインドウ とタブ	window-003	タブの選択時タブを左へ移動	ctrl,shift,pageUp	0
+ウインドウ とタブ	window-004	タブの選択時タブを右へ移動	ctrl,shift,pageDown	0
+ウインドウ とタブ	window-005	タブの選択時タブを先頭へ移動	cmd,home	0
+ウインドウ とタブ	window-006	タブの選択時タブを末尾へ移動	cmd,end	0
+ウインドウ とタブ	window-007	新規 タブ	cmd,t	0
+ウインドウ とタブ	window-008	新規 ウインドウ	cmd,n	0
+ウインドウ とタブ	window-009	新規 プライベートウィンドウ	cmd,shift,p	0
+ウインドウ とタブ	window-010	次のタブ	ctrl,tab,or,ctrl,pageDown,or,cmd,alt,curRight	0
+ウインドウ とタブ	window-011	ロケーションバーまたは検索バーから新規 タブでアドレスを開く	alt,return	0
+ウインドウ とタブ	window-012	前のタブ	ctrl,shift,tab,or,ctrl,pageUp,or,cmd,alt,curLeft	0
+ウインドウ とタブ	window-013	閉じたタブを開き直す	cmd,shift,t	0
+ウインドウ とタブ	window-014	閉じたウインドウ を開き直す	cmd,shift,n	0
+ウインドウ とタブ	window-015	タブを選択 (1 から 8)	cmd,num1,num2,num2,num3,num4,num5,num6,num7,num8	0
+ウインドウ とタブ	window-016	最後のタブを選択	cmd,num9	0
+ウインドウ とタブ	window-017	タブグループ表示	cmd,shift,e	0
+ウインドウ とタブ	window-018	タブグループ表示を閉じる	esc	0
+ウインドウ とタブ	window-019	次のタブグループ	ctrl,at	0
+ウインドウ とタブ	window-020	前のタブグループ	ctrl,shift,at	0
+履歴	history-001	履歴サイドバー	cmd,shift,h	0
+履歴	history-002	最近の履歴を消去	cmd,shift,delete	0
+ブックマーク	bkmrk-001	すべてのタブをブックマーク	cmd,shift,d	0
+ブックマーク	bkmrk-002	このページをブックマーク	cmd,d	0
+ブックマーク	bkmrk-003	ブックマークサイドバー	cmd,b	0
+ブックマーク	bkmrk-004	履歴とブックマークの管理 (ブックマーク)	cmd,shift,b	0
+ツール	tool-001	ダウンロードの管理	cmd,j	0
+ツール	tool-002	アドオンマネージャ	cmd,shift,a	0
+ツール	tool-003	開発ツールの切り替え	f12,or,cmd,alt,i	0
+ツール	tool-004	Web コンソール	cmd,alt,k	0
+ツール	tool-005	インスペクタ	cmd,alt,c	0
+ツール	tool-006	デバッガ	cmd,alt,s	0
+ツール	tool-007	スタイルエディタ	shift,f7	0
+ツール	tool-008	プロファイラ	shift,f5	0
+ツール	tool-009	ネットワーク	cmd,alt,q	0
+ツール	tool-010	開発ツールバー	shift,f2	0
+ツール	tool-011	レスポンシブデザインビュー	cmd,alt,m	0
+ツール	tool-012	スクラッチパッド	shift,f4	0
+ツール	tool-013	ページのソース	cmd,u	0
+ツール	tool-014	ブラウザコンソール	cmd,shift,j	0
+ツール	tool-015	ページの情報	cmd,i	0
+PDF Viewer	pdf-001	次のページ	n,or,j,or,curRight	0
+PDF Viewer	pdf-002	前のページ	p,or,k,or,curLeft	0
+PDF Viewer	pdf-003	ズームイン	cmd,plus	0
+PDF Viewer	pdf-004	ズームアウト	cmd,hyphen	0
+PDF Viewer	pdf-005	自動ズーム	cmd,num0	0
+PDF Viewer	pdf-006	ドキュメントを時計回りに回転	r	0
+PDF Viewer	pdf-007	ドキュメントを反時計回りに回転	shift,r	0
+PDF Viewer	pdf-008	プレゼンテーションモードに切り替え	cmd,alt,p	0
+PDF Viewer	pdf-009	手のひらツールの切り替え	h	0
+PDF Viewer	pdf-010	ページ番号の入力ボックスを選択	cmd,alt,g	0
+その他	other-001	.com アドレス補完	cmd,return	0
+その他	other-002	.net アドレス補完	shift,return	0
+その他	other-003	.org アドレス補完	cmd,shift,return	0
+その他	other-004	選択された自動補完エントリを削除	shift,delete	0
+その他	other-005	フルスクリーン の切り替え	cmd,shift,f	0
+その他	other-006	アドオンバーの表示/非表示	cmd,slash	0
+その他	other-007	キャレットブラウズモードの切り替え	f7	0
+その他	other-008	ロケーションバーを選択	f6,or,cmd,l	0
+メディア	media-001	再生と一時停止の切り替え	space	0
+メディア	media-002	音量を下げる	curDown	0
+メディア	media-003	音量を上げる	curUp	0
+メディア	media-004	音声を消す	cmd,curDown	0
+メディア	media-005	音声を出す	cmd,curUp	0
+メディア	media-006	15 秒巻き戻す	curLeft	0
+メディア	media-007	メディアの長さの 10% 分を巻き戻す	cmd,curLeft	0
+メディア	media-008	15 秒早送りする	curRight	0
+メディア	media-009	メディアの長さの 10% 分を早送りする	cmd,curRight	0
+メディア	media-010	先頭まで巻き戻す	home	0
+メディア	media-011	末尾まで早送りする	end	0

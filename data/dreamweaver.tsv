@@ -1,0 +1,172 @@
+メニューコマンド	menu-001	環境設定	cmd,u	0
+メニューコマンド	menu-002	新規	cmd,n	0
+メニューコマンド	menu-003	開く	cmd,o	0
+メニューコマンド	menu-004	閉じる	cmd,w	0
+メニューコマンド	menu-005	すべて閉じる	cmd,shift,w	0
+メニューコマンド	menu-006	保存	cmd,s	0
+メニューコマンド	menu-007	別名で保存	cmd,shift,s	0
+メニューコマンド	menu-008	コードの印刷	cmd,p	0
+メニューコマンド	menu-009	取り消し	cmd,z,or,alt,delete	0
+メニューコマンド	menu-010	やり直し	cmd,y,or,cmd,shift,z	0
+メニューコマンド	menu-011	カット	cmd,x,or,shift,del	0
+メニューコマンド	menu-012	コピー	cmd,c	0
+メニューコマンド	menu-013	ペーストスペシャル	cmd,shift,v	0
+メニューコマンド	menu-014	すべて選択	cmd,a	0
+メニューコマンド	menu-015	親タグを選択	cmd,bra1	0
+メニューコマンド	menu-016	子タグを選択	cmd,bra2	0
+メニューコマンド	menu-017	検索/置換	cmd,f	0
+メニューコマンド	menu-018	選択範囲の検索	cmd,shift,g	0
+メニューコマンド	menu-019	再検索	cmd,g	0
+メニューコマンド	menu-020	ライブ検索	cmd,shift,f	0
+メニューコマンド	menu-021	行へ移動	cmd,comma	0
+メニューコマンド	menu-022	コードヒントの表示	ctrl,space	0
+メニューコマンド	menu-023	コードヒントを更新	ctrl,period	0
+メニューコマンド	menu-024	コードのインデント	cmd,shift,curRight	0
+メニューコマンド	menu-025	コードのインデント解除	cmd,shift,curLeft	0
+メニューコマンド	menu-026	選択範囲をたたむ	cmd,shift,c	0
+メニューコマンド	menu-027	選択範囲以外をたたむ	cmd,alt,c	0
+メニューコマンド	menu-028	選択範囲を展開	cmd,shift,e	0
+メニューコマンド	menu-029	フルタグをたたむ	cmd,shift,j	0
+メニューコマンド	menu-030	選択範囲以外のフルタグをたたむ	cmd,alt,j	0
+メニューコマンド	menu-031	すべて展開	cmd,alt,e	0
+メニューコマンド	menu-032	ビューの切り替え	ctrl,at	0
+メニューコマンド	menu-033	ライブビューを切り替え(	alt,f11	0
+メニューコマンド	menu-034	JavaScript の停止	f6	0
+メニューコマンド	menu-035	ライブビューの表示を隠す	ctrl,cmd,h	0
+メニューコマンド	menu-036	インスペクト	alt,shift,f11	0
+メニューコマンド	menu-037	エレメントクイックビュー	cmd,slash	0
+メニューコマンド	menu-038	すべて非表示	cmd,shift,i	0
+メニューコマンド	menu-039	ズームアウト	cmd,hyphen	0
+メニューコマンド	menu-040	50%	cmd,alt,num5	0
+メニューコマンド	menu-041	100%	cmd,num0	0
+メニューコマンド	menu-042	200%	cmd,alt,num2	0
+メニューコマンド	menu-043	300%	cmd,alt,num3	0
+メニューコマンド	menu-044	選択オブジェクト	cmd,alt,num0	0
+メニューコマンド	menu-045	ドキュメント全体	cmd,shift,num0	0
+メニューコマンド	menu-046	幅を合わせる	cmd,alt,shift,num0	0
+メニューコマンド	menu-047	表示	cmd,alt,r	0
+メニューコマンド	menu-048	グリッドの表示	cmd,alt,g	0
+メニューコマンド	menu-049	グリッドに吸着	cmd,alt,shift,g	0
+メニューコマンド	menu-050	ガイドを表示	cmd,semicolon	0
+メニューコマンド	menu-051	ガイドをロック	cmd,alt,semicolon	0
+メニューコマンド	menu-052	グリッドに吸着	cmd,shift,semicolon	0
+メニューコマンド	menu-053	ガイドをエレメントに吸着	cmd,shift,slash	0
+メニューコマンド	menu-054	パネルの表示	f4	0
+メニューコマンド	menu-055	コードナビゲーター	cmd,alt,n	0
+メニューコマンド	menu-056	HTML5 Video	cmd,alt,shift,v	0
+メニューコマンド	menu-057	イメージ	cmd,alt,i	0
+メニューコマンド	menu-058	テーブル	cmd,alt,t	0
+メニューコマンド	menu-059	改行	shift,return	0
+メニューコマンド	menu-060	区切りなしスペース	cmd,shift,space	0
+メニューコマンド	menu-061	Edge Animate コンポジション	cmd,alt,shift,e	0
+メニューコマンド	menu-062	HTML5 Video	cmd,alt,shift,v	0
+メニューコマンド	menu-063	Flash SWF	cmd,alt,f	0
+メニューコマンド	menu-064	編集可能領域	cmd,alt,v	0
+メニューコマンド	menu-065	ページプロパティ	cmd,j	0
+メニューコマンド	menu-066	クイックタグ編集	cmd,t	0
+メニューコマンド	menu-067	リンクの作成	cmd,l	0
+メニューコマンド	menu-068	リンクの削除	cmd,shift,l	0
+メニューコマンド	menu-069	セルのマージ	cmd,alt,m	0
+メニューコマンド	menu-070	セルの分割	cmd,alt,shift,t	0
+メニューコマンド	menu-071	行の挿入	cmd,m	0
+メニューコマンド	menu-072	列の挿入	cmd,shift,a	0
+メニューコマンド	menu-073	行の削除	cmd,shift,m	0
+メニューコマンド	menu-074	列の削除	cmd,shift,hyphen	0
+メニューコマンド	menu-075	列の拡大	cmd,shift,bra2	0
+メニューコマンド	menu-076	列の縮小	cmd,shift,bra1	0
+メニューコマンド	menu-077	左揃え	cmd,shift,num1	0
+メニューコマンド	menu-078	下揃え	cmd,shift,num6	0
+メニューコマンド	menu-079	幅の統一	cmd,shift,num7	0
+メニューコマンド	menu-080	高さの統一	cmd,shift,num9	0
+メニューコマンド	menu-081	インデント	cmd,alt,bra2	0
+メニューコマンド	menu-082	インデント解除	cmd,alt,bra1	0
+メニューコマンド	menu-083	なし	cmd,num0	0
+メニューコマンド	menu-084	段落	cmd,shift,p	0
+メニューコマンド	menu-085	見出し 1	cmd,num1	0
+メニューコマンド	menu-086	見出し 2	cmd,num2	0
+メニューコマンド	menu-087	見出し 3	cmd,num3	0
+メニューコマンド	menu-088	見出し 4	cmd,num4	0
+メニューコマンド	menu-089	見出し 5	cmd,num5	0
+メニューコマンド	menu-090	見出し 6	cmd,num6	0
+メニューコマンド	menu-091	左	cmd,alt,shift,l	0
+メニューコマンド	menu-092	中央	cmd,alt,shift,c	0
+メニューコマンド	menu-093	右	cmd,alt,shift,r	0
+メニューコマンド	menu-094	整列	cmd,alt,shift,j	0
+メニューコマンド	menu-095	ボールド	cmd,b	0
+メニューコマンド	menu-096	イタリック	cmd,i	0
+メニューコマンド	menu-097	スペルチェック	shift,f7	0
+メニューコマンド	menu-098	GET	cmd,shift,d	0
+メニューコマンド	menu-099	チェックアウト	cmd,alt,shift,d	0
+メニューコマンド	menu-100	PUT	cmd,shift,u	0
+メニューコマンド	menu-101	チェックイン	cmd,alt,shift,u	0
+メニューコマンド	menu-102	サイト全体のリンクチェック	cmd,f8	0
+メニューコマンド	menu-103	挿入	cmd,f2	0
+メニューコマンド	menu-104	プロパティ	cmd,f3	0
+メニューコマンド	menu-105	Extract	cmd,k	0
+メニューコマンド	menu-106	CSS デザイナー	cmd,f11	0
+メニューコマンド	menu-107	Business Catalyst	cmd,shift,b	0
+メニューコマンド	menu-108	ファイル	f8	0
+メニューコマンド	menu-109	ビヘイビアー	shift,f4	0
+メニューコマンド	menu-110	コードインスペクター	alt,f10	0
+メニューコマンド	menu-111	検索	f7	0
+メニューコマンド	menu-112	パネルの表示	f4	0
+メニューコマンド	menu-113	次のドキュメント	cmd,at	0
+メニューコマンド	menu-114	前のドキュメント	cmd,shift,at	0
+メニューコマンド	menu-115	Dreamweaver オンラインヘルプ	f1	0
+コード編集	code-001	コピー	cmd,c	0
+コード編集	code-002	ペースト	cmd,v	0
+コード編集	code-003	ペーストスペシャル	cmd,shift,v	0
+コード編集	code-004	カット	cmd,x	0
+コード編集	code-005	# で囲む	cmd,shift,num3	0
+コード編集	code-006	左側の語を削除	cmd,delete	0
+コード編集	code-007	右側の語を削除	cmd,del	0
+コード編集	code-008	1 行上を選択	shift,curUp	0
+コード編集	code-009	1 行下を選択	shift,curDown	0
+コード編集	code-010	左の文字を選択	shift,curLeft	0
+コード編集	code-011	右の文字を選択	shift,curRight	0
+コード編集	code-012	1 ページ上まで選択	shift,pageUp	0
+コード編集	code-013	1 ページ下まで選択	shift,pageDown	0
+コード編集	code-014	1 単語左に移動	alt,curLeft	0
+コード編集	code-015	1 単語右に移動	alt,curRight	0
+コード編集	code-016	現在の行の先頭に移動	cmd,curLeft	0
+コード編集	code-017	現在の行の終わりに移動	cmd,curRight	0
+コード編集	code-018	1 単語左を選択	alt,shift,curLeft	0
+コード編集	code-019	1 単語右を選択	alt,shift,curRight	0
+コード編集	code-020	行の先頭に移動	home	0
+コード編集	code-021	行末に移動	end	0
+コード編集	code-022	行の先頭まで選択	shift,home	0
+コード編集	code-023	行末まで選択	shift,end	0
+コード編集	code-024	ファイルの先頭に移動	cmd,home	0
+コード編集	code-025	ファイルの終わりに移動	cmd,end	0
+コード編集	code-026	ファイルの先頭まで選択	cmd,shift,home	0
+コード編集	code-027	ファイルの終わりまで選択	cmd,shift,end	0
+ドキュメント編集	doc-001	アプリケーションの終了	alt,f4	0
+ドキュメント編集	doc-002	次の単語へ移動	cmd,curRight	0
+ドキュメント編集	doc-003	次の単語へ移動	alt,curRight	0
+ドキュメント編集	doc-004	前の単語へ移動	cmd,curLeft	0
+ドキュメント編集	doc-005	前の単語へ移動	alt,curLeft	0
+ドキュメント編集	doc-006	前の段落へ移動	cmd,curUp	0
+ドキュメント編集	doc-007	次の段落へ移動	cmd,curDown	0
+ドキュメント編集	doc-008	次の単語まで選択	cmd,shift,curRight	0
+ドキュメント編集	doc-009	次の単語まで選択	alt,shift,curRight	0
+ドキュメント編集	doc-010	前の単語から選択	cmd,shift,curLeft	0
+ドキュメント編集	doc-011	前の単語から選択	alt,shift,curLeft	0
+ドキュメント編集	doc-012	前の段落から選択	cmd,shift,curUp	0
+ドキュメント編集	doc-013	次の段落まで選択	cmd,shift,curDown	0
+ドキュメント編集	doc-014	クラシック CSS パネルとビジュアル CSS パネル間の切り替え	cmd,shift,alt,p	0
+ドキュメント編集	doc-015	CSS セレクターを追加	cmd,alt,s	0
+ドキュメント編集	doc-016	CSS プロパティを追加	cmd,alt,p	0
+ドキュメント編集	doc-017	次のプロパティペインへ移動	cmd,alt,pageDown	0
+ドキュメント編集	doc-018	前のプロパティペインへ移動	cmd,alt,pageUp	0
+ドキュメント編集	doc-019	同じウィンドウで新規作成	cmd,shift,n	0
+ドキュメント編集	doc-020	プライマリブラウザーでプレビュー	alt,f12	0
+ドキュメント編集	doc-021	セカンダリブラウザーでプレビュー	cmd,f12,or,shift,f12	0
+ドキュメント編集	doc-022	セカンダリブラウザーでプレビュー	shift,f12	0
+ドキュメント編集	doc-023	Device Central でプレビュー	ctrl,alt,f12	0
+ドキュメント編集	doc-024	段落の終了	cmd,return	0
+ドキュメント編集	doc-025	FTP のキャンセル	cmd,period	0
+ドキュメント編集	doc-026	コードの印刷	cmd,p	0
+ドキュメント編集	doc-027	ソースコードに移動	cmd,alt,at	0
+ドキュメント編集	doc-028	コードナビゲーター	cmd,alt,n	0
+ドキュメント編集	doc-029	エレメントクイックビュー	cmd,slash	0
+ドキュメント編集	doc-030	Extract	cmd,k	0

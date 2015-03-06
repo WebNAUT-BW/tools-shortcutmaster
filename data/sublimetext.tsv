@@ -1,18 +1,18 @@
-ファイル関連	file-01	新規ウィンドウ	cmd,shift,n	
-ファイル関連	file-02	ウィンドウを閉じる	cmd,shift,w	
-ファイル関連	file-03	ファイルを開く	cmd,o	
-ファイル関連	file-04	最後に閉じたファイルを再度開く	cmd,shift,t	
-ファイル関連	file-05	新規ファイルを作成	cmd,n	
-ファイル関連	file-06	保存	cmd,s	
-ファイル関連	file-07	別名で保存	cmd,shift,s	
-ファイル関連	file-08	すべて保存	cmd,alt,s	
-ファイル関連	file-09	閉じる	cmd,w	
-編集関連	edit-01	取り消し	cmd,z	
-編集関連	edit-02	やり直し	cmd,shift,z	
-編集関連	edit-03	やり直しまたは繰り返し	cmd,y	
-編集関連	edit-04	選択の取り消し	cmd,u	
-編集関連	edit-05	選択のやり直し	cmd,shift,u	
-編集関連	edit-06	カット	cmd,x	
+ファイル関連	file-01	新規ウィンドウ	cmd,shift,n	0
+ファイル関連	file-02	ウィンドウを閉じる	cmd,shift,w	0
+ファイル関連	file-03	ファイルを開く	cmd,o	0
+ファイル関連	file-04	最後に閉じたファイルを再度開く	cmd,shift,t	0
+ファイル関連	file-05	新規ファイルを作成	cmd,n	0
+ファイル関連	file-06	保存	cmd,s	0
+ファイル関連	file-07	別名で保存	cmd,shift,s	0
+ファイル関連	file-08	すべて保存	cmd,alt,s	0
+ファイル関連	file-09	閉じる	cmd,w	0
+編集関連	edit-01	取り消し	cmd,z	0
+編集関連	edit-02	やり直し	cmd,shift,z	0
+編集関連	edit-03	やり直しまたは繰り返し	cmd,y	0
+編集関連	edit-04	選択の取り消し	cmd,u	0
+編集関連	edit-05	選択のやり直し	cmd,shift,u	0
+編集関連	edit-06	カット	cmd,x	0
 編集関連	edit-07	コピー	cmd,c	0
 編集関連	edit-08	ペースト	cmd,v	0
 編集関連	edit-09	ペーストしてインデント	cmd,shift,v	0
@@ -30,22 +30,22 @@
 編集関連	edit-21	選択範囲を行ごとに分割	cmd,shift,l	0
 編集関連	edit-22	複数キャレットを解除	esc	0
 編集関連	edit-23	上書き入力への切り替え	cmd,alt,o	0
-編集関連	edit-24	1行選択	cmd,l	0
-編集関連	edit-25	選択範囲を拡張して同じ単語を選択	cmd,d	0
-編集関連	edit-26	1つスキップして選択範囲を拡張	cmd,k,and,cmd,d	0
-編集関連	edit-27	次に1行挿入	cmd,return	0
-編集関連	edit-28	前に1行挿入	cmd,shift,return	0
+編集関連	edit-24	1行選択	cmd,l	3
+編集関連	edit-25	選択範囲を拡張して同じ単語を選択	cmd,d	3
+編集関連	edit-26	1つスキップして選択範囲を拡張	cmd,k,and,cmd,d	3
+編集関連	edit-27	次に1行挿入	cmd,return	1
+編集関連	edit-28	前に1行挿入	cmd,shift,return	1
 編集関連	edit-29	サブワードの先頭まで削除	ctrl,delete	0
-編集関連	edit-30	行頭まで削除	cmd,delete	0
-編集関連	edit-31	行末まで削除	ctrl,k	0
+編集関連	edit-30	行頭まで削除	cmd,delete	2
+編集関連	edit-31	行末まで削除	ctrl,k	2
 編集関連	edit-32	1行削除	ctrl,shift,k	0
 編集関連	edit-33	行を連結	cmd,j	0
 編集関連	edit-34	行を複製	cmd,shift,d	0
 編集関連	edit-35	1行上と入れ替え	ctrl,cmd,curUp	0
 編集関連	edit-36	1行下と入れ替え	ctrl,cmd,curDown	0
-編集関連	edit-37	カーソルの前後の文字を入れ替え	ctrl,t	0
-編集関連	edit-38	大文字に変換	cmd,k,and,cmd,u	0
-編集関連	edit-39	小文字に変換	cmd,k,and,cmd,l	0
+編集関連	edit-37	カーソルの前後の文字を入れ替え	ctrl,t	1
+編集関連	edit-38	大文字に変換	cmd,k,and,cmd,u	2
+編集関連	edit-39	小文字に変換	cmd,k,and,cmd,l	2
 編集関連	edit-40	行をソートする	f5	0
 編集関連	edit-41	行をソートする（大文字・小文字を区別）	ctrl,f5	0
 編集関連	edit-42	行末でそろうように整形	cmd,alt,q	0
@@ -66,8 +66,8 @@
 コード関連	code-09	タグ単位で選択範囲を拡張	cmd,shift,a	0
 コード関連	code-10	タグを閉じる	cmd,alt,period	0
 コード関連	code-11	選択範囲をタグで囲む	ctrl,shift,w	0
-コード関連	code-12	1行コメントに切り替え	cmd,slash	0
-コード関連	code-13	複数行コメントに切り替え	cmd,alt,slash	0
+コード関連	code-12	1行コメントに切り替え	cmd,slash	2
+コード関連	code-13	複数行コメントに切り替え	cmd,alt,slash	2
 コード関連	code-14	コンソールを表示	ctrl,shift,at	0
 コード関連	code-15	コード補完を表示	ctrl,space	0
 コード関連	code-16	スコープの名前をステータスバーに表示	cmd,alt,p,or,ctrl,shift,p	0
@@ -93,26 +93,26 @@
 コード関連	code-36	マクロの実行	ctrl,shift,q	0
 コード関連	code-37	ヘッダと実装を切り替え	cmd,alt,curUp	0
 検索・移動関連	search-01	Goto Anything	cmd,p,or,cmd,t	0
-検索・移動関連	search-02	コマンドパレットを表示	cmd,shift,p	0
+検索・移動関連	search-02	コマンドパレットを表示	cmd,shift,p	3
 検索・移動関連	search-03	プロジェクトの切り替え	cmd,ctrl,p	0
 検索・移動関連	search-04	シンボルに移動	cmd,r	0
 検索・移動関連	search-05	行番号を指定して移動	ctrl,g	0
-検索・移動関連	search-06	定義へ移動	cmd,alt,curDown,or,f12	0
+検索・移動関連	search-06	定義へ移動	cmd,alt,curDown,or,f12	3
 検索・移動関連	search-07	プロジェクト内のシンボルへ移動	cmd,shift,r	0
 検索・移動関連	search-08	後ろへジャンプ	ctrl,hyphen	0
 検索・移動関連	search-09	前へジャンプ	ctrl,shift,hyphen	0
 検索・移動関連	search-10	インクリメンタル検索	cmd,l	0
 検索・移動関連	search-11	前方へインクリメンタル検索	cmd,shift,l	0
-検索・移動関連	search-12	検索パネルを表示	cmd,f	0
-検索・移動関連	search-13	置換パネルを表示	cmd,alt,f	0
-検索・移動関連	search-14	置換して次へ	cmd,alt,e	0
-検索・移動関連	search-15	次を検索	cmd,g	0
-検索・移動関連	search-16	前を検索	cmd,shift,g	0
+検索・移動関連	search-12	検索パネルを表示	cmd,f	1
+検索・移動関連	search-13	置換パネルを表示	cmd,alt,f	1
+検索・移動関連	search-14	置換して次へ	cmd,alt,e	1
+検索・移動関連	search-15	次を検索	cmd,g	2
+検索・移動関連	search-16	前を検索	cmd,shift,g	2
 検索・移動関連	search-17	選択した文字列を検索文字列にする	cmd,e	0
 検索・移動関連	search-18	選択した文字列を置換文字列にする	cmd,shift,e	0
-検索・移動関連	search-19	クイック検索（選択範囲と同じ文字を検索）	alt,cmd,g	0
-検索・移動関連	search-20	前方へクイック検索	shift,alt,cmd,g	0
-検索・移動関連	search-21	クイック選択（同じ文字をすべて選択）	ctrl,cmd,g	0
+検索・移動関連	search-19	クイック検索（選択範囲と同じ文字を検索）	alt,cmd,g	1
+検索・移動関連	search-20	前方へクイック検索	shift,alt,cmd,g	1
+検索・移動関連	search-21	クイック選択（同じ文字をすべて選択）	ctrl,cmd,g	1
 検索・移動関連	search-22	複数ファイル内を検索	cmd,shift,f	0
 検索・移動関連	search-23	スペルチェック	f6	0
 検索・移動関連	search-24	次の指摘へ	ctrl,f6	0
@@ -140,10 +140,10 @@
 表示関連	view-17	8つ目のタブに切り替え	cmd,num8	0
 表示関連	view-18	9つ目のタブに切り替え	cmd,num9	0
 表示関連	view-19	最後のタブに切り替え	cmd,num0	0
-表示関連	view-20	分割せず1画面にする	cmd,alt,num1	0
-表示関連	view-21	画面を横に2分割	cmd,alt,num2	0
-表示関連	view-22	画面を横に3分割	cmd,alt,num3	0
-表示関連	view-23	画面を横に4分割	cmd,alt,num4	0
+表示関連	view-20	分割せず1画面にする	cmd,alt,num1	2
+表示関連	view-21	画面を横に2分割	cmd,alt,num2	2
+表示関連	view-22	画面を横に3分割	cmd,alt,num3	2
+表示関連	view-23	画面を横に4分割	cmd,alt,num4	2
 表示関連	view-24	画面を縦に2分割	cmd,alt,shift,num2	0
 表示関連	view-25	画面を縦に3分割	cmd,alt,shift,num3	0
 表示関連	view-26	画面をグリッドに分割	cmd,alt,num5	0

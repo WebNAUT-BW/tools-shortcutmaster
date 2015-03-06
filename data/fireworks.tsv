@@ -1,0 +1,199 @@
+ファイル	file-001	新規作成	cmd,n	0
+ファイル	file-002	開く...	cmd,o	0
+ファイル	file-003	Bridge で参照...	alt,cmd,o	0
+ファイル	file-004	閉じる	cmd,w	0
+ファイル	file-005	保存	cmd,s	0
+ファイル	file-006	別名で保存...	shift,cmd,s	0
+ファイル	file-007	読み込み...	cmd,r	0
+ファイル	file-008	書き出し...	shift,cmd,r	0
+ファイル	file-009	画像プレビュー...	shift,cmd,x	0
+ファイル	file-010	ファイル情報...	ctrl,shift,cmd,f	0
+ファイル	file-011	ファイル情報... > ブラウザーでプレビュー	alt,f12	0
+ファイル	file-012	ファイル情報... > セカンダリブラウザーでプレビュー	cmd,f12	0
+ファイル	file-013	ファイル情報... > すべてのページをプライマリブラウザーでプレビュー	shift,cmd,f12	0
+ファイル	file-014	プリント...	cmd,p	0
+編集	edit-001	取り消し	cmd,z	0
+編集	edit-002	やり直し	cmd,y,or,shift,cmd,z	0
+編集	edit-003	挿入 > 新規ボタン...	shift,cmd,f8	0
+編集	edit-004	挿入 > 新規シンボル...	cmd,f8	0
+編集	edit-005	挿入 > ホットスポット	shift,cmd,u	0
+編集	edit-006	挿入 > 長方形スライス	shift,alt,u	0
+編集	edit-007	挿入 > 多角形スライス	shift,alt,p	0
+編集	edit-008	検索と置換...	cmd,f	0
+編集	edit-009	カット	cmd,x	0
+編集	edit-010	コピー	cmd,c	0
+編集	edit-011	HTML コードをコピー...	alt,cmd,c	0
+編集	edit-012	ペースト	cmd,v	0
+編集	edit-013	内部にペースト	shift,cmd,v	0
+編集	edit-014	属性をペースト	shift,alt,cmd,v	0
+編集	edit-015	複製	cmd,d	0
+編集	edit-016	クローン	shift,cmd,d	0
+表示	view-001	ズームイン	cmd,equalTen,or,cmd,plus,or,shift,cmd,equalTen	0
+表示	view-002	ズームアウト	cmd,hyphen	0
+表示	view-003	表示倍率 > 50%	cmd,num5	0
+表示	view-004	表示倍率 > 100%	cmd,num1	0
+表示	view-005	表示倍率 > 200%	cmd,num2	0
+表示	view-006	表示倍率 > 300%	cmd,num3	0
+表示	view-007	表示倍率 > 400%	cmd,num4	0
+表示	view-008	表示倍率 > 800%	cmd,num8	0
+表示	view-009	表示倍率 > 1600%	cmd,num6	0
+表示	view-010	選択範囲に合わせる	alt,cmd,num0	0
+表示	view-011	ドキュメント全体に合わせる	cmd,num0	0
+表示	view-012	選択オブジェクトを隠す	cmd,l	0
+表示	view-013	すべてを表示	shift,cmd,l	0
+表示	view-014	ツールヒント	cmd,bra2	0
+表示	view-015	定規	alt,cmd,r	0
+表示	view-016	グリッド > グリッドを表示	alt,cmd,g	0
+表示	view-017	グリッド > グリッドにスナップ	shift,alt,cmd,g	0
+表示	view-018	ガイド > ガイドを表示	cmd,semicolon	0
+表示	view-019	ガイド > ガイドをロック	alt,cmd,semicolon	0
+表示	view-020	ガイド > ガイドにスナップ	shift,cmd,semicolon	0
+表示	view-021	スマートガイド > スマートガイドを表示	cmd,backslash	0
+表示	view-022	スマートガイド > スマートガイドにスナップ	shift,cmd,backslash	0
+表示	view-023	スライスガイド	shift,alt,cmd,semicolon	0
+表示	view-024	エッジ	alt,f9	0
+選択	select-001	すべて選択	cmd,a	0
+選択	select-002	選択を解除	shift,cmd,a	0
+選択	select-003	グループ選択	cmd,curRight	0
+選択	select-004	ダイレクト選択	cmd,curLeft	0
+選択	select-005	選択範囲を反転	shift,cmd,i	0
+変更	change-001	カンバス > カンバスを切り抜き	alt,cmd,t	0
+変更	change-002	カンバス > カンバスを合わせる	alt,cmd,f	0
+変更	change-003	アニメーション > 選択範囲をアニメーション化...	shift,alt,f8	0
+変更	change-004	シンボル > シンボルに変換...	f8	0
+変更	change-005	シンボル > インスタンスのトゥイーン...	shift,alt,cmd,t	0
+変更	change-006	選択範囲をロック	alt,cmd,l	0
+変更	change-007	選択範囲を統合	shift,alt,cmd,z	0
+変更	change-008	下のレイヤーと結合	cmd,e	0
+変更	change-009	変形 > 自由変形	cmd,t	0
+変更	change-010	変形 > 数値を入力して変形...	shift,cmd,t	0
+変更	change-011	変形 > 時計回りに 90°回転	shift,cmd,num9	0
+変更	change-012	変形 > 反時計回りに 90°回転	shift,cmd,num7	0
+変更	change-013	重ね順 > 最前面へ	shift,cmd,curUp	0
+変更	change-014	重ね順 > 前面へ	cmd,curUp	0
+変更	change-015	重ね順 > 背面へ	cmd,curDown	0
+変更	change-016	重ね順 > 最背面へ	shift,cmd,curDown	0
+変更	change-017	整列 > 左揃え	alt,cmd,num1	0
+変更	change-018	整列 > 縦方向中央揃え	alt,cmd,num2	0
+変更	change-019	整列 > 右揃え	alt,cmd,num3	0
+変更	change-020	整列 > 上揃え	alt,cmd,num4	0
+変更	change-021	整列 > 横方向中央揃え	alt,cmd,num5	0
+変更	change-022	整列 > 下揃え	alt,cmd,num6	0
+変更	change-023	整列 > 水平方向中央に分布	alt,cmd,num7	0
+変更	change-024	整列 > 垂直方向中央に分布	alt,cmd,num9	0
+変更	change-025	パスを結合 > パスの結合	cmd,j	0
+変更	change-026	パスを結合 > パスの分離	shift,cmd,j	0
+変更	change-027	ピクセルにスナップ	cmd,k	0
+変更	change-028	グループ	cmd,g	0
+変更	change-029	グループ解除	shift,cmd,g	0
+テキスト	text-001	サイズ > 小さく	shift,cmd,comma	0
+テキスト	text-002	サイズ > 大きく	shift,cmd,period	0
+テキスト	text-003	スタイル > 太字	cmd,b	0
+テキスト	text-004	スタイル > 斜体	cmd,i	0
+テキスト	text-005	整列 > 横書きの左揃え	shift,alt,cmd,l	0
+テキスト	text-006	整列 > 横書きの中央揃え	shift,alt,cmd,c	0
+テキスト	text-007	整列 > 横書きの右揃え	shift,alt,cmd,r	0
+テキスト	text-008	整列 > 横書きの両端揃え	shift,alt,cmd,j	0
+テキスト	text-009	パスに結合	shift,cmd,y	0
+テキスト	text-010	パスに変換	shift,cmd,p	0
+テキスト	text-011	スペルチェック...	shift,f7	0
+フィルター	filter-001	プラグインを繰り返し	shift,alt,cmd,x	0
+ウィンドウ	window-001	ウィンドウを複製	alt,cmd,n	0
+ウィンドウ	window-002	パネルを隠す	f4,or,tab	0
+ウィンドウ	window-003	アプリケーションフレーム	ctrl,cmd,f	0
+ウィンドウ	window-004	エクステンション > jQuery Mobile テーマのアプリ内プレビュー	cmd,f10	0
+ウィンドウ	window-005	ツール	cmd,f2	0
+ウィンドウ	window-006	プロパティ	cmd,f3	0
+ウィンドウ	window-007	最適化	f6	0
+ウィンドウ	window-008	レイヤー	f2	0
+ウィンドウ	window-009	共有ライブラリ	f7	0
+ウィンドウ	window-010	CSS プロパティ	cmd,f7	0
+ウィンドウ	window-011	ステート	shift,f2	0
+ウィンドウ	window-012	ページ	f5	0
+ウィンドウ	window-013	ヒストリー	shift,f10	0
+ウィンドウ	window-014	スタイル	cmd,f11	0
+ウィンドウ	window-015	ドキュメントライブラリ	alt,f11	0
+ウィンドウ	window-016	URL	shift,alt,f10	0
+ウィンドウ	window-017	カラーミキサー	shift,f9	0
+ウィンドウ	window-018	スウォッチ	cmd,f9	0
+ウィンドウ	window-019	情報	shift,alt,f12	0
+ウィンドウ	window-020	ビヘイビアー	shift,f3	0
+ウィンドウ	window-021	検索と置換	cmd,f	0
+ツール	tool-001	選択ツール	v,or,num0	0
+ツール	tool-002	背面選択ツール	v,or,num0	0
+ツール	tool-003	ダイレクト選択ツール	a,or,num1	0
+ツール	tool-004	長方形選択ツール	m	0
+ツール	tool-005	楕円形選択ツール	m	0
+ツール	tool-006	なげなわツール	l	0
+ツール	tool-007	多角形なげなわツール	l	0
+ツール	tool-008	切り抜きツール	c	0
+ツール	tool-009	書き出し領域ツール	c	0
+ツール	tool-010	自動選択ツール	w	0
+ツール	tool-011	ラインツール	n	0
+ツール	tool-012	ペンツール	p	0
+ツール	tool-013	長方形ツール	u	0
+ツール	tool-014	楕円ツール	u	0
+ツール	tool-015	多角形ツール	u	0
+ツール	tool-016	テキストツール	t	0
+ツール	tool-017	鉛筆ツール	b	0
+ツール	tool-018	ベクトルパスツール	p	0
+ツール	tool-019	パス再描画ツール	p	0
+ツール	tool-020	ブラシツール	b	0
+ツール	tool-021	拡大・縮小ツール	q	0
+ツール	tool-022	ゆがみツール	q	0
+ツール	tool-023	変形ツール	q	0
+ツール	tool-024	9 スライスの拡大・縮小ツール	q	0
+ツール	tool-025	パス変形ツール	o	0
+ツール	tool-026	パス領域変形ツール	o	0
+ツール	tool-027	パスの筆圧ツール - 増	o	0
+ツール	tool-028	パスの筆圧ツール - 減	o	0
+ツール	tool-029	スポイトツール	i	0
+ツール	tool-030	塗りつぶしツール	g	0
+ツール	tool-031	グラデーションツール	g	0
+ツール	tool-032	消しゴムツール	e	0
+ツール	tool-033	ぼかしツール	r	0
+ツール	tool-034	シャープツール	r	0
+ツール	tool-035	覆い焼きツール	r	0
+ツール	tool-036	焼き込みツール	r	0
+ツール	tool-037	指先ツール	r	0
+ツール	tool-038	スタンプツール	s	0
+ツール	tool-039	カラーの置き換えツール	s	0
+ツール	tool-040	赤目修正ツール	s	0
+ツール	tool-041	ナイフツール	y	0
+ツール	tool-042	長方形ホットスポットツール	j	0
+ツール	tool-043	円形ホットスポットツール	j	0
+ツール	tool-044	多角形ホットスポットツール	j	0
+ツール	tool-045	スライスツール	k	0
+ツール	tool-046	多角形スライスツール	k	0
+ツール	tool-047	手のひらツール	h	0
+ツール	tool-048	ズームツール	z	0
+ツール	tool-049	Web オブジェクトを表示 / 隠す	num2	0
+ツール	tool-050	デフォルトのストロークと塗りのカラー	d	0
+ツール	tool-051	ストロークと塗りのカラーを入れ替え	x	0
+ツール	tool-052	スクリーンモードを切り替え	f	0
+その他	other-001	アニメーションを再生	ctrl,alt,p	0
+その他	other-002	クローンして上に10ピクセル移動	shift,alt,curUp,or,shift,alt,cmd,curUp	0
+その他	other-003	クローンして上に移動	alt,curUp,or,alt,cmd,curUp	0
+その他	other-004	クローンして下に10ピクセル移動	shift,alt,curDown,or,shift,alt,cmd,curDown	0
+その他	other-005	クローンして下に移動	alt,curDown,or,alt,cmd,curDown	0
+その他	other-006	クローンして右に10ピクセル移動	shift,alt,curRight,or,shift,alt,cmd,curRight	0
+その他	other-007	クローンして右に移動	alt,curRight,or,alt,cmd,curRight	0
+その他	other-008	クローンして左に10ピクセル移動	shift,alt,curLeft,or,shift,alt,cmd,curLeft	0
+その他	other-009	クローンして左に移動	alt,curLeft,or,alt,cmd,curLeft	0
+その他	other-010	ビットマップモードの終了	shift,cmd,e	0
+その他	other-011	上に10ピクセル移動	shift,curUp	0
+その他	other-012	上に移動	curUp	0
+その他	other-013	下に10ピクセル移動	shift,curDown	0
+その他	other-014	下に移動	curDown	0
+その他	other-015	内部にペースト	shift,cmd,v	0
+その他	other-016	前のステート	shift,comma	0
+その他	other-017	前のページ	pageUp,or,cmd,pageUp	0
+その他	other-018	前の選択範囲	shift,cmd,curLeft	0
+その他	other-019	右に10ピクセル移動	shift,curRight	0
+その他	other-020	右に移動	curRight	0
+その他	other-021	左に10ピクセル移動	shift,curLeft	0
+その他	other-022	左に移動	curLeft	0
+その他	other-023	次のステート	shift,period	0
+その他	other-024	次のページ	pageDown,or,cmd,pageDown	0
+その他	other-025	次の選択範囲	shift,cmd,curRight	0
+その他	other-026	選択したピクセルを塗る	alt,delete	0
