@@ -449,6 +449,21 @@
 }
 
 // =============================================
+// テンキー無しキーボード/Macbook：ボタン色調整
+// =============================================
+#keyboard-base.keyboard-apple-sj,
+#keyboard-base.keyboard-apple-us,
+#keyboard-base.keyboard-macbook-sj,
+#keyboard-base.keyboard-macbook-us {
+	#keyboard-wrap.key-del & #key-fn,
+	#keyboard-wrap.key-del & #key-delete {
+		background-color: #428BCA;
+		color: #fff;
+		font-weight: bold;
+	}
+}
+
+// =============================================
 // Macbook：ボタン色調整
 // =============================================
 #keyboard-base.keyboard-macbook-sj,
@@ -642,6 +657,7 @@
 #keyboard-wrap.key-num5 #key-num5,
 #keyboard-wrap.key-num6 #key-num6,
 #keyboard-wrap.key-num7 #key-num7,
+#keyboard-wrap.key-apostrophe #key-num7,
 #keyboard-wrap.key-num8 #key-num8,
 #keyboard-wrap.key-num9 #key-num9,
 #keyboard-wrap.key-num0 #key-num0,
@@ -661,6 +677,7 @@
 #keyboard-wrap.key-o #key-o,
 #keyboard-wrap.key-p #key-p,
 #keyboard-wrap.key-at #key-at,
+#keyboard-wrap.key-accent #key-at,
 #keyboard-wrap.key-bra1 #key-bra1,
 #keyboard-wrap.key-return #key-return,
 #keyboard-wrap.key-ctrl #key-ctrl,
@@ -678,6 +695,8 @@
 #keyboard-wrap.key-colon #key-colonUs,
 #keyboard-wrap.key-bra2 #key-bra2,
 #keyboard-wrap.key-shift #key-shiftLeft,
+#keyboard-wrap.key-apostrophe #key-shiftLeft,
+#keyboard-wrap.key-question #key-shiftLeft,
 #keyboard-wrap.key-z #key-z,
 #keyboard-wrap.key-x #key-x,
 #keyboard-wrap.key-c #key-c,
@@ -688,6 +707,7 @@
 #keyboard-wrap.key-comma #key-comma,
 #keyboard-wrap.key-period #key-period,
 #keyboard-wrap.key-slash #key-slash,
+#keyboard-wrap.key-question #key-slash,
 #keyboard-wrap.key-underScore #key-underScore,
 #keyboard-wrap.key-alt #key-altLeft,
 #keyboard-wrap.key-cmd #key-cmdLeft,
@@ -716,7 +736,8 @@
 #keyboard-wrap.key-astTen #key-astTen,
 #keyboard-wrap.key-plus #key-plusUs,
 #keyboard-wrap.key-enter #key-enter,
-#keyboard-wrap.key-hyphen #key-hyphenUs
+#keyboard-wrap.key-hyphen #key-hyphenUs,
+#keyboard-wrap.key-del #key-deleteRight
  {
 	background-color: #428BCA;
 	color: #fff;
@@ -744,8 +765,9 @@
 
 #keyboard-wrap.key-cmd #key-cmdRight,
 #keyboard-wrap.key-shift #key-shiftRight,
-#keyboard-wrap.key-alt #key-altRight,
-#keyboard-wrap.key-delete #key-deleteRight {
+#keyboard-wrap.key-apostrophe #key-shiftRight,
+#keyboard-wrap.key-question #key-shiftRight,
+#keyboard-wrap.key-alt #key-altRight {
 	background-color: #aaa;
 	font-weight: bold;
 }

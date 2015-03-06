@@ -12,7 +12,7 @@
 	$lang = 'ja';
 
 	//description
-	$description = '見たままわかる！キーボードショートカットキーのWeb版チートシート';
+	$description = '見たままわかる！キーボードショートカットキーのWeb版チートシート「ShortcutMaster for Mac」';
 
 	//Name
 	$name = 'ShortcutMaster for Mac';
@@ -43,10 +43,10 @@
 <html lang="<?php echo($lang); ?>">
 <head>
 <meta charset="<?php echo($charset); ?>">
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width">
 <meta name="description" content="<?php echo($description); ?>／運営：株式会社ビーワークス WEB制作部／紹介元：WEBNAUT">
 <meta name="keywords" content="WebNAUT,ウェブノート,Web制作,制作,ビーワークス,beeworks,キーボード,ショートカットキー,ShortcutMaster" />
-<meta name="author" content="">
+<meta name="author" content="Beeworks">
 <title><?php echo($name); ?></title>
 <link rel="shortcut icon" href="resources/img/favicon.png" />
 <link href="resources/css/bootstrap.min.css" rel="stylesheet">
@@ -191,6 +191,112 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					$sample=explode(',',$data[$i]);
 					for($k = 0; $k < count($sample); $k++) {
 
+						//ボタンカラーを適用するキー
+						if (($sample[$k] === 'esc')||
+							($sample[$k] === 'f1')||
+							($sample[$k] === 'f2')||
+							($sample[$k] === 'f3')||
+							($sample[$k] === 'f4')||
+							($sample[$k] === 'f5')||
+							($sample[$k] === 'f6')||
+							($sample[$k] === 'f7')||
+							($sample[$k] === 'f8')||
+							($sample[$k] === 'f9')||
+							($sample[$k] === 'f10')||
+							($sample[$k] === 'f11')||
+							($sample[$k] === 'f12')||
+							($sample[$k] === 'eject')||
+							($sample[$k] === 'num1')||
+							($sample[$k] === 'num2')||
+							($sample[$k] === 'num3')||
+							($sample[$k] === 'num4')||
+							($sample[$k] === 'num5')||
+							($sample[$k] === 'num6')||
+							($sample[$k] === 'num7')||
+							($sample[$k] === 'apostrophe')||
+							($sample[$k] === 'num8')||
+							($sample[$k] === 'num9')||
+							($sample[$k] === 'num0')||
+							($sample[$k] === 'hyphen')||
+							($sample[$k] === 'caret')||
+							($sample[$k] === 'backslash')||
+							($sample[$k] === 'delete')||
+							($sample[$k] === 'tab')||
+							($sample[$k] === 'q')||
+							($sample[$k] === 'w')||
+							($sample[$k] === 'e')||
+							($sample[$k] === 'r')||
+							($sample[$k] === 't')||
+							($sample[$k] === 'y')||
+							($sample[$k] === 'u')||
+							($sample[$k] === 'i')||
+							($sample[$k] === 'o')||
+							($sample[$k] === 'p')||
+							($sample[$k] === 'at')||
+							($sample[$k] === 'accent')||
+							($sample[$k] === 'bra1')||
+							($sample[$k] === 'return')||
+							($sample[$k] === 'ctrl')||
+							($sample[$k] === 'a')||
+							($sample[$k] === 's')||
+							($sample[$k] === 'd')||
+							($sample[$k] === 'f')||
+							($sample[$k] === 'g')||
+							($sample[$k] === 'h')||
+							($sample[$k] === 'j')||
+							($sample[$k] === 'k')||
+							($sample[$k] === 'l')||
+							($sample[$k] === 'semicolon')||
+							($sample[$k] === 'colon')||
+							($sample[$k] === 'bra2')||
+							($sample[$k] === 'shift')||
+							($sample[$k] === 'z')||
+							($sample[$k] === 'x')||
+							($sample[$k] === 'c')||
+							($sample[$k] === 'v')||
+							($sample[$k] === 'b')||
+							($sample[$k] === 'n')||
+							($sample[$k] === 'm')||
+							($sample[$k] === 'comma')||
+							($sample[$k] === 'period')||
+							($sample[$k] === 'slash')||
+							($sample[$k] === 'question')||
+							($sample[$k] === 'underScore')||
+							($sample[$k] === 'alt')||
+							($sample[$k] === 'cmd')||
+							($sample[$k] === 'eisu')||
+							($sample[$k] === 'space')||
+							($sample[$k] === 'kana')||
+							($sample[$k] === 'caps')||
+							($sample[$k] === 'f13')||
+							($sample[$k] === 'f14')||
+							($sample[$k] === 'f15')||
+							($sample[$k] === 'f16')||
+							($sample[$k] === 'f17')||
+							($sample[$k] === 'f18')||
+							($sample[$k] === 'f19')||
+							($sample[$k] === 'fn')||
+							($sample[$k] === 'home')||
+							($sample[$k] === 'pageUp')||
+							($sample[$k] === 'del')||
+							($sample[$k] === 'end')||
+							($sample[$k] === 'pageDown')||
+							($sample[$k] === 'curUp')||
+							($sample[$k] === 'curRight')||
+							($sample[$k] === 'curDown')||
+							($sample[$k] === 'curLeft')||
+							($sample[$k] === 'clear')||
+							($sample[$k] === 'equalTen')||
+							($sample[$k] === 'astTen')||
+							($sample[$k] === 'plus')||
+							($sample[$k] === 'enter')
+							){
+							$btnColor = true;
+						//それ以外はそのまま
+						}else {
+							$btnColor = false;
+						}
+
 						//キー表記と変えるもの
 						if (strpos($sample[$k], 'hyphen') !== false){
 							$sample[$k] = '-';
@@ -200,6 +306,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							$sample[$k] = '¥';
 						}elseif (strpos($sample[$k], 'at') !== false){
 							$sample[$k] = '@';
+						}elseif (strpos($sample[$k], 'accent') !== false){
+							$sample[$k] = '`';
 						}elseif (strpos($sample[$k], 'bra1') !== false){
 							$sample[$k] = '[';
 						}elseif (strpos($sample[$k], 'bra2') !== false){
@@ -214,6 +322,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							$sample[$k] = '.';
 						}elseif (strpos($sample[$k], 'slash') !== false){
 							$sample[$k] = '/';
+						}elseif (strpos($sample[$k], 'question') !== false){
+							$sample[$k] = '?';
 						}elseif (strpos($sample[$k], 'underScore') !== false){
 							$sample[$k] = '_';
 						}elseif (strpos($sample[$k], 'eisu') !== false){
@@ -256,18 +366,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							$sample[$k] = '8';
 						}elseif (strpos($sample[$k], 'num9') !== false){
 							$sample[$k] = '9';
+						}elseif (strpos($sample[$k], 'apostrophe') !== false){
+							$sample[$k] = '&rsquo;';
 						}
 
-						//AndとOr
-						if (strpos($sample[$k], 'and') !== false){
-							echo ('<button class="btn btn-default btn-and">→</button>');
-						}elseif (strpos($sample[$k], 'or') !== false){
-							echo ('<button class="btn btn-default btn-or">or</button>');
-
-						//それ以外はキー表記そのまま
+						//ボタンカラーを適用するキー
+						if ($btnColor == true){
+							echo ('<button class="btn btn-default btn-on">'.$sample[$k].'</button>');
+						//それ以外はそのまま
 						}else {
 							echo ('<button class="btn btn-default">'.$sample[$k].'</button>');
-
 						}
 					}
 					echo ('</td>');
